@@ -1,0 +1,315 @@
+namespace = maine
+
+
+# maine exists
+maine.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = maine.1.t
+	desc = maine.1.d
+	flavor = maine.1.f
+
+	event_image = {
+		video = "unspecific_signed_contract"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	duration = 3
+
+	trigger = {
+}
+				
+			
+		
+	
+
+	immediate = {
+	}
+
+	option = {
+		name = maine.1.a
+		default_option = yes 
+create_country = {  
+	tag = MAI 
+	origin = c:MAC	
+	                 
+	state = s:STATE_MAINE.region_state:MAC	
+	}
+	c:MAI = { trigger_event = { id = maine.2 } }
+}
+}
+maine.2 = {
+	type = country_event
+	placement = ROOT
+
+	title = maine.2.t
+	desc = maine.2.d
+	flavor = maine.2.f
+
+	event_image = {
+		video = "unspecific_signed_contract"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = maine.2.a
+		default_option = yes 
+		C:GBR = {
+		create_diplomatic_pact = {
+			country = c:MAI
+			type = puppet
+	}
+	}
+	s:STATE_MAINE = {  
+			if = {
+				limit = {
+					any_scope_state = {
+						NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			
+		}
+		}
+	c:MAC = { trigger_event = { id = maine.3 } }
+}
+
+}
+maine.3 = {
+	type = country_event
+	placement = ROOT
+
+	title = maine.3.t
+	desc = maine.3.d
+	flavor = maine.3.f
+
+	event_image = {
+		video = "unspecific_signed_contract"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = maine.3.a
+		default_option = no 
+		play_as = c:MAI
+		s:STATE_MAINE = {  
+			if = {
+				limit = {
+					any_scope_state = {
+						NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			
+		}
+		}
+}
+option = {
+		name = maine.3.b
+		default_option = yes
+		s:STATE_MAINE = {  
+			if = {
+				limit = {
+					any_scope_state = {
+						NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			
+		}
+				
+		} 
+		}
+}
+maine.4 = {
+	type = country_event
+	placement = ROOT
+
+	title = maine.4.t
+	desc = maine.4.d
+	flavor = maine.4.f
+
+	event_image = {
+		video = "europenorthamerica_before_the_battle"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = maine.4.a
+		default_option = yes
+		c:VER = { trigger_event = maine.5 }
+
+}
+	option = {
+		name = maine.4.b
+		default_option = no
+
+
+}
+}
+maine.5 = {
+	type = country_event
+	placement = ROOT
+
+	title = maine.5.t
+	desc = maine.5.d
+	flavor = maine.5.f
+
+	event_image = {
+		video = "europenorthamerica_before_the_battle"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = maine.5.a
+		default_option = yes
+	
+	change_relations = {  
+	country = c:GBR  
+	value = 30 }
+	C:GBR = {
+		create_diplomatic_pact = {
+			country = c:VER
+			type = puppet
+	} }
+						 
+	
+	C:VER = { annex = c:MAC annex = c:NHM annex = c:RHI annex = c:CNC set_capital = STATE_MASSACHUSETTS change_tag = NEN }
+
+}
+}
+# VICTORY from VER
+maine.6 = {
+	type = country_event
+	placement = ROOT
+
+	title = maine.6.t
+	desc = maine.6.d
+	flavor = maine.6.f
+
+	event_image = {
+		video = "europenorthamerica_capitalists_meeting"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = maine.6.a
+		default_option = yes
+	C:FRA = {
+		create_diplomatic_pact = {
+			country = c:VER
+			type = customs_union
+	} }
+	add_modifier = {
+			name = nen_victory
+			months = normal_modifier_time
+		}
+	change_relations = {  
+	country = c:FRA  
+	value = 20
+					}
+	change_relations = {  
+	country = c:GBR  
+	value = -30
+}
+	
+		annex = c:NHM 
+		annex = c:RHI 
+		annex = c:CNC 
+		annex = c:NBS 
+		annex = c:NVS 
+		set_capital = STATE_MASSACHUSETTS 
+		change_tag = NEN 
+		add_primary_culture = cu:franco_canadian
+
+}
+	option = {
+		name = maine.6.b
+		default_option = no
+		add_modifier = {
+			name = nen_victory
+			months = normal_modifier_time
+		}
+		change_relations = {  
+	country = c:GBR  
+	value = -20
+}  
+			
+	
+	annex = c:NHM 
+	annex = c:RHI 
+	annex = c:CNC 
+	annex = c:NBS 
+	annex = c:NVS 
+	set_capital = STATE_MASSACHUSETTS 
+	change_tag = NEN 
+	add_primary_culture = cu:franco_canadian 
+	}
+}
+
+

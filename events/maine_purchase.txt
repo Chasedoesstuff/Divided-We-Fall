@@ -1,0 +1,101 @@
+﻿namespace = maine_purchase
+
+# theivery might be okay cause its 6 am and paradox plagarize themselves all the time.
+# proposal
+maine_purchase.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = maine_purchase.1.t
+	desc = maine_purchase.1.d
+	flavor = maine_purchase.1.f
+
+	duration = 3
+
+	event_image = {
+		video = "unspecific_signed_contract"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_trade.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+		
+	}
+
+	option = {
+		name = maine_purchase.1.a
+		default_option = yes
+		add_modifier = {
+			name = maine_fee
+			months = 12
+			is_decaying = no
+		}
+		
+		show_as_tooltip = {
+			s:STATE_MAINE = {
+				set_state_owner = scope:maine_new_owner
+			}
+			change_relations = {
+				country = c:NBS
+				value = 15
+			}
+		}
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+
+#New Brunswick gets deal
+maine_purchase.2 = {
+	type = country_event
+	placement = ROOT
+
+	title = maine_purchase.2.t
+	desc = maine_purchase.2.d
+	flavor = maine_purchase.2.f
+
+	duration = 3
+
+	event_image = {
+		video = "unspecific_signed_contract"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = maine.2.a
+		default_option = yes
+	c:NBS = {
+		add_modifier = {
+			name = maine_gift
+			months = 12
+		} } 
+		s:STATE_MAINE.region_state:NBS = {
+			set_state_owner = scope:maine_new_owner
+		}
+		scope:maine_new_owner = {
+		trigger_event = {
+			id = maine_purchase.1
+			days = 0
+			popup = yes
+		} }
+		change_relations = {
+			country = c:NBS
+			value = 10
+		}
+	}
+}

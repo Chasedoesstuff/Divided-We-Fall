@@ -1,0 +1,608 @@
+ namespace = slave_revolt_usa
+#Important note to all who look in the files, slavery is bad.
+slave_revolt_usa.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = slave_revolt_usa.1.t
+	desc = slave_revolt_usa.1.d
+	flavor = slave_revolt_usa.1.f
+
+	event_image = {
+		video = "europenorthamerica_before_the_battle"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	if = {
+			limit = {
+				NOT = { exists = c:ASA }
+			}
+			create_country = {
+				tag = ASA
+				origin = c:GOR
+			province = p:xB3D9D8
+			province = p:xBDB2BA 
+			province = p:x169E1F 
+			province = p:xE631D3 
+			province = p:x407040 
+			province = p:xCB1A53 
+			province = p:xD66E1C 
+			province = p:x39E367 
+			province = p:x21E256	
+				}
+	
+		c:ASA = { activate_law = law_type:law_slavery_banned }
+  }
+  else = {
+	 s:STATE_GEORGIA = {
+        set_owner_of_provinces = {
+            country = c:ASA
+            provinces = { xB3D9D8 xBDB2BA x169E1F xE631D3 x407040 xCB1A53 xD66E1C x39E367 x21E256 }
+        }
+    }
+	}
+
+			
+		
+			c:ASA = { save_scope_as = afs_revolters } 
+			}
+	option = {
+    name = slave_revolt_usa.1.a
+    default_option = yes
+	if = {
+			limit = {
+				c:ASA = is_at_war
+			}
+			
+		scope:slave_revolt_usa = {
+		
+			violate_sovereignty_accept = c:GOR
+				add_war_goal = {
+						holder = c:ASA
+						type = conquer_state
+						target_state = s:STATE_GEORGIA.region_state:GOR
+																	}		
+			
+			
+								}
+  }
+ else = {
+		create_diplomatic_play = {
+				name = slave_revolt_usa
+					
+				type = dp_conquer_state
+				escalation = 100
+				target_state = s:STATE_GEORGIA.region_state:ASA
+
+				add_war_goal = {
+					holder = c:ASA
+					type = annex_country
+					target_state = s:STATE_GEORGIA.region_state:GOR
+				}
+			}
+			every_diplomatic_play = {
+						limit = {
+						target_is = c:ASA
+					  }
+					  save_scope_as = slave_revolt_usa
+					}
+	}
+	
+   
+}
+option = {
+    name = slave_revolt_usa.1.b
+    default_option = no
+	play_as = c:ASA
+	if = {
+			limit = {
+				c:ASA = is_diplomatic_play_participant = yes
+			}
+			
+		scope:slave_revolt_usa = {
+		
+			violate_sovereignty_accept = c:GOR
+				add_war_goal = {
+						holder = c:ALA
+						type = conquer_state
+						target_state = s:STATE_GEORGIA.region_state:GOR
+																	}		
+			
+			
+								}
+  }
+ else = {
+		create_diplomatic_play = {
+				name = slave_revolt_usa
+					
+				type = dp_conquer_state
+				escalation = 100
+				target_state = s:STATE_GEORGIA.region_state:ASA
+
+				add_war_goal = {
+					holder = c:ASA
+					type = annex_country
+					target_state = s:STATE_GEORGIA.region_state:GOR
+				}
+			}
+			every_diplomatic_play = {
+						limit = {
+						target_is = c:ASA
+					  }
+					  save_scope_as = slave_revolt_usa
+					}
+	}
+}
+}
+slave_revolt_usa.2 = {
+	type = country_event
+	placement = ROOT
+
+	title = slave_revolt_usa.2.t
+	desc = slave_revolt_usa.2.d
+	flavor = slave_revolt_usa.2.f
+
+	event_image = {
+		video = "europenorthamerica_before_the_battle"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	
+	immediate = {
+	if = {
+			limit = {
+				NOT = { exists = c:ASA }
+			}
+			create_country = {
+				tag = ASA
+				origin = c:GOR
+			province = p:xC8BB61
+			province = p:x5462C6 
+			province = p:x12DEAF 
+			province = p:x966D03 
+			province = p:x31044F 
+			province = p:xCC3103 
+			province = p:x913125 
+			province = p:xBD9F23 
+			province = p:x8E9218
+			province = p:x00F000
+			province = p:x6D9811
+			province = p:x489DF2
+			province = p:x492B79
+			province = p:x40A911
+			province = p:x168AE9
+			province = p:x3E5AFE
+			province = p:xA50BE3				
+				}
+
+		c:ASA = { activate_law = law_type:law_slavery_banned }
+  }
+ else = {
+		s:STATE_ALABAMA = {
+        set_owner_of_provinces = {
+            country = c:ASA
+            provinces = { xC8BB61 x5462C6 x12DEAF x966D03 x31044F xCC3103 x913125 xBD9F23 x8E9218 x00F000 x6D9811 x489DF2 x492B79 x40A911 x168AE9 x3E5AFE xA50BE3 }
+        }
+    }
+	}
+
+			
+		
+			c:ASA = { save_scope_as = afs_revolters } 
+			}
+	
+option = {
+    name = slave_revolt_usa.2.a
+    default_option = yes
+
+	if = {
+			limit = {
+				c:ASA = is_diplomatic_play_participant = yes
+			}
+			
+		scope:slave_revolt_usa = {
+		
+			violate_sovereignty_accept = c:ALA
+				add_war_goal = {
+						holder = c:ALA
+						type = conquer_state
+						target_state = s:STATE_ALABAMA.region_state:ASA
+																	}		
+			
+			
+								}
+  }
+ else = {
+		create_diplomatic_play = {
+				name = slave_revolt_usa
+					
+				type = dp_conquer_state
+				escalation = 100
+				target_state = s:STATE_ALABAMA.region_state:ASA
+
+				add_war_goal = {
+					holder = c:ASA
+					type = annex_country
+					target_state = s:STATE_ALABAMA.region_state:ALA
+				}
+			}
+			every_diplomatic_play = {
+						limit = { 
+									c:ASA = { is_diplomatic_play_participant = yes }
+																					}
+										save_scope_as = slave_revolt_usa 
+																			}
+	}
+	
+    
+}
+}
+option = {
+    name = slave_revolt_usa.1.b
+    default_option = no
+	
+			play_as = c:ASA
+
+	if = {
+			limit = {
+				c:ASA = is_diplomatic_play_participant = yes
+			}
+			
+		scope:slave_revolt_usa = {
+		
+				add_war_goal = {
+						holder = c:ALA
+						type = conquer_state
+						target_state = s:STATE_ALABAMA.region_state:ASA
+																	}		
+			
+			
+								}
+  }
+ else = {
+		create_diplomatic_play = {
+				name = slave_revolt_usa
+					
+				type = dp_conquer_state
+				escalation = 100
+				target_state = s:STATE_ALABAMA.region_state:ASA
+
+				add_war_goal = {
+					holder = c:ASA
+					type = annex_country
+					target_state = s:STATE_ALABAMA.region_state:ALA
+				}
+			}
+			every_diplomatic_play = {
+						limit = { 
+									c:ASA = { is_diplomatic_play_participant = yes }
+																					}
+										save_scope_as = slave_revolt_usa 
+																			}
+	}
+}
+slave_revolt_usa.3 = {
+#south carolina
+	type = country_event
+	placement = ROOT
+
+	title = slave_revolt_usa.3.t
+	desc = slave_revolt_usa.3.d
+	flavor = slave_revolt_usa.3.f
+
+	event_image = {
+		video = "europenorthamerica_before_the_battle"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	if = {
+			limit = {
+				NOT = { exists = c:ASA }
+			}
+			create_country = {
+				tag = ASA
+				origin = c:SCL
+			province = p:xF5B3A1
+			province = p:x1FA379 
+			province = p:x3B0FAE 
+			province = p:xF83D99 
+			province = p:x7AAA59 
+			province = p:x9B1B8B 
+			province = p:xD4D27E 		
+				}
+				
+		c:ASA = { activate_law = law_type:law_slavery_banned }
+  }
+  else = {
+   s:STATE_SOUTH_CAROLINA = {
+        set_owner_of_provinces = {
+            country = c:ASA
+            provinces = { xF5B3A1 x1FA379 x3B0FAE xF83D99 x7AAA59 x9B1B8B xD4D27E }
+        }
+    }
+  }
+	c:ASA = { save_scope_as = afs_revolters } 
+	}
+	option = {
+    name = slave_revolt_usa.3.a
+    default_option = yes
+
+   
+	create_diplomatic_play = {
+				name = slave_revolt_scl
+				type = dp_conquer_state
+				escalation = 100
+				target_state = s:STATE_SOUTH_CAROLINA.region_state:ASA
+
+				add_war_goal = {
+					holder = c:ASA
+					type = annex_country
+					target_state = s:STATE_SOUTH_CAROLINA.region_state:SCL
+				}
+			}
+}
+option = {
+    name = slave_revolt_usa.1.b
+    default_option = no
+	play_as = c:ASA
+	create_diplomatic_play = {
+				name = slave_revolt_scl
+				type = dp_conquer_state
+				escalation = 100
+				target_state = s:STATE_SOUTH_CAROLINA.region_state:ASA
+
+				add_war_goal = {
+					holder = c:ASA
+					type = annex_country
+					target_state = s:STATE_SOUTH_CAROLINA.region_state:SCL
+				}
+			}
+}
+}
+slave_revolt_usa.4 = {
+# Mississippi
+	type = country_event
+	placement = ROOT
+
+	title = slave_revolt_usa.4.t
+	desc = slave_revolt_usa.4.d
+	flavor = slave_revolt_usa.4.f
+
+	event_image = {
+		video = "europenorthamerica_before_the_battle"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+		
+	immediate = {
+	if = {
+			limit = {
+				NOT = { exists = c:ASA }
+			}
+			create_country = {
+				tag = ASA
+				origin = c:GOR
+			province = p:xF641D2
+			province = p:x14BCC5 
+			province = p:x6D0DAC 
+			province = p:x2958AE 
+			province = p:xAD9E8B 
+			province = p:x3B0B58 
+			province = p:x68986b
+			province = p:xCAD065
+			province = p:xECBE35
+			province = p:x9E0C8B
+			province = p:x0B6E85
+			province = p:x6E06B3
+			province = p:x80F080
+			province = p:x123257
+			province = p:xF0A4C8
+			province = p:xDD0524
+				}
+				
+		c:ASA = { activate_law = law_type:law_slavery_banned }
+  }
+  else = { 
+  s:STATE_MISSISSIPPI = {
+        set_owner_of_provinces = {
+            country = c:ASA
+            provinces = { xF641D2 x14BCC5 x6D0DAC x2958AE xAD9E8B x3B0B58 x68986b xCAD065 xECBE35 x9E0C8B x0B6E85 x6E06B3 x80F080 x123257 xF0A4C8 xDD0524 }
+        }
+    }
+}
+	c:ASA = { save_scope_as = afs_revolters } 
+	}
+	option = {
+    name = slave_revolt_usa.4.a
+    default_option = yes
+
+    
+	create_diplomatic_play = {
+				name = slave_revolt_mis
+				type = dp_conquer_state
+				escalation = 100
+				target_state = s:STATE_MISSISSIPPI.region_state:ASA
+
+				add_war_goal = {
+					holder = c:ASA
+					type = annex_country
+					target_state = s:STATE_MISSISSIPPI.region_state:MIS
+				}
+			}
+}
+option = {
+    name = slave_revolt_usa.1.b
+    default_option = no
+	play_as = c:ASA
+    
+	create_diplomatic_play = {
+				name = slave_revolt_mis
+				type = dp_conquer_state
+				escalation = 100
+				target_state = s:STATE_MISSISSIPPI.region_state:ASA
+
+				add_war_goal = {
+					holder = c:ASA
+					type = annex_country
+					target_state = s:STATE_MISSISSIPPI.region_state:MIS
+				}
+			}
+}
+}
+slave_revolt_usa.5 = {
+	type = country_event
+	placement = ROOT
+
+	title = slave_revolt_usa.5.t
+	desc = slave_revolt_usa.5.d
+	flavor = slave_revolt_usa.5.f
+
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+			
+			if = {
+			limit = {
+				c:GOR = { is_player = yes }
+				
+			} 
+			c:GOR = {
+			change_tag = CSA
+			annex = C:MIS
+			annex = C:SCL
+			annex = C:GOR
+			annex = C:ALA
+			}
+			
+			
+			
+		}
+		if = {
+			limit = {
+				c:SCL = { is_player = yes }
+				
+			}
+			c:SCL = {
+			change_tag = CSA
+			annex = C:MIS
+			annex = C:SCL
+			annex = C:GOR
+			annex = C:ALA
+			
+			
+			}
+			
+		}
+		if = {
+			limit = {
+				c:MIS = { is_player = yes }
+				
+			} 
+			c:MIS = {
+			change_tag = CSA
+			annex = C:MIS
+			annex = C:SCL
+			annex = C:GOR
+			annex = C:ALA
+			
+			
+			}
+			
+		}
+		if = {
+			limit = {
+				c:ALA = { is_player = yes }
+				
+			} 
+			c:ALA = {
+			change_tag = CSA
+			annex = C:MIS
+			annex = C:SCL
+			annex = C:GOR
+			annex = C:ALA
+			
+			
+			}
+			
+		}
+	if = {
+			limit = {
+				c:GOR = { is_player = no }
+				c:SCL = { is_player = no }
+				c:MIS = { is_player = no }
+				c:ALA = { is_player = no }
+			} 
+			c:GOR = {
+			change_tag = CSA
+			annex = C:MIS
+			annex = C:SCL
+			annex = C:GOR
+			annex = C:ALA
+			
+			
+			}
+			
+		}		
+				}
+	option = {
+		name = slave_revolt_usa.5.mc
+		default_option = yes
+		set_capital = STATE_GEORGIA
+		add_modifier = {
+			name = csa_victory
+			months = normal_modifier_time
+		} }
+	option = {
+		name = slave_revolt_usa.5.keep
+		default_option = no
+		add_modifier = {
+			name = csa_victory
+			months = normal_modifier_time
+		}
+	}
+
+}

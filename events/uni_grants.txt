@@ -1,0 +1,38 @@
+namespace = uni_grant
+
+uni_grant.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = unigrant.1.t
+	desc = unigrant.1.d
+	flavor = unigrant.1.f
+
+	duration = 3
+
+	event_image = {
+		video = "unspecific_signed_contract"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = unigrant.1.a
+		default_option = yes
+				change_relations = {  
+	country = c:GBR 
+	value = 25
+	}
+		add_modifier = {
+			name = uni_pay
+		}
+
+}

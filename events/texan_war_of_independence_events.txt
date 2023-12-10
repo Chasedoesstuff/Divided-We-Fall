@@ -1,0 +1,264 @@
+﻿namespace = texan_war_of_independence
+
+# For TEX
+# Victory event, reuse loc from event 6 but also make it about joining USA
+texan_war_of_independence.1 = {
+	type = country_event
+	placement = ROOT
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	title = texan_war_of_independence.1.t
+	desc = texan_war_of_independence.1.d
+	flavor = texan_war_of_independence.1.f
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+	option = {
+		name = texan_war_of_independence.1.gbr
+		trigger = { c:GBR = {
+			relations:root >= relations_threshold:cordial
+		} }
+		c:GBR = {
+			set_variable = tex_subject
+			
+				create_diplomatic_pact = {
+					country = c:TEX
+					type = dominion
+				}
+			}
+		
+		ai_chance = {
+			base = 60
+		}
+	}
+	option = {
+		name = texan_war_of_independence.1.fra
+		trigger = { c:FRA = {
+			relations:root >= relations_threshold:cordial
+		} }
+		c:FRA = {
+			set_variable = tex_subject
+			
+				create_diplomatic_pact = {
+					country = c:TEX
+					type = dominion
+				}
+			
+		}
+		ai_chance = {
+			base = 50
+		}
+	}
+	option = {
+		name = texan_war_of_independence.1.spa
+		trigger = { c:SPA = {
+			relations:root >= relations_threshold:cordial
+		} }
+		c:SPA = {
+			set_variable = tex_subject
+			
+				create_diplomatic_pact = {
+					country = c:TEX
+					type = dominion
+				}
+			
+		}
+		ai_chance = {
+			base = 30
+		}
+	}
+	option = {
+		name = texan_war_of_independence.1.c
+		default_option = yes
+		show_as_tooltip = {
+			change_relations = {
+				country = c:FRA
+				value = -10
+			}
+			change_relations = {
+				country = c:SPA
+				value = -10
+			}
+			change_relations = {
+				country = c:GBR
+				value = -10
+			}
+		}
+		add_modifier = {
+			name = lone_star_state
+			months = normal_modifier_time
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+# Capture of Santa Anna
+texan_war_of_independence.3 = {
+	type = country_event
+	placement = ROOT
+	event_image = {
+		video = "europenorthamerica_before_the_battle"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	title = texan_war_of_independence.3.t
+	desc = texan_war_of_independence.3.d
+	flavor = texan_war_of_independence.3.f
+
+	duration = 3
+
+	trigger = {
+		NOT = {
+			has_variable = santa_anna_captured
+		}
+		exists = c:TEX
+		exists = c:MEX
+		ROOT = c:TEX
+		any_diplomatic_play = {
+			initiator_is = c:TEX
+			target_is = c:MEX
+		}
+		c:MEX = {
+			is_player = no
+			any_scope_character = {
+				has_variable = is_santa_anna
+			}
+		}
+	}
+
+	immediate = {
+		c:MEX = {
+			random_scope_character = {
+				limit = {
+					has_variable = is_santa_anna
+				}
+				save_scope_as = santa_anna_scope
+			}
+		}
+		set_variable = {
+			name = santa_anna_captured
+		}
+	}
+
+	option = {
+		name = texan_war_of_independence.3.a
+		default_option = yes
+		every_diplomatic_play = {
+			limit = {
+				initiator_is = c:TEX
+				target_is = c:MEX
+			}
+			end_play = yes
+		}
+		hidden_effect = {
+			c:TEX = { save_scope_as = texas_scope }
+			c:MEX = { save_scope_as = mexico_scope }
+			every_country = {
+				limit = {
+					NOT = { this = c:TEX }
+					NOT = { this = c:MEX }
+					OR = {
+						has_diplomatic_relevance = c:TEX
+						has_diplomatic_relevance = c:MEX
+					}			
+				}
+				post_notification = santa_anna_captured_notification
+			}		
+		}			
+		ai_chance = {
+			base = 95
+		}		
+	}
+	option = {
+		name = texan_war_of_independence.3.b	
+		ai_chance = {
+			base = 5
+		}		
+	}	
+}
+texan_war_of_independence.4 = {
+	type = country_event
+	placement = ROOT
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	title = texan_war_of_independence.4.t
+	desc = texan_war_of_independence.4.d
+	flavor = texan_war_of_independence.4.f
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+	option = {
+		name = texan_war_of_independence.4.a
+		trigger = { is_player = no }
+		C:USA = { annex = C:TEX 
+		trigger_event = { id = texan_war_of_independence.5 } }
+		
+		ai_chance = {
+			base = 50
+		}
+	}
+	option = {
+		name = texan_war_of_independence.4.b
+		trigger = { is_player = yes }
+		make_independent = yes
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+texan_war_of_independence.5 = {
+	type = country_event
+	placement = ROOT
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	title = texan_war_of_independence.5.t
+	desc = texan_war_of_independence.5.d
+	flavor = texan_war_of_independence.5.f
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+	option = {
+		name = texan_war_of_independence.5.a
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+# Nice to have: Make a Je for Mexico using loc from .2 event text
