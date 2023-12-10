@@ -1,0 +1,23 @@
+﻿DIPLOMATIC_PLAYS = {
+	c:VER = {
+		create_diplomatic_play = {
+			name = vermont_independence_war
+		
+			target_state = s:STATE_MASSACHUSETTS.region_state:MAC
+			
+			war = yes
+			
+			type = dp_annex_war
+			
+			
+
+			add_war_goal = {
+				holder = c:GBR	
+				type = make_protectorate
+				target_state = s:STATE_VER.region_state:VER
+				target_country = c:VER
+			}
+						
+		}	
+	}
+}
