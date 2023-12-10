@@ -1,0 +1,590 @@
+American_colony = { # da flag in the mod
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	color2 = "red"
+	color3 = "red"
+}
+Iowa_tribe = { # da flag in the mod
+	pattern = "pattern_horizontal_split_01.tga"
+	color1 = "green"
+	color2 = "red"
+}
+UOM_subject = {		
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	textured_emblem = {
+		texture = "te_coa_michigan.dds"
+	
+        instance = { scale = { 0.7 0.7 } position = { 0.75 0.5 } }
+	}	
+}
+UOM_free = {		
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+
+	textured_emblem = {
+		texture = "te_coa_michigan.dds"
+	
+        instance = { scale = { .8   .8  }
+	}	
+} }
+NEY_subject = {		
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	textured_emblem = {
+		texture = "te_coa_new_york.dds"
+	
+        instance = { scale = { 0.7 0.7 } position = { 0.75 0.5 } }
+	}	
+}
+NEY_free = {		
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+
+	textured_emblem = {
+		texture = "te_coa_new_york.dds"
+	
+        instance = { scale = { .8   .8  position = { 0.75 0.6 } }
+	}	
+} }
+VER_subject = {		
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	textured_emblem = {
+		texture = "te_coa_vermont.dds"
+	
+        instance = { scale = { 0.7 0.7 } position = { 0.75 0.5 } }
+	}	
+}
+VER_free = {		
+	pattern = "pattern_solid.tga"
+	color1 = "green"
+
+	colored_emblem = {
+		texture = "ce_frame_square.dds"
+		color1 = "blue"
+		instance = { position = { 0.01 0.01 } }
+		
+	} 
+	colored_emblem = {
+		texture = "ce_star_05.dds"
+		color1 = "white"
+		instance = { position = { 0.17 0.25 } scale = { 0.4 0.4 } }
+		
+	} 
+	
+        	
+}
+ASA_subject = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	colored_emblem = {
+		texture = "ce_bicolor_top.dds"
+		color1 = "green"
+	}
+	colored_emblem = {
+		texture = "ce_kanaga.dds"
+		color1 = "black"
+		instance = { position = { .75 .5 } scale = { .8 .8 } }
+	}
+}
+FLO_subject = {		
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	
+	colored_emblem = {
+		texture = "ce_cross_burgundy.dds"
+		color1 = "red"
+		
+	}
+
+	textured_emblem = {
+		texture = "te_coa_florida.dds"
+	
+       instance = { scale = { 0.6 0.6 }  }
+	}	
+}
+FLO_free = {		
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+
+	textured_emblem = {
+		texture = "te_coa_florida.dds"
+	
+       instance = { scale = { .6   .6   }
+	}	
+	}
+	colored_emblem = {
+		texture = "ce_saltire.dds"
+		color1 = "red"
+		
+	}
+ }
+ OHI_subject = {		
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	textured_emblem = {
+		texture = "te_coa_ohio.dds"
+	
+        instance = { scale = { 0.7 0.7 } position = { 0.745 0.5 } }
+	}	
+}
+OHI_free = {		
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	textured_emblem = {
+		texture = "te_coa_ohio.dds"
+	
+        instance = { scale = { .8   .8  position = { 0.745 0.6 } }
+	}	
+} }
+WIS_subject = {		
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	textured_emblem = {
+		texture = "te_coa_wisconsin.dds"
+	
+        instance = { scale = { 0.7 0.7 } position = { 0.745 0.5 } }
+	}	
+}
+WIS_free = {		
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+
+	textured_emblem = {
+		texture = "te_coa_wisconsin.dds"
+	
+        instance = { scale = { .8   .8  position = { 0.745 0.6 } }
+	}	
+} }
+ILL_subject = {		
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	textured_emblem = {
+		texture = "te_coa_illinois.dds"
+	
+        instance = { scale = { 0.7 0.7 } position = { 0.745 0.5 } }
+	}	
+}
+ILL_free = {		
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+
+	textured_emblem = {
+		texture = "te_coa_illinois.dds"
+	
+        instance = { scale = { .8   .8  position = { 0.745 0.6 } }
+	}	
+} }
+IDA_subject = {		
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	textured_emblem = {
+		texture = "te_coa_indiana.dds"
+	
+        instance = { scale = { 0.7 0.7 } position = { 0.745 0.5 } }
+	}	
+}
+IDA_free = {		
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+
+	textured_emblem = {
+		texture = "te_coa_indiana.dds"
+	
+        instance = { scale = { .8   .8  position = { 0.745 0.6 } }
+	}	
+} }
+PSV_subject = {		
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	textured_emblem = {
+		texture = "te_coa_pennsylvania.dds"
+	
+        instance = { scale = { 0.7 0.7 } position = { 0.745 0.5 } }
+	}	
+}
+PSV_free = {		
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+
+	textured_emblem = {
+		texture = "te_coa_pennsylvania.dds"
+	
+        instance = { scale = { .8   .8  position = { 0.745 0.6 } }
+	}	
+} }
+NWJ_subject = {		
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	textured_emblem = {
+		texture = "te_coa_new_jersey.dds"
+	
+        instance = { scale = { 0.7 0.7 } position = { 0.745 0.5 } }
+	}	
+}
+NWJ_free = {		
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+
+	textured_emblem = {
+		texture = "te_coa_new_jersey.dds"
+	
+        instance = { scale = { .8   .8  position = { 0.745 0.6 } }
+	}	
+} }
+NHM_subject = {		
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	textured_emblem = {
+		texture = "te_coa_new_hampshire.dds"
+	
+        instance = { scale = { 0.7 0.7 } position = { 0.745  0.5 } }
+	}	
+}
+NHM_free  = {		
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+
+	textured_emblem = {
+		texture = "te_coa_new_hampshire.dds"
+	
+        instance = { scale = { .8   .8  position = { 0.745 0.6 } }
+	}	
+} }
+CNC_subject = {		
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	textured_emblem = {
+		texture = "te_coa_connecticut.dds"
+	
+        instance = {  scale = { .8   .8 } position = { 0.745  0.5 } }
+	}	
+}
+CNC_free = {		
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+
+	textured_emblem = {
+		texture = "te_coa_connecticut.dds"
+	
+        instance = { scale = { .8   .8 } position = { 0.5 0.5 } }
+	}	
+}
+RHI_subject = {		
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	textured_emblem = {
+		texture = "te_coa_rhode_island.dds"
+	
+        instance = { scale = { 0.7 0.7 } position = { 0.75 0.5 } }
+	}	
+}
+RHI_free = {		
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+
+	textured_emblem = {
+		texture = "te_coa_rhode_island.dds"
+	
+        instance = { scale = { .8   .8  position = { 0.75 0.6 } }
+	}	
+} }
+MAC_subject = {		
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	textured_emblem = {
+		texture = "te_coa_massachusetts.dds"
+	
+        instance = { scale = { 0.7 0.7 } position = { 0.75 0.5 } }
+	}	
+}
+MAC_free = {		
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+
+	textured_emblem = {
+		texture = "te_coa_massachusetts.dds"
+	
+        instance = { scale = { .8   .8  position = { 0.75 0.6 } }
+	}	
+} }
+MAI_subject = {		
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	textured_emblem = {
+		texture = "te_coa_maine.dds"
+	
+        instance = { scale = { 0.7 0.7 } position = { 0.75 0.5 } }
+	}	
+}
+MAI_free = {		
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+
+	textured_emblem = {
+		texture = "te_coa_maine.dds"
+	
+        instance = { scale = { .8   .8  position = { 0.75 0.6 } }
+	}	
+} }
+KEN_subject = {		
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+
+	textured_emblem = {
+		texture = "te_coa_kentucky.dds"
+	
+        instance = { scale = { 0.7 0.7 } position = { 0.75 0.5 } }
+	}	
+}
+KEN_free = {		
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+
+	textured_emblem = {
+		texture = "te_coa_kentucky.dds"
+	
+        instance = { scale = { .8   .8  position = { 0.75 0.6 } }
+	}	
+} }
+DEL_subject = {		
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	textured_emblem = {
+		texture = "te_coa_delaware.dds"
+	
+        instance = { scale = { 0.7 0.7 } position = { 0.75 0.5 } }
+	}	
+}
+DEL_free = {		
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+
+	textured_emblem = {
+		texture = "te_coa_delaware.dds"
+	
+        instance = { scale = { .8   .8  position = { 0.75 0.6 } }
+	}	
+} }
+MYL_subject = {		
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	textured_emblem = {
+		texture = "te_coa_maryland.dds"
+	
+        instance = { scale = { 0.7 0.7 } position = { 0.75 0.5 } }
+	}	
+}
+MYL_free = {		
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+
+	textured_emblem = {
+		texture = "te_full_flag_maryland.dds"
+	
+        
+	}	
+}
+TSE_subject = {		
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	textured_emblem = {
+		texture = "te_coa_tennessee.dds"
+	
+        instance = { scale = { 0.7 0.7 } position = { 0.75 0.5 } }
+	}	
+}
+TSE_free = {		
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+
+	textured_emblem = {
+		texture = "te_coa_tennessee.dds"
+	
+        instance = { scale = { .8   .8  position = { 0.75 0.6 } }
+	}
+	}	
+}
+MIS_subject = {		
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	textured_emblem = {
+		texture = "te_coa_mississippi.dds"
+	
+        instance = { scale = { 0.7 0.7 } position = { 0.745 0.5 } }
+	}	
+}
+MIS_free = {		
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+
+	textured_emblem = {
+		texture = "te_coa_mississippi.dds"
+	
+        instance = { scale = { .8   .8  position = { 0.745 0.6 } }
+	}
+	}	
+}
+ALA_subject = {		
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	textured_emblem = {
+		texture = "te_coa_alabama.dds"
+	
+        instance = { scale = { 0.7 0.7 } position = { 0.745 0.5 } }
+	}	
+}
+ALA_free = {		
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+
+	textured_emblem = {
+		texture = "te_coa_alabama.dds"
+	
+        instance = { scale = { .8   .8  position = { 0.745 0.6 } }
+	}
+	}	
+}
+SCL_subject = {		
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	textured_emblem = {
+		texture = "te_coa_south_carolina.dds"
+	
+        instance = { scale = { 0.7 0.7 } position = { 0.745 0.5 } }
+	}	
+}
+SCL_free = {		
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+
+	textured_emblem = {
+		texture = "te_coa_south_carolina.dds"
+	
+        instance = { scale = { .8   .8  position = { 0.745 0.6 } }
+	}
+	}	
+}
+NCL_subject = {		
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	textured_emblem = {
+		texture = "te_coa_north_carolina.dds"
+	
+        instance = { scale = { 0.7 0.7 } position = { 0.745 0.5 } }
+	}	
+}
+NCL_free = {		
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+
+	textured_emblem = {
+		texture = "te_coa_north_carolina.dds"
+	
+        instance = { scale = { .8   .8  position = { 0.745 0.6 } }
+	}
+	}	
+}
+GOR_subject = {		
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = "white"
+		color2 = "red"
+		
+	}
+	colored_emblem = {
+		texture = "ce_frame_square.dds"
+		color1 = "blue"
+		instance = { scale = { .6   1 } position = { .2 } }
+		
+	}
+	textured_emblem = {
+		texture = "te_coa_georgia.dds"
+	
+        instance = { scale = { 0.7 0.7 } position = { 0.7 0.5 } }
+	}	
+}
+GOR_free = {		
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = "white"
+		color2 = "red"
+		
+	}
+	colored_emblem = {
+		texture = "ce_frame_square.dds"
+		color1 = "blue"
+		instance = { scale = { .6   1 } position = { .2 } }
+		
+	}
+	textured_emblem = {
+		texture = "te_coa_georgia.dds"
+	
+        instance = { scale = { 0.5 0.5 } position = { 0.19		0.5 } }
+	}	
+}
+VIR_subject = {		
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	textured_emblem = {
+		texture = "te_coa_virginia.dds"
+	
+        instance = { scale = { 0.7 0.7 } position = { 0.745 0.5 } }
+	}	
+}
+VIR_free = {		
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+
+	textured_emblem = {
+		texture = "te_coa_virginia.dds"
+	
+        instance = { scale = { .8   .8  position = { 0.745 0.6 } }
+	}
+	}	
+}
+FEI = {		
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	colored_emblem = {
+		texture = "ce_tricolor_vertical.dds"
+		color1 = "white"
+		color2 = "red"
+	}
+	textured_emblem = {
+		texture = "te_coa_french_east_indies.dds"
+	
+        instance = { scale = { .65   .65 } position = { 0.495 0.45 } }
+	}	
+}

@@ -1,0 +1,20 @@
+﻿je_negotiate_vermont_button = {
+	name = "je_negotiate_vermont_button"
+	desc = "je_negotiate_vermont_button_desc"
+
+	visible = { NOT = { has_variable = request_compromise_ver } }  
+
+	ai_chance = {
+		base = 2
+	}
+
+	possible = {
+			NOT = { has_variable = request_compromise_ver } 
+			c:VER = { has_war_with = c:GBR }
+	}
+
+	effect = {
+		c:GBR = { trigger_event = { id = maine.4 popup = yes } }
+		set_variable = request_compromise_ver
+	}
+}

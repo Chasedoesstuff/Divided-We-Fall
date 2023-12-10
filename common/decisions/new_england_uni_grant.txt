@@ -1,0 +1,152 @@
+uni_new_england = {
+	is_shown = {
+		c:GBR = ROOT
+		NOT = { has_global_variable = gbr_uni_grants }
+		OR = {
+		c:NEY = {
+			is_subject_of = ROOT
+			
+			}
+		c:MAC = {
+			is_subject_of = ROOT
+
+			}
+		c:PSV = {
+			is_subject_of = ROOT
+
+			}
+		}
+	}
+
+	possible = {
+		c:GBR = ROOT
+		taking_loans = no
+		is_at_war = no
+	}
+
+	when_taken = {
+		set_global_variable = gbr_uni_grants
+	if = {
+		limit = { exists = c:NEY } 
+		c:NEY = { trigger_event = { id = uni_grant.1 } }
+		c:GBR = { add_modifier = { name = uni_paying_ney } }
+															}
+	if = {
+		limit = { exists = c:PSV } 
+		c:PSV = { trigger_event = { id = uni_grant.1 } }
+		c:GBR = { add_modifier = { name = uni_paying_psv } 
+													}
+															} 
+	if = {
+		limit = { exists = c:MAC } 
+		c:MAC = { trigger_event = { id = uni_grant.1 } }
+		c:GBR = { add_modifier = { name = uni_paying_mac } 
+													}
+															}
+	if = {
+		limit = { exists = c:MAI } 
+		c:MAI = { trigger_event = { id = uni_grant.1 } } 
+		c:GBR = { add_modifier = { name = uni_paying_mai } 
+													} } }
+		
+	ai_chance = {
+		base = 10
+	
+	modifier = {
+			c:PSV = {
+				relations:root >= relations_threshold:amicable
+			}
+			add = 20
+		}
+		modifier = {
+			c:MAI = {
+				relations:root >= relations_threshold:amicable
+			}
+			add = 20
+		}
+		modifier = {
+			c:MAC = {
+				relations:root >= relations_threshold:amicable
+			}
+			add = 20
+		}
+		modifier = {
+			c:NEY = {
+				relations:root >= relations_threshold:amicable
+			}
+			add = 20
+		} 
+	}
+}
+uni_new_england_remove = {
+	is_shown = {
+		c:GBR = ROOT
+		c:GBR = { has_global_variable = gbr_uni_grants }
+	NOT = {	c:GBR = { has_global_variable = no_pay } }
+	}
+	
+
+	possible = {
+		c:GBR = ROOT
+		custom_tooltip = {
+				text = paying_ne_tt
+			
+	} }
+
+	when_taken = {
+	custom_tooltip = {
+				text = no_repay_tt
+	}
+	set_global_variable = no_pay
+	if = {
+		limit = { exists = c:NEY } 
+		c:NEY = { remove_modifier = uni_pay }  
+		c:GBR = { remove_modifier = uni_paying_ney } 
+															}
+	if = {
+		limit = { exists = c:PSV		} 
+		c:PSV = { remove_modifier = uni_pay } 
+		c:GBR = { remove_modifier = uni_paying_psv } 
+															} 
+	if = {
+		limit = { exists = c:MAC } 
+		c:MAC = { remove_modifier = uni_pay }
+		c:GBR = { remove_modifier = uni_paying_mac }
+															}
+	if = {
+		limit = { exists = c:MAI } 
+		c:MAI = { remove_modifier = uni_pay } 
+		c:GBR = { remove_modifier = uni_paying_mai } 
+															} 
+															
+		}
+		
+	ai_chance = {
+		base = 0
+	
+		modifier = {
+			c:MAI = {
+				is_independent
+			}
+			add = 1000
+		}
+		modifier = {
+			c:PSV = {
+				is_independent
+			}
+			add = 1000
+		}
+		modifier = {
+			c:MAC = {
+				is_independent
+			}
+			add = 1000
+		}
+		modifier = {
+			c:NEY = {
+				is_independent
+			}
+			add = 1000
+		} 
+	}
+}

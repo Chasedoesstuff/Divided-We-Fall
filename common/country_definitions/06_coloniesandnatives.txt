@@ -1,0 +1,327 @@
+VER = {
+	color = { 10 97 18 }
+	
+	country_type = colonial
+	
+	tier = principality
+	
+	cultures = { yankee }
+	capital = state_vermont
+}
+CNC = {
+	color = { 90  94  193 }
+	
+	country_type = colonial
+	
+	tier = principality
+	
+	cultures = { yankee }
+	capital = state_connecticut
+}
+DEL = {
+	color = { 90  94  193 }
+	
+	country_type = colonial
+	
+	tier = principality
+	
+	cultures = { yankee }
+	capital = state_delaware
+}
+IDA = {
+	color = { 90  94  193 }
+	
+	country_type = colonial
+	
+	tier = principality
+	
+	cultures = { yankee }
+	capital = state_indiana
+}
+ILL = {
+	color = { 90  94  193 }
+	
+	country_type = colonial
+	
+	tier = principality
+	
+	cultures = { yankee }
+	capital = state_illinois
+}
+MAI = {
+	color = { 90  94  193 }
+	
+	country_type = colonial
+	
+	tier = principality
+	
+	cultures = { yankee }
+	capital = state_maine
+}
+MAC = {
+	color = { 90  94  193 }
+	
+	country_type = colonial
+	
+	tier = principality
+	
+	cultures = { yankee }
+	capital = state_massachusetts
+}
+MYL = {
+	color = { 90  94  193 }
+	
+	country_type = colonial
+	
+	tier = principality
+	
+	cultures = { yankee }
+	capital = state_maryland
+}
+NEY = {
+	color = { 90  94  193 }
+	
+	country_type = colonial
+	
+	tier = principality
+	
+	cultures = { yankee }
+	capital = state_new_york
+}
+NHM = {
+	color = { 90  94  193 }
+	
+	country_type = colonial
+	
+	tier = principality
+	
+	cultures = { yankee }
+	capital = state_new_hampshire
+}
+NWJ = {
+	color = { 90  94  193 }
+	
+	country_type = colonial
+	
+	tier = principality
+	
+	cultures = { yankee }
+	capital = state_new_jersey
+}
+OHI = {
+	color = { 90  94  193 }
+	
+	country_type = colonial
+	
+	tier = principality
+	
+	cultures = { yankee }
+	capital = state_ohio
+}
+PSV = {
+	color = { 90  94  193 }
+	
+	country_type = colonial
+	
+	tier = principality
+	
+	cultures = { yankee }
+	capital = state_pennsylvania
+}
+RHI = {
+	color = { 90  94  193 }
+	
+	country_type = colonial
+	
+	tier = principality
+	
+	cultures = { yankee }
+	capital = state_rhode_island
+}
+UOM = {
+	color = { 90 94 193 }
+	
+	country_type = colonial
+
+	tier = principality
+	
+	cultures = { yankee }
+	capital = STATE_MICHIGAN
+}
+WIS = {
+	color = { 90 94 193 }
+	
+	country_type = colonial
+
+	tier = principality
+	
+	cultures = { yankee }
+	capital = STATE_WISCONSIN
+}
+KEN = {
+	color = { 90 94 193 }
+	
+	country_type = colonial
+
+	tier = principality
+	
+	cultures = { dixie }
+	capital = STATE_KENTUCKY
+}
+VIR = {
+	color = { 90 94 193 }
+	
+	country_type = colonial
+
+	tier = principality
+	
+	cultures = { dixie }
+	capital = STATE_VIRGINIA
+}
+TSE = {
+	color = { 90 94 193 }
+	
+	country_type = colonial
+
+	tier = principality
+	
+	cultures = { dixie }
+	capital = STATE_TENNESSEE
+}
+NCL = {
+	color = { 90 94 193 }
+	
+	country_type = colonial
+
+	tier = principality
+	
+	cultures = { dixie }
+	capital = STATE_NORTH_CAROLINA
+}
+SCL = {
+	color = { 90 94 193 }
+	
+	country_type = colonial
+
+	tier = principality
+	
+	cultures = { dixie }
+	capital = STATE_SOUTH_CAROLINA 
+}
+GOR = {
+	color = { 90 94 193 }
+	
+	country_type = colonial
+
+	tier = principality
+	
+	cultures = { dixie }
+	capital = STATE_GEORGIA
+}
+ALA = {
+	color = { 90 94 193 }
+	
+	country_type = colonial
+
+	tier = principality
+	
+	cultures = { dixie }
+	capital = STATE_ALABAMA
+}
+MIS = {
+	color = { 90 94 193 }
+	
+	country_type = colonial
+
+	tier = principality
+	
+	cultures = { dixie }
+	capital = STATE_MISSISIPPI
+}
+FLO = {
+	color = { 189 61 42 }
+	
+	country_type = colonial
+	
+	tier = principality
+	
+	cultures = { dixie caribeno }
+	capital = STATE_FLORIDA
+}
+########
+#TRIBES#
+########
+IWT = {
+	color = { 191 83 27 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { dakota algonquian }
+	capital = STATE_IOWA
+}
+KNT = {
+	color = { 33 71 23 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { siouan }
+	capital = STATE_KANSAS
+}
+CYT = {
+	color = { 105 32 161 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { paiute }
+	capital = STATE_WYOMING
+}
+#OTOE MISSOURI
+OMT = {
+	color = { 96 108 43 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { siouan }
+	capital = STATE_MISSOURI
+}
+#QUAPAW
+QPT = {
+	color = { 235 132 97 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { siouan }
+	capital = STATE_MISSOURI
+}
+#(originally sioux) INDIAN CONFEDERACY
+SYT = {
+	color = { 44 92 40 }
+	
+	country_type = unrecognized
+	
+	tier = grand_principality
+	
+	cultures = { dakota algonquian }
+	capital = STATE_WISCONSIN
+}
+#Chickasaw
+CST = {
+	color = { 44 92 40 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { cherokee }
+	capital = STATE_TENNESSEE
+}

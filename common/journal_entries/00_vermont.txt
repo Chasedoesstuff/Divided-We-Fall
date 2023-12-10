@@ -1,0 +1,55 @@
+je_vermont_war_ver = {
+group = je_group_historical_content
+    icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
+
+    scripted_button = je_negotiate_vermont_button
+
+    immediate = {
+        
+    }
+    complete = {
+       is_subject = no
+	   is_at_war = no 
+	   owns_entire_state_region = STATE_MASSACHUSETTS
+    }
+
+    on_complete = {
+        trigger_event = { id = maine.6 popup = yes }
+																	}
+    
+
+    fail = {
+        is_subject = yes
+    }
+	on_fail = {
+        C:GBR = {
+		create_diplomatic_pact = {
+			country = root
+			type = puppet
+	}
+	}
+    }
+    weight = 1000
+    should_be_pinned_by_default = yes
+}
+je_vermont_war_mac = {
+group = je_group_historical_content
+    icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
+
+    immediate = {
+        
+    }
+    complete = {
+      c:VER = { is_subject = yes }
+	   is_at_war = no 
+    }
+
+    on_complete = {
+	hidden_effect = {
+        trigger_event = { id = maine.1 popup = yes }	}
+									`					}
+    
+
+    weight = 1000
+    should_be_pinned_by_default = yes
+}

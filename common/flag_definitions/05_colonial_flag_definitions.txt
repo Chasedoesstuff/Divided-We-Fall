@@ -1,0 +1,688 @@
+﻿# common variables
+@coa_width = 768
+@coa_height = 512
+@canton_scale_cross_x = @[ ( 333 / coa_width ) + 0.001 ]
+@canton_scale_cross_y = @[ ( 205 / coa_height ) + 0.001 ]
+@canton_scale_sweden_x = @[ ( 255 / coa_width ) + 0.001 ]
+@canton_scale_sweden_y = @[ ( 204 / coa_height ) + 0.001 ]
+@canton_scale_norway_x = @[ ( 192 / coa_width ) + 0.001 ]
+@canton_scale_norway_y = @[ ( 192 / coa_height ) + 0.001 ]
+@canton_scale_denmark_x = @[ ( 220 / coa_width ) + 0.001 ]
+@canton_scale_denmark_y = @[ ( 220 / coa_height ) + 0.001 ]
+@third = @[1/3]
+
+DEL = { # American colony under britain
+	flag_definition = {
+		coa = American_colony
+		subject_canton = American_colony
+		allow_overlord_canton = yes
+		priority = 90
+	}
+}
+IDA = { # American colony under britain
+	flag_definition = {
+		coa = American_colony
+		subject_canton = American_colony
+		allow_overlord_canton = yes
+		priority = 90
+	}
+}
+ILL = { # American colony under britain
+	flag_definition = {
+		coa = American_colony
+		subject_canton = American_colony
+		allow_overlord_canton = yes
+		priority = 90
+	}
+}
+MAC = { # American colony under britain
+	flag_definition = {
+		coa = American_colony
+		subject_canton = American_colony
+		allow_overlord_canton = yes
+		priority = 90
+	}
+}
+MAI = { # American colony under britain
+	flag_definition = {
+		coa = American_colony
+		subject_canton = American_colony
+		allow_overlord_canton = yes
+		priority = 90
+	}
+}
+MYL = { # American colony under britain
+	flag_definition = {
+		coa = American_colony
+		subject_canton = American_colony
+		allow_overlord_canton = yes
+		priority = 90
+	}
+}
+
+NHM = { # American colony under britain
+	flag_definition = {
+		coa = American_colony
+		subject_canton = American_colony
+		allow_overlord_canton = yes
+		priority = 90
+	}
+}
+NWJ = { # American colony under britain
+	flag_definition = {
+		coa = American_colony
+		subject_canton = American_colony
+		allow_overlord_canton = yes
+		priority = 90
+	}
+}
+OHI = { # American colony under britain
+	flag_definition = {
+		coa = American_colony
+		subject_canton = American_colony
+		allow_overlord_canton = yes
+		priority = 90
+	}
+}
+PSV = { # American colony under britain
+	flag_definition = {
+		coa = American_colony
+		subject_canton = American_colony
+		allow_overlord_canton = yes
+		priority = 90
+	}
+}
+RHI = { # American colony under britain
+	flag_definition = {
+		coa = American_colony
+		subject_canton = American_colony
+		allow_overlord_canton = yes
+		priority = 90
+	}
+}
+
+VER = { # American colony under britain
+	flag_definition = {
+		coa = American_colony
+		subject_canton = American_colony
+		allow_overlord_canton = yes
+		priority = 90
+	}
+}
+WIS = { # American colony under britain
+	flag_definition = {
+		coa = American_colony
+		subject_canton = American_colony
+		allow_overlord_canton = yes
+		priority = 90
+	}
+}
+VIR = { # American colony under britain
+	flag_definition = {
+		coa = American_colony
+		subject_canton = American_colony
+		allow_overlord_canton = yes
+		priority = 90
+	}
+}
+KEN = { # American colony under britain
+	flag_definition = {
+		coa = American_colony
+		subject_canton = American_colony
+		allow_overlord_canton = yes
+		priority = 90
+	}
+}
+TSE = { # American colony under britain
+	flag_definition = {
+		coa = American_colony
+		subject_canton = American_colony
+		allow_overlord_canton = yes
+		priority = 90
+	}
+}
+NCL = { # American colony under britain
+	flag_definition = {
+		coa = American_colony
+		subject_canton = American_colony
+		allow_overlord_canton = yes
+		priority = 90
+	}
+}
+SCL = { # American colony under britain
+	flag_definition = {
+		coa = American_colony
+		subject_canton = American_colony
+		allow_overlord_canton = yes
+		priority = 90
+	}
+}
+GOR = { # American colony under britain
+	flag_definition = {
+		coa = American_colony
+		subject_canton = American_colony
+		allow_overlord_canton = yes
+		priority = 90
+	}
+}
+ALA = { # American colony under britain
+	flag_definition = {
+		coa = American_colony
+		subject_canton = American_colony
+		allow_overlord_canton = yes
+		priority = 90
+	}
+}
+MIS = { # American colony under britain
+	flag_definition = {
+		coa = American_colony
+		subject_canton = American_colony
+		allow_overlord_canton = yes
+		priority = 90
+	}
+}
+IWT = { # Iowa Tribe
+	flag_definition = {
+		coa = Iowa_tribe
+		allow_overlord_canton = no
+		priority = 90
+	}
+}
+UOM = { # American colony under britain
+	flag_definition = {
+		coa = UOM_free
+		subject_canton = UOM_free
+		allow_overlord_canton = yes
+		priority = 20 
+		trigger = { coa_def_independent_trigger = yes }
+	}
+	flag_definition = {
+		coa = UOM_subject
+		subject_canton = UOM_subject
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = UOM_subject		
+		priority = 17
+		trigger = { 
+			
+		}
+	}
+	} 
+NEY = { # American colony under britain
+	flag_definition = {
+		coa = NEY_free
+		subject_canton = NEY_free
+		allow_overlord_canton = yes
+		priority = 20 
+		trigger = { coa_def_independent_trigger = yes }
+	}
+	flag_definition = {
+		coa = NEY_subject
+		subject_canton = NEY_with_canton
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = NEY_subject		
+		priority = 17
+		trigger = { 
+			
+		}
+	}
+	} 
+	VER = { # American colony under britain
+	flag_definition = {
+		coa = VER_free
+		subject_canton = VER_free
+		priority = 20 
+		trigger = { coa_def_independent_trigger = yes }
+	}
+	flag_definition = {
+		coa = VER_subject
+		subject_canton = NEY_with_canton
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = VER_subject		
+		priority = 17
+		trigger = { 
+			
+		}
+	}
+	}
+	ASA	= { # American colony under britain
+	flag_definition = {
+		coa = ASA
+		subject_canton = ASA
+		priority = 20 
+		trigger = { coa_def_independent_trigger = yes }
+	}
+	flag_definition = {
+		coa = ASA_subject
+		subject_canton = ASA_subject
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = ASA_subject		
+		priority = 17
+		trigger = { 
+			
+		}
+	}
+	}
+	FLO = { # American colony under britain
+	flag_definition = {
+		coa = FLO_free
+		subject_canton = FLO_subject
+		priority = 20 
+		trigger = { coa_def_independent_trigger = yes }
+	}
+	flag_definition = {
+		coa = FLO_subject
+		subject_canton = FLO_subject
+		coa_with_overlord_canton = FLO_subject		
+		priority = 17
+		trigger = { 
+			
+		}
+	}
+	}
+	OHI = { # American colony under britain
+	flag_definition = {
+		coa = OHI_free
+		subject_canton = OHI_free
+		allow_overlord_canton = yes
+		priority = 20 
+		trigger = { coa_def_independent_trigger = yes }
+	}
+	flag_definition = {
+		coa = OHI_subject
+		subject_canton = OHI_free
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = OHI_subject		
+		priority = 17
+		trigger = { 
+			
+		}
+	}
+	}
+	WIS = { # American colony under britain
+	flag_definition = {
+		coa = WIS_free
+		subject_canton = WIS_free
+		allow_overlord_canton = yes
+		priority = 20 
+		trigger = { coa_def_independent_trigger = yes }
+	}
+	flag_definition = {
+		coa = WIS_subject
+		subject_canton = WIS_subject
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = WIS_subject		
+		priority = 17
+		trigger = { 
+			
+		}
+	}
+	}
+ILL = { # American colony under britain
+	flag_definition = {
+		coa = ILL_free
+		subject_canton = ILL_free
+		allow_overlord_canton = yes
+		priority = 20 
+		trigger = { coa_def_independent_trigger = yes }
+	}
+	flag_definition = {
+		coa = ILL_subject
+		subject_canton = ILL_subject
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = ILL_subject		
+		priority = 17
+		trigger = { 
+			
+		}
+	}
+	}
+	IDA = { # American colony under britain
+	flag_definition = {
+		coa = IDA_free
+		subject_canton = IDA_free
+		allow_overlord_canton = yes
+		priority = 20 
+		trigger = { coa_def_independent_trigger = yes }
+	}
+	flag_definition = {
+		coa = IDA_subject
+		subject_canton = IDA_subject
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = IDA_subject		
+		priority = 17
+		trigger = { 
+			
+		}
+	}
+	}
+	PSV = { # American colony under britain
+	flag_definition = {
+		coa = PSV_free
+		subject_canton = PSV_free
+		allow_overlord_canton = yes
+		priority = 20 
+		trigger = { coa_def_independent_trigger = yes }
+	}
+	flag_definition = {
+		coa = PSV_subject
+		subject_canton = PSV_subject
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = PSV_subject		
+		priority = 17
+		trigger = { 
+			
+		}
+	}
+	}
+	NWJ = { # American colony under britain
+	flag_definition = {
+		coa = NWJ_free
+		subject_canton = NWJ_free
+		allow_overlord_canton = yes
+		priority = 20 
+		trigger = { coa_def_independent_trigger = yes }
+	}
+	flag_definition = {
+		coa = NWJ_subject
+		subject_canton = NWJ_subject
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = NWJ_subject		
+		priority = 17
+		trigger = { 
+			
+		}
+	}
+	}
+	NHM = { # American colony under britain
+	flag_definition = {
+		coa = NHM_free
+		subject_canton = NHM_free
+		allow_overlord_canton = yes
+		priority = 20 
+		trigger = { coa_def_independent_trigger = yes }
+	}
+	flag_definition = {
+		coa = NHM_subject
+		subject_canton = NHM_subject
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = NHM_subject		
+		priority = 17
+		trigger = { 
+			
+		}
+	}
+	}
+	CNC = { # American colony under britain
+	flag_definition = {
+		coa = CNC_free
+		subject_canton = CNC_free
+		allow_overlord_canton = yes
+		priority = 20 
+		trigger = { coa_def_independent_trigger = yes }
+	}
+	flag_definition = {
+		coa = CNC_subject
+		subject_canton = CNC_subject
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = CNC_subject		
+		priority = 17
+		trigger = { 
+			
+		}
+	}
+	}
+RHI = { # American colony under britain
+	flag_definition = {
+		coa = RHI_free
+		subject_canton = RHI_free
+		allow_overlord_canton = yes
+		priority = 20 
+		trigger = { coa_def_independent_trigger = yes }
+	}
+	flag_definition = {
+		coa = RHI_subject
+		subject_canton = RHI_subject
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = RHI_subject		
+		priority = 17
+		trigger = { 
+			
+		}
+	}
+	}
+MAC = { # American colony under britain
+	flag_definition = {
+		coa = MAC_free
+		subject_canton = MAC_free
+		allow_overlord_canton = yes
+		priority = 20 
+		trigger = { coa_def_independent_trigger = yes }
+	}
+	flag_definition = {
+		coa = MAC_subject
+		subject_canton = MAC_subject
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = MAC_subject		
+		priority = 17
+		trigger = { 
+			
+		}
+	}
+	}
+MAI = { # American colony under britain
+	flag_definition = {
+		coa = MAI_free
+		subject_canton = MAI_free
+		allow_overlord_canton = yes
+		priority = 20 
+		trigger = { coa_def_independent_trigger = yes }
+	}
+	flag_definition = {
+		coa = MAI_subject
+		subject_canton = MAI_subject
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = MAI_subject		
+		priority = 17
+		trigger = { 
+			
+		}
+	}
+	}
+KEN = { # American colony under britain
+	flag_definition = {
+		coa = KEN_free
+		subject_canton = KEN_free
+		allow_overlord_canton = yes
+		priority = 20 
+		trigger = { coa_def_independent_trigger = yes }
+	}
+	flag_definition = {
+		coa = KEN_subject
+		subject_canton = KEN_subject
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = KEN_subject		
+		priority = 17
+		trigger = { 
+			
+		}
+	}
+	}
+DEL = { # American colony under britain
+	flag_definition = {
+		coa = DEL_free
+		subject_canton = DEL_free
+		allow_overlord_canton = yes
+		priority = 20 
+		trigger = { coa_def_independent_trigger = yes }
+	}
+	flag_definition = {
+		coa = DEL_subject
+		subject_canton = DEL_subject
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = DEL_subject		
+		priority = 17
+		trigger = { 
+			
+		}
+	}
+	}
+MYL = { # American colony under britain
+	flag_definition = {
+		coa = MYL_free
+		subject_canton = MYL_free
+		allow_overlord_canton = yes
+		priority = 20 
+		trigger = { coa_def_independent_trigger = yes }
+	}
+	flag_definition = {
+		coa = MYL_subject
+		subject_canton = MYL_subject
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = MYL_subject		
+		priority = 17
+		trigger = { 
+			
+		}
+	}
+	}
+TSE = { # American colony under britain
+	flag_definition = {
+		coa = TSE_free
+		subject_canton = TSE_free
+		allow_overlord_canton = yes
+		priority = 20 
+		trigger = { coa_def_independent_trigger = yes }
+	}
+	flag_definition = {
+		coa = TSE_subject
+		subject_canton = TSE_subject
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = TSE_subject		
+		priority = 17
+		trigger = { 
+			
+		}
+	}
+	}
+MIS = { # American colony under britain
+	flag_definition = {
+		coa = MIS_free
+		subject_canton = MIS_free
+		allow_overlord_canton = yes
+		priority = 20 
+		trigger = { coa_def_independent_trigger = yes }
+	}
+	flag_definition = {
+		coa = MIS_subject
+		subject_canton = MIS_subject
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = MIS_subject		
+		priority = 17
+		trigger = { 
+			
+		}
+	}
+	}
+ALA	= { # American colony under britain
+	flag_definition = {
+		coa = ALA_free
+		subject_canton = ALA_free
+		allow_overlord_canton = yes
+		priority = 20 
+		trigger = { coa_def_independent_trigger = yes }
+	}
+	flag_definition = {
+		coa = ALA_subject
+		subject_canton = ALA_subject
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = ALA_subject		
+		priority = 17
+		trigger = { 
+			
+		}
+	}
+	}
+SCL	= { # American colony under britain
+	flag_definition = {
+		coa = SCL_free
+		subject_canton = SCL_free
+		allow_overlord_canton = yes
+		priority = 20 
+		trigger = { coa_def_independent_trigger = yes }
+	}
+	flag_definition = {
+		coa = SCL_subject
+		subject_canton = SCL_subject
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = SCL_subject		
+		priority = 17
+		trigger = { 
+			
+		}
+	}
+	}
+NCL	= { # American colony under britain
+	flag_definition = {
+		coa = NCL_free
+		subject_canton = NCL_free
+		allow_overlord_canton = yes
+		priority = 20 
+		trigger = { coa_def_independent_trigger = yes }
+	}
+	flag_definition = {
+		coa = NCL_subject
+		subject_canton = NCL_subject
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = NCL_subject		
+		priority = 17
+		trigger = { 
+			
+		}
+	}
+	}
+GOR	= { # American colony under britain
+	flag_definition = {
+		coa = GOR_free
+		subject_canton = GOR_free
+		priority = 20 
+		trigger = { coa_def_independent_trigger = yes }
+	}
+	flag_definition = {
+		coa = GOR_subject
+		subject_canton = GOR_subject
+		allow_overlord_canton = yes	
+		overlord_canton_scale = {  @canton_scale_sweden_y }
+		coa_with_overlord_canton = GOR_subject		
+		priority = 17
+		trigger = { 
+			
+		}
+	}
+	}
+VIR	= { # American colony under britain
+	flag_definition = {
+		coa = VIR_free
+		subject_canton = VIR_free
+		allow_overlord_canton = yes
+		priority = 20 
+		trigger = { coa_def_independent_trigger = yes }
+	}
+	flag_definition = {
+		coa = VIR_subject
+		subject_canton = VIR_subject
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = VIR_subject		
+		priority = 17
+		trigger = { 
+			
+		}
+	}
+	}
+FEI = { # American colony under britain
+	flag_definition = {
+		coa = FEI
+		subject_canton = FEI
+		priority = 90
+	}
+}
+	

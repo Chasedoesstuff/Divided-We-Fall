@@ -1,0 +1,368 @@
+je_south_slavery_gor = {
+	group = je_group_historical_content
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	immediate = {
+		set_variable = {
+			name = asr_progress_var
+			value = 0
+		}
+	}
+
+	complete = {
+		has_law = law_type:law_slavery_banned
+	}
+
+	on_complete = {
+		trigger_event = { id = slavery_law_events.7 days = 0 popup = yes }
+	}
+
+	fail = {
+		scope:journal_entry = {
+			is_goal_complete = yes
+		}}		
+	
+		
+	
+
+	on_fail = {
+		custom_tooltip = {
+			text = asr_will_happen_tt
+			trigger_event = { id = slave_revolt_usa.1 }
+			add_journal_entry = {
+				type = je_slave_revolt_ongoing
+			}
+		}
+	}
+
+	on_monthly_pulse = {
+		effect = {
+			
+				change_variable = {
+					name = asr_progress_var
+					add = 1
+				}
+			}
+		
+	}
+
+	current_value = {
+		value = root.var:asr_progress_var
+	}
+
+	goal_add_value = {
+		value = 120
+	}
+
+	progressbar = yes
+
+	weight = 100
+
+	should_be_pinned_by_default = yes
+}
+je_south_slavery_ala = {
+	group = je_group_historical_content
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	immediate = {
+		set_variable = {
+			name = asr_progress_var
+			value = 0
+		}
+	}
+
+	complete = {
+		
+		has_law = law_type:law_slavery_banned
+	}
+
+	on_complete = {
+		trigger_event = { id = slavery_law_events.7 days = 0 popup = yes }
+	}
+
+	fail = {
+		scope:journal_entry = {
+			is_goal_complete = yes
+		}}		
+	
+		
+	
+
+	on_fail = {
+		custom_tooltip = {
+			text = asr_will_happen_tt
+			trigger_event = { id = slave_revolt_usa.2 }
+			add_journal_entry = {
+				type = je_slave_revolt_ongoing
+			}
+		}
+	}
+
+	on_monthly_pulse = {
+		effect = {
+			
+				change_variable = {
+					name = asr_progress_var
+					add = 1
+				}
+			
+		}
+	}
+
+	current_value = {
+		value = root.var:asr_progress_var
+	}
+
+	goal_add_value = {
+		value = 120
+	}
+
+	progressbar = yes
+
+	weight = 100
+
+	should_be_pinned_by_default = yes
+}
+je_south_slavery_scl = {
+	group = je_group_historical_content
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	immediate = {
+		set_variable = {
+			name = asr_progress_var
+			value = 0
+		}
+	}
+
+	complete = {
+		
+		has_law = law_type:law_slavery_banned
+	}
+
+	on_complete = {
+		trigger_event = { id = slavery_law_events.7 days = 0 popup = yes }
+	}
+
+	fail = {
+		scope:journal_entry = {
+			is_goal_complete = yes
+		}}		
+	
+		
+	
+
+	on_fail = {
+		custom_tooltip = {
+			text = asr_will_happen_tt
+			trigger_event = { id = slave_revolt_usa.3 }
+			add_journal_entry = {
+				type = je_slave_revolt_ongoing
+			}
+		}
+	}
+
+	on_monthly_pulse = {
+		effect = {
+			
+				change_variable = {
+					name = asr_progress_var
+					add = 1
+				}
+			}
+		}
+	
+
+	current_value = {
+		value = root.var:asr_progress_var
+	}
+
+	goal_add_value = {
+		value = 120
+	}
+
+	progressbar = yes
+
+	weight = 100
+
+	should_be_pinned_by_default = yes
+}
+je_south_slavery_mis = {
+	group = je_group_historical_content
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	immediate = {
+		set_variable = {
+			name = asr_progress_var
+			value = 0
+		}
+	}
+
+	complete = {
+		
+		has_law = law_type:law_slavery_banned
+	}
+
+	on_complete = {
+		trigger_event = { id = slavery_law_events.7 days = 0 popup = yes }
+	}
+
+	fail = {
+		scope:journal_entry = {
+			is_goal_complete = yes
+		}}		
+	
+		
+	
+
+	on_fail = {
+		custom_tooltip = {
+			text = asr_will_happen_tt
+			trigger_event = { id = slave_revolt_usa.4 }
+			add_journal_entry = {
+				type = je_slave_revolt_ongoing
+			}
+		}
+	}
+
+	on_monthly_pulse = {
+		effect = {
+
+				change_variable = {
+					name = asr_progress_var
+					add = 1
+				}
+			}
+		}
+	
+
+	current_value = {
+		value = root.var:asr_progress_var
+	}
+
+	goal_add_value = {
+		value = 120
+	}
+
+	progressbar = yes
+
+	weight = 100
+
+	should_be_pinned_by_default = yes
+}
+#je_slave_revolt_ongoing_lallallala_null = {
+#    icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+#
+#    complete = {
+#			 c:SCL = { owns_entire_state_region = STATE_SOUTH_CAROLINA }
+#			 c:MIS = { owns_entire_state_region = STATE_MISSISSIPPI }
+#			 c:GOR = { owns_entire_state_region = STATE_GEORGIA }
+#			 c:ALA = { owns_entire_state_region = STATE_ALABAMA }
+#			
+#	
+#	}
+#
+#   
+#
+#   on_complete = {
+#       
+#			if = { 
+#				limit = { 
+#				OR = {
+#				c:GOR = { is_player = yes }
+#				c:SCL = { is_player = yes }
+#				c:MIS = { is_player = yes }
+#				c:ALA = { is_player = yes } 
+#				}
+#			}
+#			player = {  trigger_event = { id = slave_revolt_usa.5 popup = yes } }
+#		}
+#		else = { trigger_event = { id = slave_revolt_usa.5 popup = yes } }
+#																	}
+#   
+#
+#   weight = 1000
+#    should_be_pinned_by_default = yes
+#}
+je_slave_revolt_ongoing = {
+	group = je_group_historical_content
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+
+	complete = { 
+		OR = {
+			NOT = { exists = c:ASA }
+			c:ASA ?= {
+				is_country_alive = no
+			}
+		}	
+		#	 c:SCL = { owns_entire_state_region = STATE_SOUTH_CAROLINA }
+		#	 c:MIS = { owns_entire_state_region = STATE_MISSISSIPPI }
+		#	 c:GOR = { owns_entire_state_region = STATE_GEORGIA }
+		#	 c:ALA = { owns_entire_state_region = STATE_ALABAMA }
+			 }
+	on_complete = {
+		if = { 
+				limit = { 
+				c:ALA = { is_player = yes }
+				c:SCL = { is_player = no }
+				c:MIS = { is_player = no }
+				c:GOR = { is_player = no } 				
+				
+			}
+			c:ALA = { trigger_event = { id = slave_revolt_usa.5 popup = yes } }
+		}
+		
+	if = { 
+				limit = { 
+				c:SCL = { is_player = yes }
+				c:GOR = { is_player = no }
+				c:MIS = { is_player = no }
+				c:ALA = { is_player = no } 
+				
+			}
+			c:SCL = { trigger_event = { id = slave_revolt_usa.5 popup = yes } }
+		}
+		
+		if = { 
+				limit = { 
+				c:MIS = { is_player = yes }
+				c:SCL = { is_player = no }
+				c:GOR = { is_player = no }
+				c:ALA = { is_player = no } 
+				
+			}
+			c:MIS = { trigger_event = { id = slave_revolt_usa.5 popup = yes } }
+		}
+		
+		if = { 
+				limit = { 
+				c:GOR = { is_player = yes }
+				c:SCL = { is_player = no }
+				c:MIS = { is_player = no }
+				c:ALA = { is_player = no } 
+				
+			}
+			c:GOR = { trigger_event = { id = slave_revolt_usa.5 popup = yes } }
+		}
+		if = { 
+				limit = { 
+				c:GOR = { is_player = no }
+				c:SCL = { is_player = no }
+				c:MIS = { is_player = no }
+				c:ALA = { is_player = no } 
+				
+			}
+			c:GOR = { trigger_event = { id = slave_revolt_usa.5 popup = yes } }
+		}
+
+	} 
+
+	invalid = {
+		c:CSA = root
+	}
+
+	weight = 100
+
+	should_be_pinned_by_default = yes
+`
+}
