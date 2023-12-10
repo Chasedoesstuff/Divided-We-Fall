@@ -1,0 +1,167 @@
+﻿je_usa_take_louisiana = {
+	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
+
+	is_shown_when_inactive = {
+		this = c:USA
+		is_subject = yes
+	}
+
+	possible = {
+		has_technology_researched = nationalism 
+		exists = C:LOU
+	}
+
+	complete = {  
+		owns_entire_state_region = STATE_LOUISIANA }
+	on_complete = {
+		trigger_event = { id = usunify.4 }
+	}
+
+	invalid = {
+		
+	}
+
+	weight = 100
+
+	should_be_pinned_by_default = yes
+}
+je_usa_take_florida = {
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	is_shown_when_inactive = {
+		this = c:USA
+		is_subject = yes
+	}
+
+	possible = {
+		has_technology_researched = nationalism
+	}
+
+	complete = {  
+	owns_entire_state_region = STATE_FLORIDA }
+	on_complete = {
+		trigger_event = { id = usunify.5 }
+	} 
+
+	invalid = {
+		is_subject = no
+	}
+
+	weight = 100
+
+	should_be_pinned_by_default = yes
+
+}
+je_usa_should_exist = {
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	is_shown_when_inactive = {
+		OR = {
+			country_has_primary_culture = cu:yankee
+			country_has_primary_culture = cu:dixie
+		}
+		is_subject = yes
+	}
+
+	possible = {
+		has_technology_researched = nationalism
+	}
+
+	complete = {  
+	
+			owns_entire_state_region = STATE_MAINE
+			owns_entire_state_region = STATE_VERMONT
+			owns_entire_state_region = STATE_NEW_YORK
+			owns_entire_state_region = STATE_GEORGIA
+			owns_entire_state_region = STATE_NEW_HAMPSHIRE
+			owns_entire_state_region = STATE_ALABAMA
+			owns_entire_state_region = STATE_TENNESSEE
+			owns_entire_state_region = STATE_MISSISSIPPI
+			owns_entire_state_region = STATE_OHIO
+			owns_entire_state_region = STATE_KENTUCKY
+			owns_entire_state_region = STATE_SOUTH_CAROLINA
+			owns_entire_state_region = STATE_NORTH_CAROLINA
+			owns_entire_state_region = STATE_VIRGINIA
+			owns_entire_state_region = STATE_WEST_VIRGINIA
+			owns_entire_state_region = STATE_INDIANA
+			owns_entire_state_region = STATE_ILLINOIS
+			owns_entire_state_region = STATE_WISCONSIN
+			owns_entire_state_region = STATE_MICHIGAN
+			owns_entire_state_region = STATE_SOUTH_CAROLINA
+			owns_entire_state_region = STATE_RHODE_ISLAND
+			owns_entire_state_region = STATE_CONNECTICUT
+			owns_entire_state_region = STATE_NEW_JERSEY
+			owns_entire_state_region = STATE_MARYLAND
+			owns_entire_state_region = STATE_PENNSYLVANIA
+			owns_entire_state_region = STATE_MASSACHUSETTS
+			owns_entire_state_region = STATE_DELAWARE
+		} 
+	on_complete = {
+		trigger_event = { id = usunify.3 }
+	} 
+
+	invalid = {
+		is_subject = no
+	}
+
+	weight = 100
+
+	should_be_pinned_by_default = yes
+
+}
+je_usa_should_be_free = {
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	is_shown_when_inactive = {
+		this = c:USA
+		is_subject = yes
+	}
+
+	possible = {
+		has_technology_researched = nationalism
+		owns_entire_state_region = STATE_FLORIDA
+		owns_entire_state_region = STATE_LOUISIANA
+	}
+
+	complete = {  
+	
+			owns_entire_state_region = STATE_DISTRICT_OF_COLUMBIA
+			is_subject = no
+
+		}
+	on_complete = {
+		trigger_event = { id = usunify.7 }
+	} 
+
+
+	weight = 100
+
+	should_be_pinned_by_default = yes
+
+}
+je_usa_takes_canada = {
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	complete = {  
+	
+			owns_entire_state_region = STATE_ALBERTA
+			owns_entire_state_region = STATE_BRITISH_COLUMBIA
+			owns_entire_state_region = STATE_YUKON_TERRITORY
+			owns_entire_state_region = STATE_ALASKA
+			owns_entire_state_region = STATE_QUEBEC
+			owns_entire_state_region = STATE_NEWFOUNDLAND
+			owns_entire_state_region = STATE_NEW_BRUNSWICK
+			owns_entire_state_region = STATE_SASKATCHEWAN
+			owns_entire_state_region = STATE_NUNAVUT
+			owns_entire_state_region = STATE_NORTHWEST_TERRITORIES
+			owns_entire_state_region = STATE_MANITOBA
+			owns_entire_state_region = STATE_ONTARIO
+		} 
+	on_complete = {
+		trigger_event = { id = usunify.8 }
+	} 
+	weight = 100
+
+	should_be_pinned_by_default = yes
+
+}

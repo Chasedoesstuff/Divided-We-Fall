@@ -1,0 +1,31 @@
+American_colony = { # da flag in the mod
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	color2 = "red"
+	color3 = "red"
+}
+Iowa_tribe = { # da flag in the mod
+	pattern = "pattern_horizontal_split_01.tga"
+	color1 = "green"
+	color2 = "red"
+}
+UOM_subject = {		
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	textured_emblem = {
+		texture = "te_coa_michigan.dds"
+	
+        instance = { scale = { 0.7 0.7 } position = { 0.75 0.5 } }
+	}	
+}
+UOM_free = {		
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+
+	textured_emblem = {
+		texture = "te_coa_michigan.dds"
+	
+        instance = { scale = { .8   .8  }
+	}	
+}

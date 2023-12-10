@@ -1,0 +1,522 @@
+﻿namespace = usunify
+
+
+# american colony asks a poorer neighbor the color of their bugatti
+usunify.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = usunify.1.t
+	desc = usunify.1.d
+	flavor = usunify.1.f
+
+	event_image = {
+		video = "unspecific_signed_contract"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+		random_neighbouring_state = {
+			limit = {
+				owner = {
+					is_ai = yes
+					relations:root >= relations_threshold:amicable
+					OR = {
+						country_has_primary_culture = cu:yankee
+						country_has_primary_culture = cu:dixie
+					}
+					is_subject = yes
+					NOT = { THIS = ROOT }
+					top_overlord = {
+						THIS = root.top_overlord
+					}
+					this.gdp < root.gdp
+				}
+			}
+			owner = { save_scope_as = usa_annex_scope }
+		}
+		top_overlord = {
+			save_scope_as = usa_overlord_country
+			ruler = {
+				save_scope_as = usa_overlord_ruler
+			}
+		}
+	}
+
+	option = {
+		name = usunify.1.a
+		default_option = yes
+		annex = scope:usa_annex_scope
+	}
+}
+#american colony becomes dominion
+usunify.2 = {
+	type = country_event
+	placement = ROOT
+
+	title = usunify.2.t
+	desc = usunify.2.d
+	flavor = usunify.2.f
+
+	event_image = {
+		video = "europenorthamerica_capitalists_meeting"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = usunify.2.a
+		default_option = yes
+	C:GBR = {
+		create_diplomatic_pact = {
+			country = root
+			type = dominion
+	}
+	}
+}
+}
+#America is existance
+usunify.3 = {
+	type = country_event
+	placement = ROOT
+
+	title = usunify.3.t
+	desc = usunify.3.d
+	flavor = usunify.3.f
+
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+		#switch to american flag icon
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+			change_tag = USA
+			if = {
+			limit = {
+				NOT = { country_has_primary_culture = cu:dixie }
+			}
+				add_primary_culture = cu:dixie
+				}
+				if = {
+			limit = {
+				NOT = { country_has_primary_culture = cu:yankee }
+			}
+				add_primary_culture = cu:yankee
+				}
+		}
+
+	option = {
+		name = usunify.3.rm
+		default_option = no
+		set_capital = STATE_VIRGINIA 
+		add_modifier = {
+			name = usa_new_capital_modifier
+			months = normal_modifier_time
+		}
+	}
+	option = {
+		name = usunify.3.ny
+		default_option = no
+		set_capital = STATE_NEW_YORK
+		add_modifier = {
+			name = usa_new_capital_modifier
+			months = normal_modifier_time
+		}
+	}
+	option = {
+		name = usunify.3.bt
+		default_option = no
+		set_capital = STATE_MASSACHUSETTS
+		add_modifier = {
+			name = usa_new_capital_modifier
+			months = normal_modifier_time
+		}
+	}
+	option = {
+		name = usunify.3.ky
+		default_option = no
+		set_capital = STATE_KENTUCKY
+		add_modifier = {
+			name = usa_new_capital_modifier
+			months = normal_modifier_time
+		}
+	}
+	option = {
+		name = usunify.3.keep
+		default_option = yes
+		add_modifier = {
+			name = usa_new_capital_modifier
+			months = normal_modifier_time
+		}
+	}
+}
+#steal florida 
+usunify.5 = {
+	type = country_event
+	placement = ROOT
+
+	title = usunify.5.t
+	desc = usunify.5.d
+	flavor = usunify.5.f
+
+	event_image = {
+		video = "europenorthamerica_before_the_battle"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = usunify.5.a
+		default_option = yes
+		C:CUB = {
+		make_independent = yes
+		}
+		c:CUB = {
+			set_owes_obligation_to = {
+				country = ROOT
+				setting = yes
+			}
+		}
+	
+
+}
+}
+#common louisiana L annex
+usunify.4 = {
+	type = country_event
+	placement = ROOT
+
+	title = usunify.4.t
+	desc = usunify.4.d
+	flavor = usunify.4.f
+
+	event_image = {
+		video = "europenorthamerica_native_american"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = usunify.4.a
+		default_option = yes
+		annex = C:LOU
+		activate_law = law_type:law_colonial_resettlement
+} 
+}
+#America is FREE
+usunify.7 = {
+	type = country_event
+	placement = ROOT
+
+	title = usunify.7.t
+	desc = usunify.7.d
+	flavor = usunify.7.f
+
+	event_image = {
+		video = "unspecific_world_fair"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	c:TEX = { trigger_event = { id = texan_war_of_independence.4 months = 3} }
+	}
+
+	option = {
+		name = usunify.7.west
+		default_option = yes
+		custom_tooltip = west_canada
+		annex = C:NVS
+		annex = C:NBS
+		annex = C:ONT
+		annex = C:ORG
+		annex = C:QUE
+		set_capital = STATE_DISTRICT_OF_COLUMBIA
+		s:STATE_ALASKA = {  
+			if = {
+				limit = {
+					any_scope_state = {
+						NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		s:STATE_ALBERTA = {  
+			if = {
+				limit = {
+					any_scope_state = {
+						NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		s:STATE_IDAHO = { 
+			add_homeland = yankee
+		}
+		s:STATE_WASHINGTON = { 
+			add_homeland = yankee
+		}
+		s:STATE_OREGON = { 
+			add_homeland = yankee
+		}
+		hidden_effect = {
+		s:STATE_ALBERTA.region_state:HBC = {
+				set_state_owner = c:USA
+			}
+		s:STATE_YUKON_TERRITORY.region_state:HBC = {
+				set_state_owner = c:USA
+			}
+		s:STATE_YUKON_TERRITORY.region_state:CAN = {
+				set_state_owner = c:USA
+			}
+		s:STATE_ALBERTA.region_state:CAN = {
+				set_state_owner = c:USA
+			}
+		 } }
+	option = {
+		name = usunify.7.east
+		default_option = no
+		custom_tooltip = east_canada
+		annex = C:NVS
+		annex = C:NBS
+		annex = C:ONT
+		annex = C:QUE
+		annex = C:ORG
+		set_capital = STATE_DISTRICT_OF_COLUMBIA
+		s:STATE_ALASKA = {  
+			if = {
+				limit = {
+					any_scope_state = {
+						NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		s:STATE_IDAHO = { 
+			add_homeland = yankee
+		}
+		s:STATE_WASHINGTON = { 
+			add_homeland = yankee
+		}
+		s:STATE_OREGON = { 
+			add_homeland = yankee
+		}
+		hidden_effect = {
+		s:STATE_QUEBEC.region_state:HBC = {
+				set_state_owner = c:USA
+			}
+		s:STATE_NEWFOUNDLAND.region_state:GBR = {
+				set_state_owner = c:USA
+			}
+		s:STATE_NEWFOUNDLAND.region_state:NEW = {
+				set_state_owner = c:USA
+			}
+		s:STATE_QUEBEC.region_state:CAN = {
+				set_state_owner = c:USA
+			}
+	}
+} }
+usunify.8 = {
+	type = country_event
+	placement = ROOT
+
+	title = usunify.8.t
+	desc = usunify.8.d
+	flavor = usunify.8.f
+
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = usunify.8.a
+		default_option = yes
+		add_primary_culture = cu:anglo_canadian
+		add_primary_culture = cu:franco_canadian
+		s:STATE_ALASKA = { 
+			add_homeland = anglo_canadian
+		}
+} 
+}
+usunify.9 = {
+	type = country_event
+	placement = ROOT
+
+	title = usunify.9.t
+	desc = usunify.9.d
+	flavor = usunify.9.f
+
+	event_image = {
+		video = "europenorthamerica_before_the_battle"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	
+	}
+
+	option = {
+		name = usunify.9.a
+		default_option = yes
+		s:STATE_COSTA_RICA = {  
+			if = {
+				limit = {
+					any_scope_state = {
+						NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			
+		} }
+		s:STATE_CHIAPAS = {  
+			if = {
+				limit = {
+					any_scope_state = {
+						NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			
+		}
+	 }
+	 s:STATE_HONDURAS = {  
+			if = {
+				limit = {
+					any_scope_state = {
+						NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			
+		}
+		}
+		s:STATE_GUATEMALA = {  
+			if = {
+				limit = {
+					any_scope_state = {
+						NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			
+		}
+		}
+		s:STATE_NICARAGUA = {  
+			if = {
+				limit = {
+					any_scope_state = {
+						NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			
+		}
+		}
+		s:STATE_SAN_SALVADOR = {  
+			if = {
+				limit = {
+					any_scope_state = {
+						NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			
+		}
+		}
+		add_primary_culture = cu:central_american
+		} 
+		}
