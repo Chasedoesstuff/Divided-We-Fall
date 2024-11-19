@@ -1,0 +1,36 @@
+﻿je_texas_tex = {
+	group = je_group_historical_content
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+		
+	scripted_button = je_tex_beg_sb
+	complete = {
+		is_subject = no
+		is_at_war = no
+	OR = {	
+		c:FRA = {
+			relations:root >= relations_threshold:cordial
+		}
+		c:GBR = {
+			relations:root >= relations_threshold:cordial
+		}
+		c:SPA = {
+			relations:root >= relations_threshold:cordial
+		}
+		c:LOU = {
+			relations:root >= relations_threshold:cordial
+		}		
+	} 
+}
+
+	on_complete = {
+		trigger_event = { id = texan_war_of_independence.1 weeks = 1 }
+	}
+	
+	weight = 100
+	should_be_pinned_by_default = yes
+	transferable = no
+
+	invalid = {
+		NOT = { exists = c:TEX }
+	}
+}

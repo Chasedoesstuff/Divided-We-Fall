@@ -1,0 +1,23 @@
+USA = {
+	use_culture_states = yes
+	
+	is_major_formation = yes
+	
+	unification_play = dp_unify_usa
+	leadership_play = dp_leadership_usa
+
+	required_states_fraction = 0.9
+	
+	ai_will_do = { always = yes }
+
+	possible = {		
+			has_technology_researched = nationalism	
+		}
+	}
+CSA = {
+	use_culture_states = yes
+
+	required_states_fraction = 0.6	
+	
+	ai_will_do = { always = yes }
+}

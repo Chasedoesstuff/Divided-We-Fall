@@ -1,7 +1,7 @@
 ﻿namespace = usunify
 
 
-# american colony asks a poorer neighbor the color of their bugatti
+# american colony annexes a poorer neighbor
 usunify.1 = {
 	type = country_event
 	placement = ROOT
@@ -85,7 +85,7 @@ usunify.2 = {
 	option = {
 		name = usunify.2.a
 		default_option = yes
-	C:GBR = {
+	c:GBR = {
 		create_diplomatic_pact = {
 			country = root
 			type = dominion
@@ -129,6 +129,18 @@ usunify.3 = {
 			}
 				add_primary_culture = cu:yankee
 				}
+			if = {
+			limit = {
+				was_formed_from = LOU
+			}
+				add_primary_culture = cu:cajun
+				}
+	c:GBR = {
+		create_diplomatic_pact = {
+			country = root
+			type = dominion
+	}
+	}
 		}
 
 	option = {
@@ -213,8 +225,27 @@ usunify.5 = {
 				setting = yes
 			}
 		}
+		create_country = {
+			tag = PCO 
+			origin = c:SPA  
+			state = s:STATE_PUERTO_RICO.region_state:SPA
+ 
+				}
+	hidden_effect = {
+		create_country = {
+			tag = PCO 
+			origin = c:SPA  
+			state = s:STATE_PUERTO_RICO.region_state:CUB
+ 
+				}
+		create_country = {
+			tag = PCO 
+			origin = c:SPA  
+			state = s:STATE_PUERTO_RICO.region_state:FLO
+ 
+				}
 	
-
+					}
 }
 }
 #common louisiana L annex
@@ -245,8 +276,13 @@ usunify.4 = {
 	option = {
 		name = usunify.4.a
 		default_option = yes
-		annex = C:LOU
-		activate_law = law_type:law_colonial_resettlement
+		annex = c:LOU
+		if = {
+			limit = {
+					has_law = law_type:law_no_colonial_affairs
+			}
+			activate_law = law_type:law_frontier_colonization
+		}
 } 
 }
 #America is FREE
@@ -272,7 +308,6 @@ usunify.7 = {
 	}
 
 	immediate = {
-	c:TEX = { trigger_event = { id = texan_war_of_independence.4 months = 3} }
 	}
 
 	option = {
@@ -281,9 +316,15 @@ usunify.7 = {
 		custom_tooltip = west_canada
 		annex = C:NVS
 		annex = C:NBS
-		annex = C:ONT
+		annex = C:NEW
 		annex = C:ORG
 		annex = C:QUE
+		c:USA = {
+		create_diplomatic_pact = {
+			country = c:HBC
+			type = protectorate
+		}
+	}
 		set_capital = STATE_DISTRICT_OF_COLUMBIA
 		s:STATE_ALASKA = {  
 			if = {
@@ -310,13 +351,13 @@ usunify.7 = {
 			}
 		}
 		s:STATE_IDAHO = { 
-			add_homeland = yankee
+			add_homeland = cu:yankee
 		}
 		s:STATE_WASHINGTON = { 
-			add_homeland = yankee
+			add_homeland = cu:yankee
 		}
 		s:STATE_OREGON = { 
-			add_homeland = yankee
+			add_homeland = cu:yankee
 		}
 		hidden_effect = {
 		s:STATE_ALBERTA.region_state:HBC = {
@@ -338,9 +379,15 @@ usunify.7 = {
 		custom_tooltip = east_canada
 		annex = C:NVS
 		annex = C:NBS
-		annex = C:ONT
+		annex = C:NEW
 		annex = C:QUE
 		annex = C:ORG
+		c:USA = {
+		create_diplomatic_pact = {
+			country = c:HBC
+			type = protectorate
+		}
+	}
 		set_capital = STATE_DISTRICT_OF_COLUMBIA
 		s:STATE_ALASKA = {  
 			if = {
@@ -355,25 +402,25 @@ usunify.7 = {
 			}
 		}
 		s:STATE_IDAHO = { 
-			add_homeland = yankee
+			add_homeland = cu:yankee
 		}
 		s:STATE_WASHINGTON = { 
-			add_homeland = yankee
+			add_homeland = cu:yankee
 		}
 		s:STATE_OREGON = { 
-			add_homeland = yankee
+			add_homeland = cu:yankee
 		}
 		hidden_effect = {
 		s:STATE_QUEBEC.region_state:HBC = {
 				set_state_owner = c:USA
 			}
-		s:STATE_NEWFOUNDLAND.region_state:GBR = {
-				set_state_owner = c:USA
-			}
-		s:STATE_NEWFOUNDLAND.region_state:NEW = {
-				set_state_owner = c:USA
-			}
 		s:STATE_QUEBEC.region_state:CAN = {
+				set_state_owner = c:USA
+			}
+		s:STATE_ONTARIO.region_state:HBC = {
+				set_state_owner = c:USA
+			}
+		s:STATE_ONTARIO.region_state:CAN = {
 				set_state_owner = c:USA
 			}
 	}
@@ -406,9 +453,8 @@ usunify.8 = {
 		name = usunify.8.a
 		default_option = yes
 		add_primary_culture = cu:anglo_canadian
-		add_primary_culture = cu:franco_canadian
 		s:STATE_ALASKA = { 
-			add_homeland = anglo_canadian
+			add_homeland = cu:anglo_canadian
 		}
 } 
 }
@@ -521,7 +567,7 @@ usunify.9 = {
 		} 
 		}
 #2nd boston teaparty
-usunify.10 = {
+usunify.10 = { #move this to a new file for the random events
 	type = country_event
 	placement = 
 every_country = {

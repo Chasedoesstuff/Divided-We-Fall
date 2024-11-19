@@ -1,0 +1,79 @@
+je_lou_natives_core = {
+	group = je_group_historical_content
+    icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
+
+    scripted_button = je_attack_knt
+    scripted_button = je_attack_seq
+    scripted_button = je_attack_qpt
+	scripted_button = je_attack_omt
+
+    immediate = {
+    }
+    complete = { 
+			owns_entire_state_region = STATE_MISSOURI
+			owns_entire_state_region = STATE_ARKANSAS
+			owns_entire_state_region = STATE_OKLAHOMA
+			custom_description = {
+			text = KNT_dead
+			has_state_in_state_region = STATE_KANSAS
+		s:STATE_KANSAS = {
+			NOT = {
+				any_scope_state = {
+					owner = {
+						this = c:KNT
+											} 
+												}
+													}
+														}
+															}
+																}
+													
+														
+		
+			
+												
+														
+															
+    on_complete = {
+        trigger_event = { id = lou_natives.1 popup = yes }
+		
+       
+    }
+
+    invalid = {
+    }
+
+    fail = {
+     
+    }
+
+    weight = 1000
+    should_be_pinned_by_default = yes
+} 
+je_md_lou = {
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	group = je_group_historical_content
+	complete = {
+		owns_entire_state_region = STATE_MONTANA
+		owns_entire_state_region = STATE_MISSOURI
+		owns_entire_state_region = STATE_ARKANSAS
+		owns_entire_state_region = STATE_MINNESOTA
+		owns_entire_state_region = STATE_OKLAHOMA
+		owns_entire_state_region = STATE_WYOMING
+		owns_entire_state_region = STATE_IOWA
+		owns_entire_state_region = STATE_COLORADO
+		owns_entire_state_region = STATE_NORTH_DAKOTA
+		owns_entire_state_region = STATE_SOUTH_DAKOTA
+		owns_entire_state_region = STATE_NEBRASKA
+		owns_entire_state_region = STATE_KANSAS
+		owns_entire_state_region = STATE_LOUISIANA
+	}
+	
+	on_complete = {
+		trigger_event = { id = lou_natives.6 }
+	}
+	
+	weight = 100
+	
+	should_be_pinned_by_default = yes
+}

@@ -1,0 +1,5 @@
+dwf_ui_skin_theme = {					
+	category = ui_skin_theme	
+	
+	ui_skin = 	"dwf_ui_skin_theme"			
+}

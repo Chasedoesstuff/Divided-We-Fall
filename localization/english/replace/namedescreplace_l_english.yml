@@ -1,0 +1,27 @@
+﻿l_english:
+ 
+ KTY:0 "Kanty-Mansi"
+ KTY_ADJ:0 "Kanty-Mansian"
+ 
+ KNT:0 "Kanza"
+ KNT_ADJ:0 "Kanzan"
+ 
+ MAI:0 "Maine"
+ MAI_ADJ:0 "Maine"
+ SEQ:0 "Kiowa"
+ SEQ_ADJ:0 "Kiowan"
+ 
+ MAM: "Maimana"
+ MAM_ADJ: "Maimanan"
+ dyn_c_sequoyah:0 "Kiowa"
+ dyn_c_sequoyah_adj:0 "Kiowan"
+ 
+ dyn_c_sequoyah:0 "Kiowa" 
+ dyn_c_sequoyah_adj:0 "Kiowan"
+ 
+ dyn_c_sequoyah:0 "Kiowa"
+ dyn_c_sequoyah_adj:0 "Kiowan"
+ 
+HYD_FLAVOR_TEXT:0 "Hyderabad stands as the last free country of the Indian Princes, but as the Europeans close their grip around them, what will their nation become?"
+QUE_FLAVOR_TEXT:0 "Once the colony of New France, The Province of Quebec has fallen under British rule. Tensions between the predominantly French population and the overexpanded colonial government, threaten to escalate in the near future, with little chance of peaceful resolution. Along with many in the country wishing for their own governments, Will the Province of Quebec hold as one? Will Quebec win its freedom?"
+MAI_FLAVOR_TEXT:0 "$CNC_FLAVOR_TEXT$"

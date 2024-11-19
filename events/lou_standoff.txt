@@ -1,0 +1,440 @@
+﻿# Let's say hypothetically, for the sake of the argument, there is, a house, in New Orleans...
+#                                         
+#                                  @@                                  
+#                                 @@@@                                 
+#                               @@@@@@@@                               
+#                              @@@@@@@@@@                              
+#                              @@@@@@@@@@                              
+#                             @@@@@@@@@@@@                             
+#                             @@@@@@@@@@@@                             
+#                              @@@@@@@@@@                              
+#                              @@@@@@@@@@                              
+#                      @@@@@@   @@@@@@@@   @@@@@@                      
+#                    @@@@@@@@@@  @@@@@@   @@@@@@@@@                    
+#                   @@@@@@@@@@@@  @@@@@ @@@@@@@@@@@@                   
+#                   @@@@@@@@@@@@@ @@@@ @@@@@@@@@@@@@                   
+#                   @@@@@@@@@@@@@ @@@@ @@@@@@@@@@@@@                   
+#                     @@@@    @@@ @@@@ @@@    @@@@                     
+#                       @  @@@@@@@@@@@@@@@@@@  @                       
+#                          @@@@@@@@@@@@@@@@@@                          
+#                           @@@@@@@@@@@@@@@@                           
+#                                @@@@@@                                
+#                              @@@@@@@@@@                              
+#                              @@@@@@@@                               
+#                                 @@@@                                 
+#                                  @@                                  
+
+namespace = lou_econ_plans
+                                        
+# Democratic economic plan success
+lou_econ_plans.1 = {
+	type = country_event
+	placement = ROOT
+	
+	title = lou_econ_plans.1.t
+	desc = lou_econ_plans.1.d
+	flavor = lou_econ_plans.1.f
+	
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/bicorne_gun_cross.dds"
+	
+	duration = 3
+
+	
+	trigger = {
+	}
+	option = {
+		name = lou_econ_plans.1.a
+		default_option = yes
+		demo_large_standoff = yes
+		
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+# Democratic economic plan fail
+lou_econ_plans.2 = {
+	type = country_event
+	placement = ROOT
+	
+	title = lou_econ_plans.2.t
+	desc = lou_econ_plans.2.d
+	flavor = lou_econ_plans.2.f
+	
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/bicorne_gun_cross.dds"
+	
+	duration = 3
+
+	
+	trigger = {
+	}
+	option = {
+		name = lou_econ_plans.2.a
+		default_option = yes
+		auto_large_standoff = yes
+		add_radicals = {
+		value = 0.1
+				}
+		custom_tooltip = { 
+		text = auto_takes_demo_econ_laws
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_interventionism		
+														}
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+# Democracy pushes market freedom
+lou_econ_plans.3 = {
+	type = country_event
+	placement = ROOT
+	
+	title = lou_econ_plans.3.t
+	desc = lou_econ_plans.3.d
+	flavor = lou_econ_plans.3.f
+	
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/bicorne_gun_cross.dds"
+	
+	duration = 3
+
+	
+	trigger = {
+	}
+	option = {
+		name = lou_econ_plans.3.a
+		default_option = yes
+		demo_small_standoff = yes
+		activate_law = law_type:law_laissez_faire
+		activate_law = law_type:law_free_trade
+		custom_tooltip = {
+			text = emboldened_demo_econ
+			trigger_event = { id = lou_econ_plans.4 days = 30 }
+			}
+		ai_chance = {
+			base = 1
+		}
+	}
+	option = {
+		name = lou_econ_plans.3.b
+		default_option = yes
+		auto_small_standoff = yes
+		custom_tooltip = {
+			text = emboldened_auto_econ
+			trigger_event = { id = lou_econ_plans.5 days = 30 }
+			}
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+#democracy enacts journal entry
+lou_econ_plans.4 = {
+	type = country_event
+	placement = ROOT
+	
+	title = lou_econ_plans.4.t
+	desc = lou_econ_plans.4.d
+	flavor = lou_econ_plans.4.f
+	
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/bicorne_gun_cross.dds"
+	
+	duration = 3
+
+	
+	trigger = {
+	}
+	option = {
+		name = lou_econ_plans.4.a
+		default_option = yes
+		demo_small_standoff = yes
+		add_journal_entry = { type = je_lou_demo_econ }
+		ai_chance = {
+			base = 5
+		}
+	}
+	option = {
+		name = lou_econ_plans.4.b
+		auto_minute_standoff = yes
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+#Dictator pushes econ plan
+lou_econ_plans.5 = {
+	type = country_event
+	placement = ROOT
+	
+	title = lou_econ_plans.5.t
+	desc = lou_econ_plans.5.d
+	flavor = lou_econ_plans.5.f
+	
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/bicorne_gun_cross.dds"
+	
+	duration = 3
+
+	
+	trigger = {
+	}
+	option = {
+		name = lou_econ_plans.5.a
+		default_option = yes
+		auto_small_standoff = yes
+		
+		ai_chance = {
+			base = 5
+		}
+	}
+	option = {
+		name = lou_econ_plans.5.b
+		demo_minute_standoff = yes
+		add_journal_entry = { type = je_lou_demo_econ }
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+namespace = lou_standoff_endings
+
+#Lou democratic victory
+lou_standoff_endings.1 = {
+	type = country_event
+	placement = ROOT
+	
+	title = lou_standoff_endings.1.t
+	desc = lou_standoff_endings.1.d
+	flavor = lou_standoff_endings.1.f
+	
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/bicorne_gun_cross.dds"
+	
+	duration = 3
+
+	
+	trigger = {
+	}
+	option = {
+		trigger = {
+		
+		}
+		name = lou_standoff_endings.1.a
+		default_option = yes
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+#Lou auto victory
+lou_standoff_endings.2 = {
+	type = country_event
+	placement = ROOT
+	
+	title = lou_standoff_endings.2.t
+	desc = lou_standoff_endings.2.d
+	flavor = lou_standoff_endings.2.f
+	
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/bicorne_gun_cross.dds"
+	
+	duration = 3
+
+	
+	trigger = {
+	}
+	option = {
+		name = lou_standoff_endings.2.a
+		default_option = yes
+		ai_chance = {
+			base = 1
+		}
+	}
+	option = {
+		name = lou_standoff_endings.2.b
+		trigger = {
+			OR = { 
+									}
+		}
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+
+namespace = lou_standoff_random
+#Democratic Protest
+lou_standoff_random.1 = {
+	type = country_event
+	placement = ROOT
+	
+	title = lou_standoff_random.1.t
+	desc = lou_standoff_random.1.d
+	flavor = lou_standoff_random.1.f
+	
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/bicorne_gun_cross.dds"
+	
+	duration = 3
+
+	
+	trigger = {
+	}
+	option = {
+		name = lou_standoff_random.1.a
+		default_option = yes
+		demo_minute_lou_standoff_points = yes
+		ai_chance = {
+			base = 5
+		}
+	}
+	option = {
+		name = lou_standoff_random.1.b
+
+		auto_minute_lou_standoff_points = yes
+		add_treasury = -5000
+		add_radicals = {
+			value = 0.03
+							}
+		ai_chance = {
+			base = 4
+		}
+	}
+	option = {
+		name = lou_standoff_random.1.c
+		demo_small_lou_standoff_points = yes
+		
+		add_treasury = -15000
+		ai_chance = {
+			base = 2
+		}
+	}
+	option = {
+		name = lou_standoff_random.1.d
+		auto_small_lou_standoff_points = yes
+		add_radicals = {
+		value = 0.07
+				}
+		
+		ai_chance = {
+			base = 7
+		}
+	}
+}
+lou_standoff_random.2 = {
+	type = country_event
+	placement = ROOT
+	
+	title = lou_standoff_random.2.t
+	desc = lou_standoff_random.2.d
+	flavor = lou_standoff_random.2.f
+	
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/bicorne_gun_cross.dds"
+	
+	duration = 3
+
+	immediate = {
+	any_character = {
+		limit = {
+		law_stance = {
+			law = 
+			 value = neutral
+										}
+									}
+			
+								}
+	}
+	
+	trigger = {
+	}
+	option = {
+		name = lou_standoff_random.2.a
+		default_option = yes
+		demo_minute_lou_standoff_points = yes
+		ai_chance = {
+			base = 5
+		}
+	}
+	option = {
+		name = lou_standoff_random.2.b
+
+		auto_minute_lou_standoff_points = yes
+		add_treasury = -5000
+		add_radicals = {
+			value = 0.03
+							}
+		ai_chance = {
+			base = 4
+		}
+	}
+	option = {
+		name = lou_standoff_random.2.c
+		demo_small_lou_standoff_points = yes
+		
+		add_treasury = -15000
+		ai_chance = {
+			base = 2
+		}
+	}
+	option = {
+		name = lou_standoff_random.2.d
+		auto_small_lou_standoff_points = yes
+		add_radicals = {
+		value = 0.07
+				}
+		
+		ai_chance = {
+			base = 7
+		}
+	}
+}

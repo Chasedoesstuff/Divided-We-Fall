@@ -1,0 +1,8 @@
+# This is executed last among all history
+GLOBAL = {
+	set_global_variable = {
+		name = lou_var_standoff
+		value = 600					
+		}
+
+}

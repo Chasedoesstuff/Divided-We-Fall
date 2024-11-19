@@ -49,14 +49,12 @@
 				size = 21106 # 16710 free in 1830, 25502 free in 1840
 			}
 			create_pop = {
-				pop_type = slaves
 				culture = afro_antillean
 				size = 651976
 			}
 			create_pop = {
-				pop_type = slaves
 				culture = afro_antillean
-				religion = catholic
+				religion = protestant
 				size = 8000
 			}
 		}
@@ -122,7 +120,7 @@
 		region_state:RUS = {
 			create_pop = {
 				culture = athabaskan
-				size = 19780
+				size = 12780
 			}
 			create_pop = {
 				culture = russian
@@ -130,7 +128,17 @@
 			}
 			create_pop = {
 				culture = inuit
-				size = 4968
+				size = 1968
+			}
+		}
+		region_state:ATB = {
+			create_pop = {
+				culture = athabaskan
+				size = 7000
+			}
+			create_pop = {
+				culture = inuit
+				size = 3000
 			}
 		}
 	}

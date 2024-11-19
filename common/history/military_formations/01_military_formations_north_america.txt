@@ -1,5 +1,5 @@
 ﻿MILITARY_FORMATIONS = {
-	c:TEX = {
+	c:TEX ?= {
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_great_plains
@@ -8,28 +8,28 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_TEXAS
-				count = 2
+				count = 5
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_dragoons
 				state_region = s:STATE_TEXAS
-				count = 1
+				count = 2
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_cannon_artillery
 				state_region = s:STATE_TEXAS
-				count = 1
+				count = 2
 			}
 		}
 	}
 
-	c:MEX = {
+	c:MEX ?= {
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_great_plains
-			name = "Ejército de Operaciones"
+			name = Ejrcito_de_Operaciones
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -38,9 +38,9 @@
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
+				type = unit_type:combat_unit_type_irregular_infantry
 				state_region = s:STATE_YUCATAN
-				count = 2
+				count = 1
 			}
 
 			combat_unit = {
@@ -72,6 +72,8 @@
 			commander_rank = commander_rank_2
 			traits = {
 				ambitious
+				reckless
+				arrogant
 			}
 			on_created = {
 				set_variable = {
@@ -88,7 +90,7 @@
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_mexico
-			name = "Ejército Mexicano"
+			name = Ejrcito_Mexicano
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -112,7 +114,7 @@
 		create_military_formation = {
 			type = fleet
 			hq_region = sr:region_mexico
-			name = "Armada de México"
+			name = Armada_de_Mxico
 
 			combat_unit = { # Libertad
 				type = unit_type:combat_unit_type_frigate

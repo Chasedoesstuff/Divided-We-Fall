@@ -1,0 +1,6 @@
+﻿dlc_dwf = {
+	name = "Divided We Fall"
+	steam_id = "529340"
+	type = major
+	priority = 5
+}

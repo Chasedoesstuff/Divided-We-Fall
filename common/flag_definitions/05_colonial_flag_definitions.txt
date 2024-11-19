@@ -11,176 +11,6 @@
 @canton_scale_denmark_y = @[ ( 220 / coa_height ) + 0.001 ]
 @third = @[1/3]
 
-DEL = { # American colony under britain
-	flag_definition = {
-		coa = American_colony
-		subject_canton = American_colony
-		allow_overlord_canton = yes
-		priority = 90
-	}
-}
-IDA = { # American colony under britain
-	flag_definition = {
-		coa = American_colony
-		subject_canton = American_colony
-		allow_overlord_canton = yes
-		priority = 90
-	}
-}
-ILL = { # American colony under britain
-	flag_definition = {
-		coa = American_colony
-		subject_canton = American_colony
-		allow_overlord_canton = yes
-		priority = 90
-	}
-}
-MAC = { # American colony under britain
-	flag_definition = {
-		coa = American_colony
-		subject_canton = American_colony
-		allow_overlord_canton = yes
-		priority = 90
-	}
-}
-MAI = { # American colony under britain
-	flag_definition = {
-		coa = American_colony
-		subject_canton = American_colony
-		allow_overlord_canton = yes
-		priority = 90
-	}
-}
-MYL = { # American colony under britain
-	flag_definition = {
-		coa = American_colony
-		subject_canton = American_colony
-		allow_overlord_canton = yes
-		priority = 90
-	}
-}
-
-NHM = { # American colony under britain
-	flag_definition = {
-		coa = American_colony
-		subject_canton = American_colony
-		allow_overlord_canton = yes
-		priority = 90
-	}
-}
-NWJ = { # American colony under britain
-	flag_definition = {
-		coa = American_colony
-		subject_canton = American_colony
-		allow_overlord_canton = yes
-		priority = 90
-	}
-}
-OHI = { # American colony under britain
-	flag_definition = {
-		coa = American_colony
-		subject_canton = American_colony
-		allow_overlord_canton = yes
-		priority = 90
-	}
-}
-PSV = { # American colony under britain
-	flag_definition = {
-		coa = American_colony
-		subject_canton = American_colony
-		allow_overlord_canton = yes
-		priority = 90
-	}
-}
-RHI = { # American colony under britain
-	flag_definition = {
-		coa = American_colony
-		subject_canton = American_colony
-		allow_overlord_canton = yes
-		priority = 90
-	}
-}
-
-VER = { # American colony under britain
-	flag_definition = {
-		coa = American_colony
-		subject_canton = American_colony
-		allow_overlord_canton = yes
-		priority = 90
-	}
-}
-WIS = { # American colony under britain
-	flag_definition = {
-		coa = American_colony
-		subject_canton = American_colony
-		allow_overlord_canton = yes
-		priority = 90
-	}
-}
-VIR = { # American colony under britain
-	flag_definition = {
-		coa = American_colony
-		subject_canton = American_colony
-		allow_overlord_canton = yes
-		priority = 90
-	}
-}
-KEN = { # American colony under britain
-	flag_definition = {
-		coa = American_colony
-		subject_canton = American_colony
-		allow_overlord_canton = yes
-		priority = 90
-	}
-}
-TSE = { # American colony under britain
-	flag_definition = {
-		coa = American_colony
-		subject_canton = American_colony
-		allow_overlord_canton = yes
-		priority = 90
-	}
-}
-NCL = { # American colony under britain
-	flag_definition = {
-		coa = American_colony
-		subject_canton = American_colony
-		allow_overlord_canton = yes
-		priority = 90
-	}
-}
-SCL = { # American colony under britain
-	flag_definition = {
-		coa = American_colony
-		subject_canton = American_colony
-		allow_overlord_canton = yes
-		priority = 90
-	}
-}
-GOR = { # American colony under britain
-	flag_definition = {
-		coa = American_colony
-		subject_canton = American_colony
-		allow_overlord_canton = yes
-		priority = 90
-	}
-}
-ALA = { # American colony under britain
-	flag_definition = {
-		coa = American_colony
-		subject_canton = American_colony
-		allow_overlord_canton = yes
-		priority = 90
-	}
-}
-MIS = { # American colony under britain
-	flag_definition = {
-		coa = American_colony
-		subject_canton = American_colony
-		allow_overlord_canton = yes
-		priority = 90
-	}
-}
 IWT = { # Iowa Tribe
 	flag_definition = {
 		coa = Iowa_tribe
@@ -209,22 +39,17 @@ UOM = { # American colony under britain
 	} 
 NEY = { # American colony under britain
 	flag_definition = {
+		coa = NEY_subject
+		subject_canton = NEY_free
+		priority = 1
+		allow_overlord_canton = yes	
+		}
+	flag_definition = {
 		coa = NEY_free
 		subject_canton = NEY_free
-		allow_overlord_canton = yes
 		priority = 20 
-		trigger = { coa_def_independent_trigger = yes }
-	}
-	flag_definition = {
-		coa = NEY_subject
-		subject_canton = NEY_with_canton
-		allow_overlord_canton = yes	
-		coa_with_overlord_canton = NEY_subject		
-		priority = 17
-		trigger = { 
-			
+		# trigger = { coa_def_independent_trigger = yes }
 		}
-	}
 	} 
 	VER = { # American colony under britain
 	flag_definition = {
@@ -235,7 +60,7 @@ NEY = { # American colony under britain
 	}
 	flag_definition = {
 		coa = VER_subject
-		subject_canton = NEY_with_canton
+		subject_canton = VER_free
 		allow_overlord_canton = yes	
 		coa_with_overlord_canton = VER_subject		
 		priority = 17
@@ -653,10 +478,7 @@ GOR	= { # American colony under britain
 		allow_overlord_canton = yes	
 		overlord_canton_scale = {  @canton_scale_sweden_y }
 		coa_with_overlord_canton = GOR_subject		
-		priority = 17
-		trigger = { 
-			
-		}
+
 	}
 	}
 VIR	= { # American colony under britain
@@ -678,11 +500,148 @@ VIR	= { # American colony under britain
 		}
 	}
 	}
-FEI = { # American colony under britain
+FEI = { # French East Indies
 	flag_definition = {
 		coa = FEI
 		subject_canton = FEI
 		priority = 90
 	}
 }
+LOU = { # Louisiana
+	flag_definition = {
+		coa = LOU_ROYAL
+		#Theocracy, absolute, and constitutional monarch
+		subject_canton = LOU_REPUBLIC
+		priority = 25
+		trigger = { 
+			OR = {
+				coa_def_monarchy_flag_trigger = yes
+				coa_def_theocracy_flag_trigger = yes
+				coa_def_absolute_monarchy_flag_trigger = yes
+															} 
+																}
+	}
+	flag_definition = {
+		coa = LOU_BULL
+		#Dictator/oligarchy
+		subject_canton = LOU_REPUBLIC
+		priority = 30
+		trigger = { 
+			OR = {
+				coa_def_dictatorship_flag_trigger = yes
+				coa_def_oligarchy_flag_trigger = yes
+															} 
+																}
+	}
+	flag_definition = {
+		#for republic and misc.
+		coa = LOU_REPUBLIC
+		subject_canton = LOU_REPUBLIC
+		priority = 10
+		
+	}
+	flag_definition = {
+		coa = LOU_SUBJECT
+		#subject of anyone no matter government type
+		subject_canton = LOU_REPUBLIC
+		allow_overlord_canton = yes	
+		priority = 40
+		trigger = {
+				coa_def_subject_trigger = yes
+				coa_def_british_ensign_trigger = no 
+		NOT = { c:LOU = { is_subject_type = subject_type_protectorate }
+																}
+															} 
+														}
 	
+	flag_definition = {
+		coa = LOU_SUBJECT_GBR
+		#subject of GBR specifically
+		subject_canton = LOU_SUBJECT_GBR
+		allow_overlord_canton = yes	
+		priority = 50
+		trigger = {  
+				coa_def_british_ensign_trigger = yes
+				
+																			}
+	}
+	flag_definition = {
+		coa = LOU_COMM
+		subject_canton = LOU_COMM
+		priority = 5000
+		trigger = { 
+			coa_def_communist_flag_trigger = yes 
+													}
+}
+	flag_definition = {
+		coa = LOU_ANARCHY
+		subject_canton = LOU_ANARCHY
+		priority = 7000
+		trigger = { 
+			coa_def_anarchy_flag_trigger = yes 
+													}
+}
+	flag_definition = {
+		coa = LOU_FAS
+		subject_canton = LOU_FAS
+		priority = 5000
+		trigger = { 
+			coa_def_fascist_flag_trigger = yes
+		 
+													}
+}
+}
+	#Kanza fix, their flag is way too modern to use, also just to fix the kanty & kanza tag conflict, flag is kinda a stretch, but nothing else exists that is time appropiate
+KNT = {
+	flag_definition = {
+		coa = Kanza_tribal
+		subject_canton = Kanza_tribal
+		priority = 100
+		
+													}
+}
+KTY = { # Kanty-Mansi Kanza-Kanty fix
+	flag_definition = {
+		coa = KNT
+		subject_canton = KNT
+		priority = 1
+	}
+
+	flag_definition = {
+		coa = KNT_monarchy
+		subject_canton = KNT_monarchy
+		priority = 3
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+
+	flag_definition = {
+		coa = KNT_undemocratic
+		subject_canton = KNT_undemocratic
+		priority = 6
+		trigger = {
+			OR = {
+				coa_def_dictatorship_flag_trigger = yes
+				coa_def_oligarchy_flag_trigger = yes
+			}
+		}
+	}
+
+	flag_definition = {
+		coa = KNT_communist
+		subject_canton = KNT_communist
+		priority = 1000
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+}
+CYT = {
+	flag_definition = {
+		coa = CYT
+		subject_canton = CYT
+		priority = 1
+		
+													}
+}

@@ -1,0 +1,54 @@
+﻿l_english:
+  lou_standoff_progress_bar: "Louisianian Standoff"
+  lou_standoff_progress_bar_auto_desc: "Autocratic Control: [Subtract_CFixedPoint('(CFixedPoint)1200', GetGlobalVariable('lou_var_standoff').GetValue)]"
+  lou_standoff_progress_bar_demo_desc: "Democratic Control: [GetGlobalVariable('lou_var_standoff').GetValue|1]"
+  
+  
+  demo_large_lou_standoff_points: "#b Large increase to Democratic Control"
+  auto_large_lou_standoff_points: "#b Large increase to Autocratic Control"
+  demo_normal_lou_standoff_points: "Increase to Democratic Control"
+  auto_normal_lou_standoff_points: "Increase to Autocratic Control"
+  demo_small_lou_standoff_points: "Minor increase to Democratic Control"
+  auto_small_lou_standoff_points: "Minor increase to Autocratic Control"
+  demo_minute_lou_standoff_points: "Tiny increase to Democratic Control"
+  auto_minute_lou_standoff_points: "Tiny increase to Autocratic Control"
+
+  proven_col_lou:0 "We have demonstrated the potential of our colonial efforts. This will be beneficial for future attempts."
+  lou_tension:0 "Louisianian Tension"
+  je_lou_standoff:0 "Louisianan Standoff" 
+  je_lou_standoff_reason:0 "Just a couple years ago, [SCOPE.GetRootScope.GetCountry.GetRuler.GetFullName] dismissed Louisiana's parliament leaving power under only his iron fist, but there are elements and advocates in the nation fighting for democracy, [SCOPE.sCharacter('lou_resistance_ig_leader').GetFullName] being a main player. Many of his supporters will not stand for this. [ROOT.GetCountry.GetNameNoFlag] is deep in the flames of distrust and strife. What kind of [ROOT.GetCountry.GetNameNoFlag] will emerge from the ashes?"
+
+  je_lou_standoff_demo_goal_tt: "Democratic Elements have Secured Power"
+  je_lou_standoff_auto_goal_tt: "Autocratic Elements have Maintained Power"
+  
+  je_lou_debt:0 "Louisianan Debt Crisis" 
+  je_lou_debt_reason:0 "Louisiana, after being thrown to the wind with Napoleon's defeat on the European continent has been plunged into poverty and despair. Left with scraps. The economy has fallen apart. Many sides of the country are offering their solution to save the nation under their vision. Louisiana's only hope is to emerge from the ashes, but what kind of Louisiana will emerge?"
+  je_lou_debt_payment_button:0 "Repay Debt Portion"
+  je_lou_debt_gbr_forgiveness_name:0 "Request British Debt Bailout"
+  je_lou_debt_fra_forgiveness_name:0 "Request French Debt Bailout"
+    
+  lou_debt_5:0 "Crippling Louisianian Debt: 5"
+  lou_debt_4:0 "Large Louisianian Debt: 4"
+  lou_debt_3:0 "Major Louisianian Debt: 3"
+  lou_debt_2:0 "Manageable Louisianian Debt: 2"
+  lou_debt_1:0 "Negligible Louisianian Debt: 1"
+  
+  je_lou_debt_status_5:0 "Crippling Louisianian Debt: 5"
+  je_lou_debt_status_4:0 "Large Louisianian Debt: 4"
+  je_lou_debt_status_3:0 "Major Louisianian Debt: 3"
+  je_lou_debt_status_2:0 "Manageable Louisianian Debt: 2"
+  je_lou_debt_status_1:0 "Negligible Louisianian Debt: 1"
+  #Native Conquest
+    je_attack_knt_name:0 "Launch An Attack on Kanza"
+    je_attack_omt_name:0 "Secure Missouria"
+    je_attack_seq_name:0 "Ambush Kiowa"
+    je_attack_qpt_name:0 "Utilize Quapaw Land"
+  
+    je_attack_knt_desc:0 "Kanza is occupying key routes on the path between the Mississippi river and the Western Frontier. It would benefit us greatly to secure these routes. At All Costs."
+    je_attack_omt_desc:0 "The Otoe-Missouria tribe is occupying great fertile land among the Missouri River. This land could be useful for saving the economy."
+    je_attack_seq_desc:0 "The Kiowa tribe doesn't have much valuable land, but in these troubling times, we can't risk savages sitting within our borders. They must be crushed!"
+    je_attack_qpt_desc:0 "The Quapaw Tribe is squandering on our land. It's vital position between Illinois makes it an Achilles' heel. The savages must be put under the Louisianan jackboot!"
+  
+    je_lou_natives_core:0 "Louisianan Settlement" 
+    je_lou_natives_core_reason:0 "Louisiana is still carrying a major debt. Some in the government propose that by taming the savage wilderness. We can boost the economy. Although we can't afford a full military campaign, we should be able to bear the cost of marching over some forests and securing it."
+  

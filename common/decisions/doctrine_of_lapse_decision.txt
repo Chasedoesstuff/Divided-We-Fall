@@ -25,6 +25,7 @@
 			OR = {
 				has_government_type = gov_princely_state_hindu
 				hidden_trigger = { has_government_type = gov_princely_state_muslim }
+				hidden_trigger = { is_subject_of = c:FEI }
 			}
 		}
 	}

@@ -1,6 +1,6 @@
 maine_purchase_dcs = {
 	is_shown = {
-	NOT = { c:NBS = root }
+		NOT = { c:NBS = this }
 		NOT = {
 			has_global_variable = maine_purchase_var
 		}
@@ -9,34 +9,35 @@ maine_purchase_dcs = {
 			has_state_in_state_region = STATE_MAINE }
 	}
 
-	possible = {
+		possible = {
+		custom_tooltip = {
+			text = mai_pur_cooldown_tt
+			NOT = { has_variable = mai_pur_cooldown }
+		}
 		has_state_in_state_region = STATE_MAINE
 		in_default = no
 		taking_loans = no
 		is_at_war = no
 		c:NBS = {
-			relations:root >= 0
+			relations:root >= 50
 			is_at_war = no
-			scaled_debt > 0
-		}
-		can_take_on_scaled_debt = {
-			who = c:NBS
-			value = c:NBS.scaled_debt
 		}
 	}
 
 	when_taken = {
-		set_global_variable = {
-			name = maine_purchase_var
-			value = yes
-		}
+		
 		save_scope_as = maine_new_owner
 		c:NBS = {
 		trigger_event = {
 			id = maine_purchase.2
 			days = 0
 			popup = yes
-		} } }
+		} } 
+		set_variable = {
+			name = mai_pur_cooldown
+			years = 2
+		}
+		}
 	
 
 	ai_chance = {

@@ -1,0 +1,16 @@
+je_louisiana_slavery = {
+	group = je_group_historical_content
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	complete = {
+		has_law = law_type:law_slavery_banned
+	}
+
+	on_complete = {
+		trigger_event = { id = lou_events.1 popup = yes }
+	}
+
+	weight = 100
+
+	should_be_pinned_by_default = yes
+}

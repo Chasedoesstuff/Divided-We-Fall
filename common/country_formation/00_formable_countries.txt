@@ -140,7 +140,8 @@ PLC = {
 		STATE_EAST_GALICIA
 		STATE_GREATER_POLAND
 		STATE_LESSER_POLAND
-		STATE_LITHUANIA
+		STATE_KAUNAS
+		STATE_VILNIUS
 		STATE_MAZOVIA
 		STATE_POSEN
 		STATE_VOLHYNIA
@@ -275,17 +276,11 @@ NEN = {
 		
 	}
 }
+
 FSA = {
 	use_culture_states = yes
 
 	required_states_fraction = 0.75	
-	
-	ai_will_do = { always = yes }
-}
-CSA = {
-	use_culture_states = yes
-
-	required_states_fraction = 0.6	
 	
 	ai_will_do = { always = yes }
 }
@@ -373,9 +368,18 @@ ARA = {
 }
 
 GCO = {
-	use_culture_states = yes
+	states = {
+		STATE_CUNDINAMARCA
+		STATE_ECUADOR
+		STATE_MIRANDA
+		STATE_ANTIOQUIA
+		STATE_GUAVIARE
+		STATE_BOLIVAR
+		STATE_ZULIA
+		STATE_CAUCA
+	}
 
-	required_states_fraction = 0.75	
+	required_states_fraction = 0.85
 
 	ai_will_do = { always = yes }
 
@@ -403,7 +407,7 @@ BLH = {
 	ai_will_do = { always = yes }
 	
 	possible = {
-		has_technology_researched = pan-nationalism
+		has_technology_researched = nationalism
 	}
 }
 
@@ -462,21 +466,9 @@ SAF = {
 }
 
 TRH = {
-	states = { 
-		STATE_UZBEKIA
-		STATE_KIRGHIZIA
-		STATE_TAJIKISTAN
-		STATE_TURKMENIA
-		STATE_KHIVA
-		STATE_SEMIRECHE
-		STATE_AKMOLINSK
-		STATE_URALSK
-		STATE_TIANSHAN
-		STATE_DZUNGARIA
-		STATE_JETISY
-	}
+	use_culture_states = yes
 
-	required_states_fraction = 0.7
+	required_states_fraction = 0.5
 	
 	ai_will_do = { always = yes }
 
@@ -503,7 +495,7 @@ IDN = {
 		STATE_WEST_JAVA
 	}
 
-	required_states_fraction = 0.75
+	required_states_fraction = 0.65
 	
 	ai_will_do = { always = yes }
 
@@ -555,7 +547,7 @@ YEM = {
 		STATE_YEMEN
 	}
 
-	required_states_fraction = 0.75	
+	required_states_fraction = 1
 	
 	ai_will_do = { always = yes }
 }
@@ -566,6 +558,7 @@ CAU = {
 		STATE_ARMENIA
 		STATE_AZERBAIJAN
 		STATE_KARS
+		STATE_ELIZAVETPOL
 	}
 
 	required_states_fraction = 0.75	
@@ -593,9 +586,11 @@ KAZ = {
 		STATE_AKMOLINSK
 		STATE_JETISY
 		STATE_URALSK
+		STATE_AKTOBE
+		STATE_SYRDARYA
 	}
 
-	required_states_fraction = 0.75	
+	required_states_fraction = 0.5
 	
 	ai_will_do = { always = yes }
 
@@ -615,6 +610,7 @@ ALD = {
 	
 	ai_will_do = { always = yes }
 }
+
 PEU = {
 	states = {
 		STATE_LIMA
@@ -706,6 +702,19 @@ CLI = {
 		}
 		NOT = { has_game_rule = plausible_formable_nations }
 	}
+}
+
+AFG = {
+	states = {
+		STATE_HERAT
+		STATE_KANDAHAR
+		STATE_KABUL 
+		STATE_CENTRAL_HIGHLANDS
+	}
+	
+	required_states_fraction = 1
+
+	ai_will_do = { always = yes }
 }
 
 TWT = {

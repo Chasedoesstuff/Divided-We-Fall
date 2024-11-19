@@ -79,6 +79,24 @@ texan_war_of_independence.1 = {
 		}
 	}
 	option = {
+		name = texan_war_of_independence.1.lou
+		trigger = { c:LOU = {
+			relations:root >= relations_threshold:cordial
+		} }
+		c:LOU = {
+			set_variable = tex_subject
+			
+				create_diplomatic_pact = {
+					country = c:TEX
+					type = dominion
+				}
+			
+		}
+		ai_chance = {
+			base = 30
+		}
+	}
+	option = {
 		name = texan_war_of_independence.1.c
 		default_option = yes
 		show_as_tooltip = {
@@ -92,6 +110,10 @@ texan_war_of_independence.1 = {
 			}
 			change_relations = {
 				country = c:GBR
+				value = -10
+			}
+			change_relations = {
+				country = c:LOU
 				value = -10
 			}
 		}
@@ -216,7 +238,7 @@ texan_war_of_independence.4 = {
 	option = {
 		name = texan_war_of_independence.4.a
 		trigger = { is_player = no }
-		C:USA = { annex = C:TEX 
+		c:USA = { annex = c:TEX 
 		trigger_event = { id = texan_war_of_independence.5 } }
 		
 		ai_chance = {
@@ -225,7 +247,6 @@ texan_war_of_independence.4 = {
 	}
 	option = {
 		name = texan_war_of_independence.4.b
-		trigger = { is_player = yes }
 		make_independent = yes
 		ai_chance = {
 			base = 0
@@ -258,6 +279,47 @@ texan_war_of_independence.5 = {
 		name = texan_war_of_independence.5.a
 		ai_chance = {
 			base = 100
+		}
+	}
+}
+texan_war_of_independence.6 = {
+	type = country_event
+	placement = root
+	event_image = {
+		video = "unspecific_signed_contract"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	title = texan_war_of_independence.6.t
+	desc = texan_war_of_independence.6.d
+	flavor = texan_war_of_independence.6.f
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+	option = {
+		name = texan_war_of_independence.6.a
+		default_option = yes
+		change_relations = {
+				country = c:TEX
+				value = 25
+			}
+		ai_chance = {
+		
+			base = 9
+		}
+	}
+	option = {
+		name = texan_war_of_independence.6.b
+		ai_chance = {
+			base = 1
 		}
 	}
 }

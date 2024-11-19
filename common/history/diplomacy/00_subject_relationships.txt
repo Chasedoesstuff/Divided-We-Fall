@@ -1,5 +1,5 @@
 ﻿DIPLOMACY = {
-	c:SPA = {
+	c:SPA ?= {
 		create_diplomatic_pact = {
 			country = c:CUB
 			type = puppet
@@ -13,47 +13,55 @@
 			type = puppet
 		}		
 	}
-	c:NET = {
+	c:NET ?= {
 		create_diplomatic_pact = {
 			country = c:LUX
 			type = personal_union
 		}
 		create_diplomatic_pact = {
+			country = c:LUX
+			type = grant_own_market
+		}		
+		create_diplomatic_pact = {
 			country = c:DEI
 			type = dominion
 		}
 	}
-	c:SWE = {
+	c:SWE ?= {
 		create_diplomatic_pact = {
 			country = c:NOR
 			type = personal_union
 		}
 	}
-	c:RUS = {
+	c:RUS ?= {
 		create_diplomatic_pact = {
 			country = c:FIN
 			type = personal_union
 		}
 		create_diplomatic_pact = {
-			country = c:KZH
+			country = c:UBD
 			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:KZH
+			type = protectorate
 		}
 		create_diplomatic_pact = {
 			country = c:UZH
-			type = puppet
+			type = protectorate
 		}
 		create_diplomatic_pact = {
 			country = c:OZH
-			type = puppet
+			type = protectorate
 		}
 	}
-	c:PRU = {
+	c:PRU ?= {
 		create_diplomatic_pact = {
 			country = c:HOH
 			type = puppet
 		}
 	}		
-	c:DEN = {
+	c:DEN ?= {
 		create_diplomatic_pact = {
 			country = c:HOL
 			type = personal_union
@@ -63,7 +71,7 @@
 			type = personal_union
 		}
 	}
-	c:CHI = {
+	c:CHI ?= {
 		create_diplomatic_pact = {
 			country = c:TIB
 			type = vassal
@@ -77,7 +85,7 @@
 			type = tributary
 		}			
 	}
-	c:AUS = {
+	c:AUS ?= {
 		create_diplomatic_pact = {
 			country = c:KRA
 			type = puppet
@@ -115,9 +123,10 @@
 		}
 
 		### OH CANADA ###
-		# Province of Upper Canada
+		# Province of Upper Canada REMOVED
+		# Newfoundland
 		create_diplomatic_pact = {
-			country = c:ONT
+			country = c:NEW
 			type = puppet
 		}
 		# Province of Lower Canada
@@ -178,12 +187,13 @@
 			type = protectorate
 		}
 		### MURICA YEAH ###
-		#connecticut
+		
 		# Cherokee
 		create_diplomatic_pact = {
 			country = c:CHE
 			type = protectorate
 		}
+		#connecticut
 		create_diplomatic_pact = {
 			country = c:CNC
 			type = puppet
@@ -299,13 +309,13 @@
 			type = puppet
 		}
 	}
-	c:DAI = {
+	c:DAI ?= {
 		create_diplomatic_pact = {
 			country = c:CAM
 			type = tributary
 		}
 	}
-	c:SIA = {
+	c:SIA ?= {
 		create_diplomatic_pact = {
 			country = c:CHP
 			type = vassal
@@ -319,13 +329,13 @@
 			type = tributary
 		}		
 	}
-	c:EGY = {
+	c:EGY ?= {
 		create_diplomatic_pact = {
 			country = c:HDJ
 			type = tributary
 		}
 	}
-	c:TUR = {
+	c:TUR ?= {
 		create_diplomatic_pact = {
 			country = c:MOL
 			type = protectorate
@@ -347,7 +357,7 @@
 			type = protectorate
 		}
 	}
-	c:BIC = {
+	c:BIC ?= {
 		create_diplomatic_pact = {
 			country = c:KUT
 			type = puppet
@@ -421,7 +431,7 @@
 			type = puppet
 		}		
 	}
-c:FEI = {
+c:FEI ?= {
 		create_diplomatic_pact = {
 			country = c:BAS
 			type = puppet
@@ -434,7 +444,7 @@ c:FEI = {
 			country = c:TRA
 			type = puppet
 		}
-	c:DEI = {
+	c:DEI ?= {
 		create_diplomatic_pact = {
 			country = c:YOG
 			type = puppet
@@ -465,7 +475,7 @@ c:FEI = {
 		}
 	}
 
-	c:FRA = {
+	c:FRA ?= {
 		# Tahiti
 		create_diplomatic_pact = {
 			country = c:PLY
@@ -477,7 +487,7 @@ c:FEI = {
 		}
 	}
 
-	c:BOL = {
+	c:BOL ?= {
 		create_diplomatic_pact = {
 			country = c:SPU
 			type = puppet
@@ -491,4 +501,95 @@ c:FEI = {
 			type = puppet
 		}
 	}
+
+	c:PER = {
+		create_diplomatic_pact = {
+			country = c:ARB
+			type = vassal
+		}
+	}
+	
+	c:KAL = {
+		create_diplomatic_pact = {
+			country = c:MAK
+			type = vassal
+		}
+	}
+	
+	
+	# Starting liberty desire
+	c:BIC = {
+		add_liberty_desire = -30
+	}
+	
+	c:DEI = {
+		add_liberty_desire = -30
+	}	
+	
+	c:SAF = {
+		add_liberty_desire = -30
+	}	
+	
+	c:NSW = {
+		add_liberty_desire = -30
+	}
+
+	c:SAF = {
+		add_liberty_desire = -30
+	}
+
+	c:WAS = {
+		add_liberty_desire = -30
+	}	
+
+	c:SAS = {
+		add_liberty_desire = -30
+	}	
+
+	c:TAS = {
+		add_liberty_desire = -30
+	}
+
+	c:UNT = {
+		add_liberty_desire = 10
+	}	
+	
+	c:FIN = {
+		add_liberty_desire = 10
+	}
+	
+	c:OZH = {
+		add_liberty_desire = 10
+	}
+
+	c:KZH = {
+		add_liberty_desire = 10
+	}
+
+	c:UZH = {
+		add_liberty_desire = 10
+	}	
+
+	c:SEQ = {
+		add_liberty_desire = 10
+	}
+
+	c:SER = {
+		add_liberty_desire = 20
+	}	
+	
+	c:MOL = {
+		add_liberty_desire = 20
+	}	
+	
+	c:WAL = {
+		add_liberty_desire = 20
+	}	
+	
+	c:BIC ?= {
+		every_subject_or_below = {
+			 set_relations = { country = c:BIC value = 50 }
+			 add_liberty_desire = -20
+		}
+	}	
 }

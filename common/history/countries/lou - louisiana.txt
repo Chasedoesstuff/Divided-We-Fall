@@ -6,15 +6,21 @@
 		
 		activate_law = law_type:law_presidential_republic
 		activate_law = law_type:law_no_schools
-		activate_law = law_type:law_cultural_exclusion
 		activate_law = law_type:law_total_separation
 		activate_law = law_type:law_autocracy
 		activate_law = law_type:law_mercantilism
 		activate_law = law_type:law_right_of_assembly
 		activate_law = law_type:law_per_capita_based_taxation
-		
-
-
+		activate_law = law_type:law_cultural_exclusion
+	
+		set_tax_level = high
+	add_modifier = {
+			name = lou_debt_5
+		}
+	trigger_event = {
+			id = lou_events.2
+		}
+	
 		
 	}
 }

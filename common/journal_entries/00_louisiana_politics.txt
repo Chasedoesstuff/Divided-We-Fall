@@ -1,0 +1,101 @@
+je_lou_standoff = {
+	icon = "gfx/interface/icons/event_icons/bicorne_gun_cross.dds"
+
+	group = je_group_internal_affairs
+	
+	
+	
+	immediate = {
+	ig:ig_intelligentsia = { 
+			leader = {
+				save_scope_as = lou_resistance_ig_leader
+									}
+							}
+				}
+	scripted_progress_bar = lou_standoff_progress_bar
+	
+	complete = {
+		custom_tooltip = {
+			text = je_lou_standoff_demo_goal_tt
+			global_var:lou_var_standoff <= 0
+		}
+	}
+
+	on_complete = {
+		trigger_event = { id = lou_standoff_endings.1 popup = yes }
+	}
+
+	fail = {
+		custom_tooltip = {
+			text = je_lou_standoff_auto_goal_tt
+			global_var:lou_var_standoff >= 1200
+		}
+	}
+
+	on_fail = {
+		trigger_event = { id = lou_standoff_endings.2 popup = yes }
+	}
+
+
+	on_monthly_pulse = {
+		random_events = {
+			# Pulse events affect the progress bar
+			120 = 0 
+		}
+	}
+
+
+	weight = 100
+
+	can_revolution_inherit = yes
+	transferable = yes
+	should_be_pinned_by_default = yes
+}
+je_lou_demo_econ = {
+	icon = "gfx/interface/icons/event_icons/bicorne_gun_cross.dds"
+
+	group = je_group_internal_affairs
+
+	immediate = {
+				} 
+
+	complete = {
+		trigger_if = {
+			limit = { 
+				has_journal_entry = je_lou_debt
+			}
+			NOR = { 
+					has_modifier = lou_debt_5 
+					has_modifier = lou_debt_4
+					
+												}
+		}
+		country_has_building_group_levels = {
+			type = bg_mining
+			value  >= 5
+		}
+		country_has_building_group_levels = {
+			type = bg_plantations
+			value  >= 15
+		} 
+		custom_tooltip = {
+				text = demo_econ_lou_laws_tt
+				 has_law = law_type:law_free_trade
+				 has_law = law_type:law_laissez_faire
+													
+													}
+														}
+	on_complete = {
+		trigger_event = { id = lou_econ_plans.1 popup = yes }
+	}
+	timeout = 3600
+
+	on_timeout = {
+		trigger_event = { id = lou_econ_plans.2 popup = yes }
+		}
+
+
+	weight = 100
+	transferable = yes
+	should_be_pinned_by_default = yes
+}

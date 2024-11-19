@@ -1,7 +1,7 @@
 ﻿namespace = maine_purchase
 
 # theivery might be okay cause its 6 am and paradox plagarize themselves all the time.
-# proposal
+# Purchasee receives word of approval
 maine_purchase.1 = {
 	type = country_event
 	placement = ROOT
@@ -95,7 +95,71 @@ maine_purchase.2 = {
 		} }
 		change_relations = {
 			country = c:NBS
-			value = 10
+			value = 10		
+							}
+		set_global_variable = {
+			name = maine_purchase_var
+			value = yes
+		}
+		ai_chance = {
+			base = 100
+		}
+	}
+	option = {
+		name = maine.2.b
+		default_option = no
+		show_as_tooltip = {
+		change_relations = {
+			country = scope:maine_new_owner
+			value = -20 } }
+		scope:maine_new_owner = {
+		trigger_event = {
+			id = maine_purchase.3
+			days = 7
+			popup = yes
+		} }
+		ai_chance = {
+			base = 0
+		}
+	
+	
+}
+}
+maine_purchase.3 = {
+	type = country_event
+	placement = ROOT
+
+	title = maine_purchase.3.t
+	desc = maine_purchase.3.d
+	flavor = maine_purchase.3.f
+
+	duration = 3
+
+	event_image = {
+		video = "unspecific_signed_contract"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_trade.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+		
+	}
+
+	option = {
+		name = maine_purchase.3.a
+		default_option = yes
+
+			change_relations = {
+				country = c:NBS
+				value = -20
+			}
+		ai_chance = {
+			base = 1
 		}
 	}
 }

@@ -1,0 +1,156 @@
+VER = {
+	states = {
+		STATE_VERMONT
+	}
+	
+	ai_will_do = { always = no }
+}
+CNC = {
+	states = {
+		STATE_CONNECTICUT
+	}
+	
+	ai_will_do = { always = no }
+}
+DEL = {
+	states = {
+		STATE_DELAWARE
+	}
+	
+	ai_will_do = { always = no }
+}
+IDA = {
+	states = {
+		STATE_INDIANA
+	}
+	
+	ai_will_do = { always = no }
+}
+ILL = {
+	states = {
+		STATE_ILLINOIS
+	}
+	
+	ai_will_do = { always = no }
+}
+MAI = {
+	states = {
+		STATE_MAINE
+	}
+	
+	ai_will_do = { always = no }
+}
+MAC = {
+	states = {
+		STATE_MASSACHUSETTS
+	}
+	
+	ai_will_do = { always = no }
+}
+MYL = {
+	states = {
+		STATE_MARYLAND
+		STATE_DISTRICT_OF_COLUMBIA
+	}
+	
+	ai_will_do = { always = no }
+}
+NEY = {
+	states = {
+		STATE_NEW_YORK
+	}
+	
+	ai_will_do = { always = no }
+}
+NHM = {
+	states = {
+		STATE_NEW_HAMPSHIRE
+	}
+	
+	ai_will_do = { always = no }
+}
+NWJ = {
+	states = {
+		STATE_NEW_JERSEY
+	}
+	
+	ai_will_do = { always = no }
+}
+OHI = {
+	states = {
+		STATE_OHIO
+	}
+	ai_will_do = { always = no }
+}
+PSV = {
+	states = {
+		STATE_PENNSYLVANIA
+	}
+	ai_will_do = { always = no }
+}
+RHI = {
+	states = {
+		STATE_RHODE_ISLAND
+	}
+	ai_will_do = { always = no }
+}
+UOM = {
+	states = {
+		STATE_MICHIGAN
+	}
+	ai_will_do = { always = no }
+}
+WIS = {
+	states = {
+		STATE_WISCONSIN
+	}
+	ai_will_do = { always = no }
+}
+KEN = {
+	states = {
+		STATE_KENTUCKY
+	}
+	ai_will_do = { always = no }
+}
+VIR = {
+	states = {
+		STATE_VIRGINIA
+		STATE_WEST_VIRGINIA
+	}
+	ai_will_do = { always = no }
+}
+TSE = {
+	states = {
+		STATE_TENNESSEE
+	}
+	ai_will_do = { always = no }
+}
+ALA = {
+	states = {
+		STATE_ALABAMA
+	}
+	ai_will_do = { always = no }
+}
+MIS = {
+	states = {
+		STATE_MISSISSIPPI
+	}
+	ai_will_do = { always = no }
+}
+FLO = {
+	states = {
+		STATE_FLORIDA
+	}
+	ai_will_do = { always = no }
+}
+CHE = {
+	states = {
+		STATE_TENNESSEE
+		STATE_VIRGINIA
+		STATE_KENTUCKY
+		STATE_NORTH_CAROLINA
+	}
+	
+	ai_will_do = { always = no }
+
+}

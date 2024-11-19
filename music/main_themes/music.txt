@@ -1,0 +1,7 @@
+﻿##### MAINTHEME
+
+main_theme_track_3 = {
+	music = "file:/music/_The_Battle_Hymn_of_the_Republic__US_Air_Force_Band.ogg"
+	can_be_interrupted = yes
+}	
+	#Main theme track, all due respect to the US military for the public domain track 

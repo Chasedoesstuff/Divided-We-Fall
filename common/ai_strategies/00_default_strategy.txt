@@ -4803,23 +4803,23 @@ befriend = {
 			
 	}
 	#Texas will actually submit to alternate overlords
-befriend = {		
-			if = {
-				limit = {
-				root = {
-				is_subject = no			
-				root = c:TEX				}
-				
-			scope:target_country = { 
-				OR = {
-					c:GBR
-					c:FRA
-					c:SPA 
-					}  
-				}
-			}
-				add = 50
-		}	
-			
-	}
+	#befriend = {		
+	#		if = {
+	#			limit = {
+	#			root = {
+	#			is_subject = no			
+	#			c:TEX ?= this				}
+	#			
+	#		scope:target_country = { 
+	#			OR = {
+	#				c:GBR
+	#				c:FRA
+	#				c:SPA 
+	#				}  
+	#			}
+	#		}
+	#			add = 50
+	#	}	
+	#		
+	#}
 }

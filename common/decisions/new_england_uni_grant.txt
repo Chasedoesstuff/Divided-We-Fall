@@ -126,25 +126,25 @@ uni_new_england_remove = {
 	
 		modifier = {
 			c:MAI = {
-				is_independent
+				is_independent = yes
 			}
 			add = 1000
 		}
 		modifier = {
 			c:PSV = {
-				is_independent
+				is_independent = yes
 			}
 			add = 1000
 		}
 		modifier = {
 			c:MAC = {
-				is_independent
+				is_independent = yes
 			}
 			add = 1000
 		}
 		modifier = {
 			c:NEY = {
-				is_independent
+				is_independent = yes
 			}
 			add = 1000
 		} 

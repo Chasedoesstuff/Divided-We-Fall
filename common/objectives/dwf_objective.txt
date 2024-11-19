@@ -1,0 +1,15 @@
+﻿dwf_recommended = {
+	enabled_background = "gfx/interface/icons/objectives/dwf_objective_illus.dds"
+	icon = "gfx/interface/icons/objectives/economic_dominance.dds"
+	
+	recommended_tags = { NEY VIR ILL GOR LOU VER CHE TEX }
+	
+	objective_subgoals = {
+		
+	}
+	
+	final_subgoal = sg_strong_market
+	
+	on_start = {
+	}
+}

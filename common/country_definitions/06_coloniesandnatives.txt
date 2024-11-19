@@ -6,7 +6,7 @@ VER = {
 	tier = principality
 	
 	cultures = { yankee }
-	capital = state_vermont
+	capital = STATE_VERMONT
 }
 CNC = {
 	color = { 90  94  193 }
@@ -16,7 +16,7 @@ CNC = {
 	tier = principality
 	
 	cultures = { yankee }
-	capital = state_connecticut
+	capital = STATE_CONNECTICUT
 }
 DEL = {
 	color = { 90  94  193 }
@@ -26,7 +26,7 @@ DEL = {
 	tier = principality
 	
 	cultures = { yankee }
-	capital = state_delaware
+	capital = STATE_DELAWARE
 }
 IDA = {
 	color = { 90  94  193 }
@@ -36,7 +36,7 @@ IDA = {
 	tier = principality
 	
 	cultures = { yankee }
-	capital = state_indiana
+	capital = STATE_INDIANA
 }
 ILL = {
 	color = { 90  94  193 }
@@ -46,7 +46,7 @@ ILL = {
 	tier = principality
 	
 	cultures = { yankee }
-	capital = state_illinois
+	capital = STATE_ILLINOIS
 }
 MAI = {
 	color = { 90  94  193 }
@@ -56,7 +56,7 @@ MAI = {
 	tier = principality
 	
 	cultures = { yankee }
-	capital = state_maine
+	capital = STATE_MAINE
 }
 MAC = {
 	color = { 90  94  193 }
@@ -66,7 +66,7 @@ MAC = {
 	tier = principality
 	
 	cultures = { yankee }
-	capital = state_massachusetts
+	capital = STATE_MASSACHUSETTS
 }
 MYL = {
 	color = { 90  94  193 }
@@ -76,7 +76,7 @@ MYL = {
 	tier = principality
 	
 	cultures = { yankee }
-	capital = state_maryland
+	capital = STATE_MARYLAND
 }
 NEY = {
 	color = { 90  94  193 }
@@ -86,7 +86,7 @@ NEY = {
 	tier = principality
 	
 	cultures = { yankee }
-	capital = state_new_york
+	capital = STATE_NEW_YORK
 }
 NHM = {
 	color = { 90  94  193 }
@@ -96,7 +96,7 @@ NHM = {
 	tier = principality
 	
 	cultures = { yankee }
-	capital = state_new_hampshire
+	capital = STATE_NEW_HAMPSHIRE
 }
 NWJ = {
 	color = { 90  94  193 }
@@ -106,7 +106,7 @@ NWJ = {
 	tier = principality
 	
 	cultures = { yankee }
-	capital = state_new_jersey
+	capital = STATE_NEW_JERSEY
 }
 OHI = {
 	color = { 90  94  193 }
@@ -116,7 +116,7 @@ OHI = {
 	tier = principality
 	
 	cultures = { yankee }
-	capital = state_ohio
+	capital = STATE_OHIO
 }
 PSV = {
 	color = { 90  94  193 }
@@ -126,7 +126,7 @@ PSV = {
 	tier = principality
 	
 	cultures = { yankee }
-	capital = state_pennsylvania
+	capital = STATE_PENNSYLVANIA
 }
 RHI = {
 	color = { 90  94  193 }
@@ -136,7 +136,7 @@ RHI = {
 	tier = principality
 	
 	cultures = { yankee }
-	capital = state_rhode_island
+	capital = STATE_RHODE_ISLAND
 }
 UOM = {
 	color = { 90 94 193 }
@@ -236,7 +236,7 @@ MIS = {
 	tier = principality
 	
 	cultures = { dixie }
-	capital = STATE_MISSISIPPI
+	capital = STATE_MISSISSIPPI
 }
 FLO = {
 	color = { 189 61 42 }
@@ -314,9 +314,10 @@ SYT = {
 	cultures = { dakota algonquian }
 	capital = STATE_WISCONSIN
 }
-#Chickasaw
+#Chickasaw 
+###Fix so this is represented as one of the five civilized tribes instead of just decentralized
 CST = {
-	color = { 44 92 40 }
+	color = { 111 64 138 }
 	
 	country_type = decentralized
 	
