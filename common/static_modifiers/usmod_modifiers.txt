@@ -1,0 +1,93 @@
+﻿usa_test_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	country_prestige_add = 50
+}
+usa_new_capital_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	country_bureaucracy_mult = 0.10
+	country_prestige_mult = 0.2
+}
+illinois_natives = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	country_bureaucracy_mult = 0.10
+	country_prestige_mult = 0.05
+}
+uni_pay = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
+	country_minting_add = 6000
+}
+uni_paying_mai = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
+	country_minting_add = -6000
+}
+uni_paying_mac = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
+	country_minting_add = -6000
+}
+uni_paying_ney = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
+	country_minting_add = -6000
+}
+uni_paying_psv = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
+	country_minting_add = -6000
+}
+nen_victory = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	country_bureaucracy_mult = 0.10
+	country_prestige_mult = 0.2
+}
+csa_victory = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	country_bureaucracy_mult = 0.10
+	country_prestige_mult = 0.05
+}
+maine_fee = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_minting_add = -5000
+}
+maine_gift = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
+	country_minting_add = 5000
+}
+lou_natives_1 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
+	country_loyalists_from_legitimacy_mult = 0.1
+	country_prestige_mult = 0.1
+}
+lou_tension = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	country_cannot_enact_laws_bool = yes
+	country_prestige_mult = -0.1
+	country_radicals_from_legitimacy_mult = 0.15
+	country_authority_mult = -0.80
+}
+
+lou_debt_1 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 3000
+}
+lou_debt_2 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 6000
+}
+lou_debt_3 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 9000
+	country_prestige_mult = -0.1
+}
+lou_debt_4 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 12000
+	country_prestige_mult = -0.25
+}
+lou_debt_5 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 15000
+	country_prestige_mult = -0.40
+}
+lou_early_frontier_cost = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
+	country_expenses_add = 3000
+	state_migration_quota_mult = 0.5
+}

@@ -69,7 +69,7 @@ maine.2 = {
 	option = {
 		name = maine.2.a
 		default_option = yes 
-		C:GBR = {
+		c:GBR = {
 		create_diplomatic_pact = {
 			country = c:MAI
 			type = puppet
@@ -221,14 +221,14 @@ maine.5 = {
 	change_relations = {  
 	country = c:GBR  
 	value = 30 }
-	C:GBR = {
+	c:GBR = {
 		create_diplomatic_pact = {
 			country = c:VER
 			type = puppet
 	} }
 						 
 	
-	C:VER = { annex = c:MAC annex = c:NHM annex = c:RHI annex = c:CNC set_capital = STATE_MASSACHUSETTS change_tag = NEN }
+	c:VER = { annex = c:MAC annex = c:NHM annex = c:RHI annex = c:CNC set_capital = STATE_MASSACHUSETTS change_tag = NEN }
 
 }
 }

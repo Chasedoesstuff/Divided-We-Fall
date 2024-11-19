@@ -1,0 +1,25 @@
+﻿je_tex_beg_sb = {
+	name = "je_tex_beg_sb_name"
+	desc = "je_tex_beg_sb_desc"
+
+	visible = { NOT = { has_variable = tex_beg }  }  
+
+	ai_chance = {
+		base = 100
+	}
+
+	possible = {
+			
+			c:TEX = { is_at_war = no }
+	}
+
+	effect = {
+		c:TEX = { save_scope_as = tex_scope }
+		c:GBR = { trigger_event = { id = texan_war_of_independence.6 popup = yes } }
+		c:LOU = { trigger_event = { id = texan_war_of_independence.6 popup = yes } }
+		c:FRA = { trigger_event = { id = texan_war_of_independence.6 popup = yes } }
+		c:SPA = { trigger_event = { id = texan_war_of_independence.6 popup = yes } }
+		set_variable = tex_beg
+		
+	}
+}

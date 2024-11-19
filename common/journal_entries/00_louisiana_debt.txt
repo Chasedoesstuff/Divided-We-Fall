@@ -1,0 +1,54 @@
+je_lou_debt = {
+	group = je_group_historical_content
+    icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
+
+    scripted_button = je_lou_debt_payment_button
+	scripted_button = je_lou_debt_gbr_forgiveness
+	scripted_button = je_lou_debt_fra_forgiveness
+	
+
+    immediate = {
+    }
+    complete = {
+        NOR = {
+            has_modifier = lou_debt_5
+			has_modifier = lou_debt_4
+			has_modifier = lou_debt_3
+			has_modifier = lou_debt_2
+			has_modifier = lou_debt_1
+        }
+    }
+
+    on_complete = {
+        trigger_event = { id = hispaniola_events.1 popup = yes }
+    }
+	fail = { is_subject = yes }
+
+    status_desc = {
+        first_valid = {
+			triggered_desc = {
+                desc = je_lou_debt_status_5
+                trigger = { has_modifier = lou_debt_5 }
+            }
+            triggered_desc = {
+                desc = je_lou_debt_status_4
+                trigger = { has_modifier = lou_debt_4 }
+            }
+            triggered_desc = {
+                desc = je_lou_debt_status_3
+                trigger = { has_modifier = lou_debt_3 }
+            }
+            triggered_desc = {
+                desc = je_lou_debt_status_2
+                trigger = { has_modifier = lou_debt_2 }
+            }
+            triggered_desc = {
+                desc = je_lou_debt_status_1
+                trigger = { has_modifier = lou_debt_1 }
+            }
+        }
+    }
+
+    weight = 1000
+    should_be_pinned_by_default = yes
+}

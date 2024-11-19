@@ -1,0 +1,475 @@
+namespace = lou_natives
+
+lou_natives.1 = {
+#Louisiana wins small scale local native wars and gets modifier
+	type = country_event
+	placement = ROOT
+
+	event_image = {
+		video = "europenorthamerica_native_american"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	
+	title = lou_natives.1.t
+	desc = lou_natives.1.d
+	flavor = lou_natives.1.f
+	
+	duration = 3
+	
+	trigger = {
+	}
+	
+	option = {
+		name = lou_natives.1.a
+		default_option = yes
+		add_modifier = {
+			name = lou_natives_1
+			months = 132
+		}
+		custom_tooltip = { 
+		text = proven_col_lou  
+		set_variable = proven_col_lou_var }
+											}
+	}
+#Yes, I realize I probably could've made one event for all of these, but I suck at this.
+lou_natives.2 = {
+#Louisiana attacks kansa
+	type = country_event
+	placement = ROOT
+
+	event_image = {
+		video = "europenorthamerica_native_american"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	
+	title = lou_natives.2.t
+	desc = lou_natives.2.d
+	flavor = lou_natives.2.f
+	
+	duration = 3
+	
+	trigger = {
+	}
+	
+	option = {
+		name = lou_natives.2.a
+		default_option = yes
+		create_diplomatic_play = {
+				name = LOU_KNT_war
+					
+				type = dp_annex_war
+				escalation = 100
+				target_state = s:STATE_KANSAS.region_state:KNT
+
+				add_war_goal = {
+					holder = c:KNT
+					type = conquer_state
+					target_state = s:STATE_KANSAS.region_state:LOU
+																	}
+			}
+			set_variable = lou_attacked_knt_var
+	}
+	option = {
+		name = lou_natives.2.b
+		custom_tooltip = lou_native_backdown
+	}
+}
+lou_natives.3 = {
+#Louisiana attacks Quapaw
+	type = country_event
+	placement = ROOT
+
+	event_image = {
+		video = "europenorthamerica_native_american"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	
+	title = lou_natives.2.t
+	desc = lou_natives.2.d
+	flavor = lou_natives.2.f
+	
+	duration = 3
+	
+	trigger = {
+	}
+	
+	option = {
+		name = lou_natives.2.a
+		default_option = yes
+		create_diplomatic_play = {
+				name = LOU_QPT_war
+					
+				type = dp_annex_war
+				escalation = 100
+				target_state = s:STATE_MISSOURI.region_state:QPT
+
+				add_war_goal = {
+					holder = c:QPT
+					type = conquer_state
+					target_state = s:STATE_MISSOURI.region_state:LOU
+																	}
+				add_war_goal = {
+					holder = c:QPT
+					type = conquer_state
+					target_state = s:STATE_ARKANSAS.region_state:LOU
+																	}
+			}
+			set_variable = lou_attacked_qpt_var
+	}
+	option = {
+		name = lou_natives.2.b
+		custom_tooltip = lou_native_backdown
+	}
+}
+lou_natives.4 = {
+#Louisiana attacks Otoe-Missouria
+	type = country_event
+	placement = ROOT
+
+	event_image = {
+		video = "europenorthamerica_native_american"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	
+	title = lou_natives.2.t
+	desc = lou_natives.2.d
+	flavor = lou_natives.2.f
+	
+	duration = 3
+	
+	trigger = {
+	}
+	
+	option = {
+		name = lou_natives.2.a
+		default_option = yes
+		create_diplomatic_play = {
+				name = LOU_OMT_war
+					
+				type = dp_annex_war
+				escalation = 100
+				target_state = s:STATE_MISSOURI.region_state:OMT
+
+				add_war_goal = {
+					holder = c:OMT
+					type = conquer_state
+					target_state = s:STATE_MISSOURI.region_state:LOU
+																	}
+			}
+			set_variable = lou_attacked_omt_var
+	}
+	option = {
+		name = lou_natives.2.b
+		custom_tooltip = lou_native_backdown
+	}
+}
+lou_natives.5 = {
+#Louisiana attacks Kiowa
+	type = country_event
+	placement = ROOT
+
+	event_image = {
+		video = "europenorthamerica_native_american"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	
+	title = lou_natives.2.t
+	desc = lou_natives.2.d
+	flavor = lou_natives.2.f
+	
+	duration = 3
+	
+	trigger = {
+	}
+	
+	option = {
+		name = lou_natives.2.a
+		default_option = yes
+		create_diplomatic_play = {
+				name = LOU_SEQ_war
+					
+				type = dp_annex_war
+				escalation = 100
+				target_state = s:STATE_OKLAHOMA.region_state:SEQ
+
+				add_war_goal = {
+					holder = c:SEQ
+					type = conquer_state
+					target_state = s:STATE_OKLAHOMA.region_state:LOU
+																	}
+			}
+			set_variable = lou_attacked_seq_var
+	}
+	option = {
+		name = lou_natives.2.b
+		custom_tooltip = lou_native_backdown
+	}
+}
+# Completed Natives JE
+lou_natives.6 = {
+	type = country_event
+	placement = ROOT
+
+	event_image = {
+		video = "europenorthamerica_native_american"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	
+	title = lou_natives.6.t
+	desc = lou_natives.6.d
+	flavor = lou_natives.6.f
+	
+	duration = 3
+	
+	trigger = {
+	}
+	
+	option = {
+		name = lou_natives.6.a
+		default_option = yes
+		s:STATE_OKLAHOMA = { 
+			add_homeland = cu:cajun
+		}
+		s:STATE_MONTANA = { 
+			add_homeland = cu:cajun
+		}
+		s:STATE_WYOMING = { 
+			add_homeland = cu:cajun
+		}
+		s:STATE_COLORADO = { 
+			add_homeland = cu:cajun
+		}
+		s:STATE_NORTH_DAKOTA = { 
+			add_homeland = cu:cajun
+		}
+		s:STATE_SOUTH_DAKOTA = { 
+			add_homeland = cu:cajun
+		}
+		s:STATE_NEBRASKA = { 
+			add_homeland = cu:cajun 
+		}
+		s:STATE_KANSAS = { 
+			add_homeland = cu:cajun 
+		}
+		s:STATE_MINNESOTA = { 
+			add_homeland = cu:cajun 
+		}
+		s:STATE_IOWA = { 
+			add_homeland = cu:cajun 
+		}
+	}
+}
+namespace = lou_frontier
+
+lou_frontier.1 = {
+#Louisiana gets a mass migration 
+	type = country_event
+	placement = ROOT
+
+	event_image = {
+		video = "europenorthamerica_native_american"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	
+	title = lou_frontier.1.t
+	desc = lou_frontier.1.d
+	flavor = lou_frontier.1.f
+	
+	duration = 3
+	immediate = {
+		if = { 
+			limit = { NOT = { has_variable = quebec_mm } }
+	random_country = {
+			limit = {
+				country_rank <= rank_value:major_power
+				custom_tooltip = {
+					text = is_in_europe_tt
+					country_is_in_europe = yes
+				}
+				any_primary_culture = {
+					culture_can_have_mass_migration_to_country = ROOT
+				}
+				any_scope_state = {
+					is_incorporated = yes
+					custom_tooltip = {
+						text = is_in_europe_tt
+						state_is_in_europe = yes
+					}
+					count >= 3
+				}
+			}
+			save_scope_as = migration_country
+			random_scope_state = {
+				limit = {
+					is_incorporated = yes
+					state_is_in_europe = yes
+					any_scope_culture = {
+						has_homeland = PREV
+						culture_can_have_mass_migration_to_country = ROOT
+					}
+				}
+				save_scope_as = migration_state
+				random_scope_culture = {
+					limit = {
+						has_homeland = PREV
+						culture_can_have_mass_migration_to_country = ROOT
+					}
+					save_scope_as = migration_culture
+				}
+			}
+
+		}
+		ordered_scope_state = {
+			limit = {
+				OR = {
+					region = sr:region_pacific_coast
+					region = sr:region_great_plains
+					}
+				}
+				state_is_eligible_as_mass_migration_target = yes
+			order_by = migration_pull
+			save_scope_as = migration_target_state
+								} 
+		}
+	}
+	trigger = {
+	}
+	
+	option = {
+		name = lou_frontier.1.a
+		default_option = yes
+		if = {
+			limit = {
+			NOT = { has_variable = quebec_mm }
+												}
+			create_mass_migration = {
+				origin = c:QUE
+				culture = cu:franco_canadian
+											}
+				
+		else = {
+		scope:migration_target_state = {
+			create_mass_migration = {
+				origin = scope:migration_country
+				culture = scope:migration_culture
+										}
+											}
+												}
+													}
+														}
+										}
+lou_frontier.2 = {
+#Louisiana gets a frontier building 
+	type = country_event
+	placement = ROOT
+
+	event_image = {
+		video = "europenorthamerica_native_american"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	
+	title = lou_frontier.1.t
+	desc = lou_frontier.1.d
+	flavor = lou_frontier.1.f
+	
+	duration = 3
+	immediate = {
+		random_state = { 	
+			limit = { 
+				owner = ROOT
+				is_homeland_of_country_cultures = ROOT
+				is_split_state = yes
+				has_potential_resource = bg_livestock_ranches	
+																	}
+										save_scope_as = lou_ranch		
+																		}
+		random_state = { 	
+			limit = { 
+				owner = ROOT
+				is_homeland_of_country_cultures = ROOT
+				is_split_state = yes
+					has_potential_resource = bg_plantations	
+																	}
+										save_scope_as = lou_plantation	
+																		}
+		random_state = { 	
+			limit = { 
+				owner = ROOT
+				is_homeland_of_country_cultures = ROOT
+				is_split_state = yes
+				has_potential_resource = bg_logging	
+																	}
+										save_scope_as = lou_log	
+																		}
+		random_state = { 	
+			limit = { 
+				owner = ROOT
+				is_homeland_of_country_cultures = ROOT
+				is_split_state = yes
+				has_potential_resource = bg_mining	
+																	}
+										save_scope_as = lou_mine	
+																		}
+		random_state = { 	
+			limit = { 
+				owner = ROOT
+				is_homeland_of_country_cultures = ROOT
+				is_split_state = yes
+				has_potential_resource = bg_agriculture	
+																	}
+										save_scope_as = lou_farm	
+																		}
+	}
+	trigger = {
+	}
+	
+	option = {
+		name = lou_frontier.2.a
+		default_option = yes
+		scope:lou_ranch = {
+				create_building = {
+				 building = building_livestock_ranch
+					subsidized = no
+				reserves = [1]
+				level = 1
+			}
+		}
+	}
+	option = {
+		name = lou_frontier.2.b
+		scope:lou_plantation = {
+				create_building = {
+				 building = building_cotton_plantation
+					subsidized = no
+				reserves = [1]
+				level = 1
+		}
+	}
+	}
+	
+	
+}

@@ -1,0 +1,72 @@
+﻿demo_large_standoff = {
+	custom_tooltip = {
+				text = demo_large_lou_standoff_points
+				change_global_variable = {
+					name = lou_var_standoff
+					add = 200
+				}
+			}
+	}
+auto_large_standoff = {
+	custom_tooltip = {
+			text = auto_large_lou_standoff_points
+			change_global_variable = {
+				name = lou_var_standoff
+				add = -200
+			}
+		}
+	}
+demo_normal_standoff = {
+	custom_tooltip = {
+			text = demo_normal_lou_standoff_points
+			change_global_variable = {
+				name = lou_var_standoff
+				add = 100
+			}
+		}
+	}
+auto_normal_standoff = {
+	custom_tooltip = {
+			text = auto_normal_lou_standoff_points
+			change_global_variable = {
+				name = lou_var_standoff
+				add = -100
+			}
+		}
+	}
+demo_small_lou_standoff_points = {
+	custom_tooltip = {
+			text = demo_small_lou_standoff_points
+			change_global_variable = {
+				name = lou_var_standoff
+				add = 50
+			}	
+		}
+	}
+auto_small_lou_standoff_points = {
+	custom_tooltip = {
+			text = auto_small_lou_standoff_points
+			change_global_variable = {
+				name = lou_var_standoff
+				add = -50
+			}	
+		}
+	}
+demo_minute_lou_standoff_points = {
+	custom_tooltip = {
+			text = demo_minute_lou_standoff_points
+			change_global_variable = {
+				name = lou_var_standoff
+				add = 25
+			}
+		}
+	}
+auto_minute_lou_standoff_points = {
+	custom_tooltip = {
+			text = auto_minute_lou_standoff_points
+			change_global_variable = {
+				name = lou_var_standoff
+				add = -25
+			}
+		}
+	}

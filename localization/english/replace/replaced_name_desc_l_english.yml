@@ -1,0 +1,22 @@
+﻿l_english
+
+ KTY: "Kanty-Mansi"
+ KTY_ADJ: "Kanty-Mansian"
+ 
+ MAI:0 "Maine"
+ MAI_ADJ:0 "Maine"
+ SEQ:0 "Kiowa"
+ SEQ_ADJ:0 "Kiowan"
+ 
+ dyn_c_sequoyah:0 "Kiowa"
+ dyn_c_sequoyah_adj:0 "Kiowan"
+ 
+ dyn_c_sequoyah:0 "Kiowa"
+ dyn_c_sequoyah_adj:0 "Kiowan"
+ 
+ dyn_c_sequoyah:0 "Kiowa"
+ dyn_c_sequoyah_adj:0 "Kiowan"
+ 
+HYD_FLAVOR_TEXT:0 "Hyderabad stands as the last free prince of the Indian Princes, but as the Europeans close their grip around them, what will their nation become?"
+QUE_FLAVOR_TEXT:0 "Hyderabad stands as the last free prince of the Indian Princes, but as the Europeans close their grip around them, what will their nation become?"
+MAI_FLAVOR_TEXT:0 "$CNC_FLAVOR_TEXT$"

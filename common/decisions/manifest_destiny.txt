@@ -15,6 +15,7 @@
 	}
 
 	when_taken = {
+		set_variable = { name = manifested_destiny value = yes }
 		if = {
 			limit = {
 				owns_entire_state_region = STATE_CALIFORNIA
@@ -371,7 +372,7 @@
 				add_claim = ROOT 
 			}
 		}
-		set_variable = manifested_destiny
+		 
 	}
 
 	ai_chance = {

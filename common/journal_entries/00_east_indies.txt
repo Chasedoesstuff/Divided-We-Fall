@@ -157,3 +157,61 @@ je_ethical_policy = {
 
 	weight = 100
 }
+je_consolidate_colonial_rule_fei = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	group = je_group_historical_content
+
+	complete = {
+		scope:journal_entry = {
+			is_goal_complete = yes
+		}
+			country_or_subject_owns_entire_state_region = STATE_HYDERABAD
+			country_or_subject_owns_entire_state_region = STATE_BOMBAY
+			
+
+		
+	}
+
+	on_complete = {
+		trigger_event = { id = east_indies.4 }
+		set_variable = consolidated_colonial_rule
+	}
+
+	on_monthly_pulse = {
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						any_civil_war = {
+							is_civil_war_type = secession
+							civil_war_progress > 0.3
+						}
+					}
+				}
+				change_variable = {
+					name = east_indies_revolt_var
+					add = 1
+				}
+			}
+		}
+	}
+
+	invalid = {
+		has_variable = bic_collapse_var
+	}
+
+	current_value = {
+		value = root.var:east_indies_revolt_var
+	}
+
+	goal_add_value = {
+		add = 120
+	}
+
+	progressbar = yes
+
+	timeout = 7300
+
+	weight = 100
+}

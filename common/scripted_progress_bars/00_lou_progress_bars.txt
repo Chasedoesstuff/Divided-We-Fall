@@ -1,0 +1,36 @@
+﻿ ### For je_lou_standoff
+
+lou_standoff_progress_bar = {
+	name = "lou_standoff_progress_bar"
+	desc = "lou_standoff_progress_bar_demo_desc"
+	second_desc = "lou_standoff_progress_bar_auto_desc"
+	double_sided_bad = yes
+	
+	weekly_progress = {
+ 		if = {
+				limit = {
+					NOT = {
+						scope:journal_entry = { 
+								global_var:lou_var_standoff = "scripted_bar_progress(lou_standoff_progress_bar)" 
+							}
+								}
+									}
+				scope:journal_entry = { 
+				subtract = {
+					desc = "lou_standoff_value_reset"
+					value = "scripted_bar_progress(lou_standoff_progress_bar)"
+					} 
+				}
+				add = {
+					desc = "lou_standoff_value_readd"
+				 	value = global_var:lou_var_standoff
+				}
+			}
+		}
+			
+	start_value = 600
+	min_value = 0
+	max_value = 1200
+
+ }
+ 

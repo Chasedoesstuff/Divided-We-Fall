@@ -1,0 +1,8 @@
+name = "Divided We Fall"
+path = "dlc/dlc_dwf"
+steam_id = "529340"
+pops_id = "dlc_dwf"
+mp_synced = yes
+affects_save_compatibility = yes
+localizable_name = dlc_dwf
+checksum = ""

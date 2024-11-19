@@ -1,0 +1,268 @@
+﻿namespace = lou_gbr_debt
+
+#Lou surrenders to Britain
+lou_gbr_debt.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = lou_gbr_debt.1.t
+	desc = lou_gbr_debt.1.d
+	flavor = lou_gbr_debt.1.f
+
+	event_image = {
+		video = "unspecific_factory_closed"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+	duration = 3
+
+	trigger = {
+	}
+
+	option = {
+		name = lou_gbr_debt.1.a
+		default_option = yes
+		c:GBR = { trigger_event = { id = lou_gbr_debt.2 popup = yes } }
+	}
+}
+#Britain Decides 
+lou_gbr_debt.2 = {
+	type = country_event
+	placement = ROOT
+
+	title = lou_gbr_debt.2.t
+	desc = lou_gbr_debt.2.d
+	flavor = lou_gbr_debt.2.f
+
+	event_image = {
+		video = "unspecific_factory_closed"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+	duration = 3
+
+	trigger = {
+	}
+
+	option = {
+		name = lou_gbr_debt.2.a
+		default_option = yes
+		custom_tooltip = gbr_lou_debt_yes
+		hidden_effect = { c:LOU = { trigger_event = { id = lou_gbr_debt.3 popup = yes } } }
+		ai_chance = {
+			base = 5
+		}
+	}
+	option = {
+		name = lou_gbr_debt.2.b
+		default_option = no
+		custom_tooltip = gbr_lou_debt_no
+		hidden_effect = { c:LOU = { trigger_event = { id = lou_gbr_debt.4 popup = yes } } }
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+#UK accepts 
+lou_gbr_debt.3 = {
+	type = country_event
+	placement = ROOT
+
+	title = lou_gbr_debt.3.t
+	desc = lou_gbr_debt.3.d
+	flavor = lou_gbr_debt.3.f
+
+	event_image = {
+		video = "unspecific_factory_closed"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+	duration = 3
+
+	trigger = {
+	}
+	
+	option = {
+		name = lou_gbr_debt.3.a
+		default_option = yes
+	c:GBR = {
+		create_diplomatic_pact = {
+			country = c:LOU
+			type = dominion
+							}
+						}
+			remove_modifier = lou_debt_5
+			
+			add_primary_culture = cu:dixie
+		}
+	option = {
+		name = lou_gbr_debt.3.b
+		default_option = no
+	c:GBR = {
+		create_diplomatic_pact = {
+			country = c:LOU
+			type = dominion
+							}
+						}
+		
+			remove_modifier = lou_debt_5
+		}
+	}
+#Britain declines
+lou_gbr_debt.4 = {
+	type = country_event
+	placement = ROOT
+
+	title = lou_gbr_debt.4.t
+	desc = lou_gbr_debt.4.d
+	flavor = lou_gbr_debt.4.f
+
+	event_image = {
+		video = "unspecific_factory_closed"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+	duration = 3
+
+	trigger = {
+	}
+
+	option = {
+		name = lou_gbr_debt.4.a
+		default_option = yes
+	}
+}
+
+namespace = lou_fra_debt
+#Lou surrenders to France
+lou_fra_debt.5 = {
+	type = country_event
+	placement = ROOT
+
+	title = lou_fra_debt.2.t
+	desc = lou_fra_debt.2.d
+	flavor = lou_fra_debt.2.f
+
+	event_image = {
+		video = "unspecific_factory_closed"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+	duration = 3
+
+	trigger = {
+	}
+
+	option = {
+		name = lou_fra_debt.2.a
+		default_option = yes
+		c:FRA = { trigger_event = { id = lou_fra_debt.6 popup = yes } }
+	}
+}
+#France Decides 
+lou_fra_debt.6 = {
+	type = country_event
+	placement = ROOT
+
+	title = lou_fra_debt.2.t
+	desc = lou_fra_debt.2.d
+	flavor = lou_fra_debt.2.f
+
+	event_image = {
+		video = "unspecific_factory_closed"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+	duration = 3
+
+	trigger = {
+	}
+
+	option = {
+		name = lou_fra_debt.6.a
+		default_option = yes
+		custom_tooltip = fra_lou_debt_yes
+		hidden_effect = { c:LOU = { trigger_event = { id = lou_fra_debt.7 popup = yes } } }
+		ai_chance = {
+			base = 5
+		}
+	}
+	option = {
+		name = lou_fra_debt.6.b
+		custom_tooltip = fra_lou_debt_no
+		hidden_effect = { c:LOU = { trigger_event = { id = lou_fra_debt.8 popup = yes } } }
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+#France accepts 
+lou_fra_debt.7 = {
+	type = country_event
+	placement = ROOT
+
+	title = lou_fra_debt.7.t
+	desc = lou_fra_debt.7.d
+	flavor = lou_fra_debt.7.f
+
+	event_image = {
+		video = "unspecific_factory_closed"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+	duration = 3
+
+	trigger = {
+	}
+	
+	option = {
+		name = lou_fra_debt.7.a
+		default_option = yes
+	c:FRA = {
+		create_diplomatic_pact = {
+			country = c:LOU
+			type = dominion
+							}
+						}
+		s:STATE_GUAYANA.region_state:FRA = {
+			set_state_owner = c:LOU
+		}
+		s:STATE_WEST_INDIES.region_state:FRA = {
+			set_state_owner = c:LOU
+		}
+			remove_modifier = lou_debt_5
+		}
+	}
+}
+#France declines
+lou_fra_debt.8 = {
+	type = country_event
+	placement = ROOT
+
+	title = lou_fra_debt.8.t
+	desc = lou_fra_debt.8.d
+	flavor = lou_fra_debt.8.f
+
+	event_image = {
+		video = "unspecific_factory_closed"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+	duration = 3
+
+	trigger = {
+	}
+
+	option = {
+		name = lou_fra_debt.8.a
+		default_option = yes
+	}
+}

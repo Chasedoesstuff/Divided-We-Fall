@@ -1,0 +1,21 @@
+{
+	"id":
+	{
+		"steam": "529340",
+		"paradox": "dlc_dwf"
+	},
+	"displayName":
+	{
+		"en": "Divided We Fall"
+	},
+	"category":
+	{
+		"en": "DLC"
+	},
+	"description":
+	{
+		"en": "Divided We Fall"
+	},
+	"thumbnailPath": "thumbnail.png",
+	"thirdPartyContent": true
+}

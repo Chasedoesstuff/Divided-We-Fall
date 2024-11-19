@@ -1,0 +1,175 @@
+﻿je_attack_knt = {
+	name = "je_attack_knt_name"
+	desc = "je_attack_knt_desc"
+
+	visible = { NOT = { has_variable = lou_attacked_knt_var } }
+
+	ai_chance = {
+		base = 10
+	}
+
+	possible = {
+		is_at_war = no
+		c:KNT = { is_country_alive = yes }
+	}
+
+	effect = {
+		trigger_event = { id = lou_natives.2 popup = yes }
+																}
+	}
+je_attack_qpt = {
+	name = "je_attack_qpt_name"
+	desc = "je_attack_qpt_desc"
+
+	visible = { NOT = { has_variable = lou_attacked_qpt_var } }
+
+	ai_chance = {
+		base = 10
+	}
+
+	possible = {
+		is_at_war = no
+		c:QPT = { is_country_alive = yes }
+	}
+
+	effect = {
+		trigger_event = { id = lou_natives.3 popup = yes }
+																}
+	}
+je_attack_omt = {
+	name = "je_attack_omt_name"
+	desc = "je_attack_omt_desc"
+
+	visible = { NOT = { has_variable = lou_attacked_omt_var } }
+
+	ai_chance = {
+		base = 10
+	}
+
+	possible = {
+		is_at_war = no
+		c:OMT = { is_country_alive = yes }
+	}
+
+	effect = {
+		trigger_event = { id = lou_natives.4 popup = yes }
+																}
+	}
+je_attack_seq = {
+	name = "je_attack_seq_name"
+	desc = "je_attack_seq_desc"
+
+	visible = { NOT = { has_variable = lou_attacked_seq_var } }
+
+	ai_chance = {
+		base = 10
+	}
+
+	possible = {
+		is_at_war = no
+		c:SEQ = { is_country_alive = yes }
+	}
+
+	effect = {
+		trigger_event = { id = lou_natives.5 popup = yes }
+																}
+	}
+je_lou_md_west = {
+	name = "je_lou_md_west_name"
+	desc = "je_lou_md_west_desc"
+
+	visible = { NOT = { has_variable = je_lou_md_west_var 
+										is_subject = no } }
+
+	ai_chance = {
+		base = 10
+	}
+
+	possible = {
+		is_at_war = no
+		is_independent = yes
+	}
+
+	effect = {
+		add_journal_entry = {
+				type = je_oregon
+			}
+																}
+	}
+je_lou_md_south = {
+	name = "je_lou_md_west_name"
+	desc = "je_lou_md_west_desc"
+
+	visible = { NOT = { has_variable = je_lou_md_west_var 
+										is_subject = no } }
+
+	ai_chance = {
+		base = 10
+	}
+
+	possible = {
+		is_at_war = no
+		is_subject = no
+	}
+
+	effect = {
+		add_journal_entry = {
+				type = je_oregon
+			}
+																}
+	}
+je_lou_md_east = {
+	name = "je_lou_md_east_name"
+	desc = "je_lou_md_east_desc"
+
+	visible = { NOT = { has_variable = je_lou_md_east 
+										is_independent = yes } }
+
+	ai_chance = {
+		base = 10
+	}
+
+	possible = {
+		is_at_war = no
+		is_subject = no
+	}
+
+	effect = {
+		add_journal_entry = {
+				type = je_oregon
+			}
+																}
+	}
+#Economic Frontier buttons
+je_lou_frontier_build = {
+	name = "je_lou_frontier_build_name"
+	desc = "je_lou_frontier_build_desc"
+
+	visible = { always = yes }
+
+	ai_chance = {
+		base = 10
+	}
+
+	possible = {
+	}
+
+	effect = {
+																}
+	}
+je_lou_frontier_migration = {
+	name = "je_lou_frontier_migration_name"
+	desc = "je_lou_frontier_migration_desc"
+
+	visible = { always = yes }
+
+	ai_chance = {
+		base = 10
+	}
+
+	possible = {
+	}
+
+	effect = {
+																}
+	}
