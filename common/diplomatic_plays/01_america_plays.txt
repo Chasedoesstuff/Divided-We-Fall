@@ -60,9 +60,12 @@ dp_minor_unify_usa = {
 	possible = {
 		NOT = { exists = c:USA }
 		NOT = { is_subject_of = scope:target_country }
+		has_technology_researched = pan-nationalism 
 		OR = { 
-		aggressive_diplomatic_plays_permitted = yes
-		 scope:target_country = { is_subject = no } }
+		 aggressive_diplomatic_plays_permitted = yes
+		 scope:target_country = { is_subject = no } 
+		 
+														}
 		NOT = { is_country_type = decentralized }
 		custom_tooltip = {
 			text = USA_tt

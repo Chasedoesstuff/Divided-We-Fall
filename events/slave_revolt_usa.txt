@@ -28,7 +28,7 @@ slave_revolt_usa.1 = {
 			}
 			create_country = {
 				tag = ASA
-				origin = c:GOR
+				origin = c:GRG
 			province = p:xB3D9D8
 			province = p:xBDB2BA 
 			province = p:x169E1F 
@@ -65,11 +65,11 @@ slave_revolt_usa.1 = {
 			
 		scope:slave_revolt_usa = {
 		
-			violate_sovereignty_accept = c:GOR
+			violate_sovereignty_accept = c:GRG
 				add_war_goal = {
 						holder = c:ASA
 						type = conquer_state
-						target_state = s:STATE_GEORGIA.region_state:GOR
+						target_state = s:STATE_GEORGIA.region_state:GRG
 																	}		
 			
 			
@@ -86,7 +86,7 @@ slave_revolt_usa.1 = {
 				add_war_goal = {
 					holder = c:ASA
 					type = annex_country
-					target_state = s:STATE_GEORGIA.region_state:GOR
+					target_state = s:STATE_GEORGIA.region_state:GRG
 				}
 			}
 			every_diplomatic_play = {
@@ -110,11 +110,11 @@ option = {
 			
 		scope:slave_revolt_usa = {
 		
-			violate_sovereignty_accept = c:GOR
+			violate_sovereignty_accept = c:GRG
 				add_war_goal = {
-						holder = c:ALA
+						holder = c:ABMA
 						type = conquer_state
-						target_state = s:STATE_GEORGIA.region_state:GOR
+						target_state = s:STATE_GEORGIA.region_state:GRG
 																	}		
 			
 			
@@ -131,7 +131,7 @@ option = {
 				add_war_goal = {
 					holder = c:ASA
 					type = annex_country
-					target_state = s:STATE_GEORGIA.region_state:GOR
+					target_state = s:STATE_GEORGIA.region_state:GRG
 				}
 			}
 			every_diplomatic_play = {
@@ -172,7 +172,7 @@ slave_revolt_usa.2 = {
 			}
 			create_country = {
 				tag = ASA
-				origin = c:GOR
+				origin = c:GRG
 			province = p:xC8BB61
 			province = p:x5462C6 
 			province = p:x12DEAF 
@@ -219,9 +219,9 @@ option = {
 			
 		scope:slave_revolt_usa = {
 		
-			violate_sovereignty_accept = c:ALA
+			violate_sovereignty_accept = c:ABMA
 				add_war_goal = {
-						holder = c:ALA
+						holder = c:ABMA
 						type = conquer_state
 						target_state = s:STATE_ALABAMA.region_state:ASA
 																	}		
@@ -240,7 +240,7 @@ option = {
 				add_war_goal = {
 					holder = c:ASA
 					type = annex_country
-					target_state = s:STATE_ALABAMA.region_state:ALA
+					target_state = s:STATE_ALABAMA.region_state:ABMA
 				}
 			}
 			every_diplomatic_play = {
@@ -268,7 +268,7 @@ option = {
 		scope:slave_revolt_usa = {
 		
 				add_war_goal = {
-						holder = c:ALA
+						holder = c:ABMA
 						type = conquer_state
 						target_state = s:STATE_ALABAMA.region_state:ASA
 																	}		
@@ -287,7 +287,7 @@ option = {
 				add_war_goal = {
 					holder = c:ASA
 					type = annex_country
-					target_state = s:STATE_ALABAMA.region_state:ALA
+					target_state = s:STATE_ALABAMA.region_state:ABMA
 				}
 			}
 			every_diplomatic_play = {
@@ -414,7 +414,7 @@ slave_revolt_usa.4 = {
 			}
 			create_country = {
 				tag = ASA
-				origin = c:GOR
+				origin = c:GRG
 			province = p:xF641D2
 			province = p:x14BCC5 
 			province = p:x6D0DAC 
@@ -507,15 +507,15 @@ slave_revolt_usa.5 = {
 			
 			if = {
 			limit = {
-				c:GOR = { is_player = yes }
+				c:GRG = { is_player = yes }
 				
 			} 
-			c:GOR = {
+			c:GRG = {
 			change_tag = CSA
-			annex = C:MIS
-			annex = C:SCL
-			annex = C:GOR
-			annex = C:ALA
+			annex = c:MIS
+			annex = c:SCL
+			annex = c:GRG
+			annex = c:ABMA
 			}
 			
 			
@@ -528,10 +528,10 @@ slave_revolt_usa.5 = {
 			}
 			c:SCL = {
 			change_tag = CSA
-			annex = C:MIS
-			annex = C:SCL
-			annex = C:GOR
-			annex = C:ALA
+			annex = c:MIS
+			annex = c:SCL
+			annex = c:GRG
+			annex = c:ABMA
 			
 			
 			}
@@ -544,10 +544,10 @@ slave_revolt_usa.5 = {
 			} 
 			c:MIS = {
 			change_tag = CSA
-			annex = C:MIS
-			annex = C:SCL
-			annex = C:GOR
-			annex = C:ALA
+			annex = c:MIS
+			annex = c:SCL
+			annex = c:GRG
+			annex = c:ABMA
 			
 			
 			}
@@ -555,15 +555,15 @@ slave_revolt_usa.5 = {
 		}
 		if = {
 			limit = {
-				c:ALA = { is_player = yes }
+				c:ABMA = { is_player = yes }
 				
 			} 
-			c:ALA = {
+			c:ABMA = {
 			change_tag = CSA
-			annex = C:MIS
-			annex = C:SCL
-			annex = C:GOR
-			annex = C:ALA
+			annex = c:MIS
+			annex = c:SCL
+			annex = c:GRG
+			annex = c:ABMA
 			
 			
 			}
@@ -571,17 +571,17 @@ slave_revolt_usa.5 = {
 		}
 	if = {
 			limit = {
-				c:GOR = { is_player = no }
+				c:GRG = { is_player = no }
 				c:SCL = { is_player = no }
 				c:MIS = { is_player = no }
-				c:ALA = { is_player = no }
+				c:ABMA = { is_player = no }
 			} 
-			c:GOR = {
+			c:GRG = {
 			change_tag = CSA
-			annex = C:MIS
-			annex = C:SCL
-			annex = C:GOR
-			annex = C:ALA
+			annex = c:MIS
+			annex = c:SCL
+			annex = c:GRG
+			annex = c:ABMA
 			
 			
 			}

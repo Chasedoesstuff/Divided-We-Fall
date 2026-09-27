@@ -255,8 +255,8 @@ je_south_slavery_mis = {
 #    complete = {
 #			 c:SCL = { owns_entire_state_region = STATE_SOUTH_CAROLINA }
 #			 c:MIS = { owns_entire_state_region = STATE_MISSISSIPPI }
-#			 c:GOR = { owns_entire_state_region = STATE_GEORGIA }
-#			 c:ALA = { owns_entire_state_region = STATE_ALABAMA }
+#			 c:GRG = { owns_entire_state_region = STATE_GEORGIA }
+#			 c:ABMA = { owns_entire_state_region = STATE_ALABAMA }
 #			
 #	
 #	}
@@ -268,10 +268,10 @@ je_south_slavery_mis = {
 #			if = { 
 #				limit = { 
 #				OR = {
-#				c:GOR = { is_player = yes }
+#				c:GRG = { is_player = yes }
 #				c:SCL = { is_player = yes }
 #				c:MIS = { is_player = yes }
-#				c:ALA = { is_player = yes } 
+#				c:ABMA = { is_player = yes } 
 #				}
 #			}
 #			player = {  trigger_event = { id = slave_revolt_usa.5 popup = yes } }
@@ -297,27 +297,27 @@ je_slave_revolt_ongoing = {
 		}	
 		#	 c:SCL = { owns_entire_state_region = STATE_SOUTH_CAROLINA }
 		#	 c:MIS = { owns_entire_state_region = STATE_MISSISSIPPI }
-		#	 c:GOR = { owns_entire_state_region = STATE_GEORGIA }
-		#	 c:ALA = { owns_entire_state_region = STATE_ALABAMA }
+		#	 c:GRG = { owns_entire_state_region = STATE_GEORGIA }
+		#	 c:ABMA = { owns_entire_state_region = STATE_ALABAMA }
 			 }
 	on_complete = {
 		if = { 
 				limit = { 
-				c:ALA = { is_player = yes }
+				c:ABMA = { is_player = yes }
 				c:SCL = { is_player = no }
 				c:MIS = { is_player = no }
-				c:GOR = { is_player = no } 				
+				c:GRG = { is_player = no } 				
 				
 			}
-			c:ALA = { trigger_event = { id = slave_revolt_usa.5 popup = yes } }
+			c:ABMA = { trigger_event = { id = slave_revolt_usa.5 popup = yes } }
 		}
 		
 	if = { 
 				limit = { 
 				c:SCL = { is_player = yes }
-				c:GOR = { is_player = no }
+				c:GRG = { is_player = no }
 				c:MIS = { is_player = no }
-				c:ALA = { is_player = no } 
+				c:ABMA = { is_player = no } 
 				
 			}
 			c:SCL = { trigger_event = { id = slave_revolt_usa.5 popup = yes } }
@@ -327,8 +327,8 @@ je_slave_revolt_ongoing = {
 				limit = { 
 				c:MIS = { is_player = yes }
 				c:SCL = { is_player = no }
-				c:GOR = { is_player = no }
-				c:ALA = { is_player = no } 
+				c:GRG = { is_player = no }
+				c:ABMA = { is_player = no } 
 				
 			}
 			c:MIS = { trigger_event = { id = slave_revolt_usa.5 popup = yes } }
@@ -336,23 +336,23 @@ je_slave_revolt_ongoing = {
 		
 		if = { 
 				limit = { 
-				c:GOR = { is_player = yes }
+				c:GRG = { is_player = yes }
 				c:SCL = { is_player = no }
 				c:MIS = { is_player = no }
-				c:ALA = { is_player = no } 
+				c:ABMA = { is_player = no } 
 				
 			}
-			c:GOR = { trigger_event = { id = slave_revolt_usa.5 popup = yes } }
+			c:GRG = { trigger_event = { id = slave_revolt_usa.5 popup = yes } }
 		}
 		if = { 
 				limit = { 
-				c:GOR = { is_player = no }
+				c:GRG = { is_player = no }
 				c:SCL = { is_player = no }
 				c:MIS = { is_player = no }
-				c:ALA = { is_player = no } 
+				c:ABMA = { is_player = no } 
 				
 			}
-			c:GOR = { trigger_event = { id = slave_revolt_usa.5 popup = yes } }
+			c:GRG = { trigger_event = { id = slave_revolt_usa.5 popup = yes } }
 		}
 
 	} 

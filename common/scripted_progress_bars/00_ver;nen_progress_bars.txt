@@ -1,0 +1,36 @@
+﻿
+ver_war_progress_bar = {
+	name = "ver_war_progress_bar"
+	desc = "ver_war_progress_bar_desc"
+	second_desc = "lou_standoff_progress_bar_auto_desc"
+	double_sided_bad = yes
+	
+	weekly_progress = {
+ 		if = {
+				limit = {
+					NOT = {
+						scope:journal_entry = { 
+								global_var:nen_var_war = "scripted_bar_progress(ver_war_progress_bar)" 
+							}
+								}
+									}
+				scope:journal_entry = { 
+				subtract = {
+					desc = "ver_war_value_reset"
+					value = "scripted_bar_progress(ver_war_progress_bar)"
+					} 
+				}
+				add = {
+					desc = "ver_war_value_readd"
+				 	value = global_var:nen_var_war
+				}
+			}
+		}
+			
+	start_value = 0
+	min_value = 0
+	max_value = 100
+
+ }
+ 
+ 

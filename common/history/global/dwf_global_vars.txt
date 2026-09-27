@@ -4,5 +4,8 @@ GLOBAL = {
 		name = lou_var_standoff
 		value = 600					
 		}
-
+	set_global_variable = {
+		name = nen_var_war
+		value = 0				
+		}
 }

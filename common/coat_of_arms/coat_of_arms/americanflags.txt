@@ -92,7 +92,7 @@ ASA_subject = {
 		instance = { position = { .75 .5 } scale = { .8 .8 } }
 	}
 }
-FLO_subject = {		
+FLR_subject = {		
 	pattern = "pattern_solid.tga"
 	color1 = "white"
 	
@@ -108,7 +108,7 @@ FLO_subject = {
        instance = { scale = { 0.6 0.6 }  }
 	}	
 }
-FLO_free = {		
+FLR_free = {		
 	pattern = "pattern_solid.tga"
 	color1 = "white"
 
@@ -184,7 +184,7 @@ ILL_free = {
         instance = { scale = { .8   .8  position = { 0.745 0.6 } }
 	}	
 } }
-IDA_subject = {		
+INDA_subject = {		
 	pattern = "pattern_solid.tga"
 	color1 = "red"
 
@@ -194,7 +194,7 @@ IDA_subject = {
         instance = { scale = { 0.7 0.7 } position = { 0.745 0.5 } }
 	}	
 }
-IDA_free = {		
+INDA_free = {		
 	pattern = "pattern_solid.tga"
 	color1 = "white"
 
@@ -446,7 +446,7 @@ MIS_free = {
 	}
 	}	
 }
-ALA_subject = {		
+ABMA_subject = {		
 	pattern = "pattern_solid.tga"
 	color1 = "red"
 
@@ -456,7 +456,7 @@ ALA_subject = {
         instance = { scale = { 0.7 0.7 } position = { 0.745 0.5 } }
 	}	
 }
-ALA_free = {		
+ABMA_free = {		
 	pattern = "pattern_solid.tga"
 	color1 = "blue"
 
@@ -509,7 +509,7 @@ NCL_free = {
 	}
 	}	
 }
-GOR_subject = {		
+GRG_subject = {		
 	pattern = "pattern_solid.tga"
 	color1 = "red"
 	
@@ -531,7 +531,7 @@ GOR_subject = {
         instance = { scale = { 0.7 0.7 } position = { 0.7 0.5 } }
 	}	
 }
-GOR_free = {		
+GRG_free = {		
 	pattern = "pattern_solid.tga"
 	color1 = "red"
 	
@@ -558,10 +558,10 @@ VIR_subject = {
 	color1 = "red"
 
 	textured_emblem = {
-		texture = "te_coa_virginia.dds"
-	
-        instance = { scale = { 0.7 0.7 } position = { 0.745 0.5 } }
-	}	
+		texture = "te_coa_virginia.dds" 
+		
+		instance = {  scale = { .7   .7 } position = { 0.745 0.5  } }
+	}
 }
 VIR_free = {		
 	pattern = "pattern_solid.tga"
@@ -570,10 +570,10 @@ VIR_free = {
 	textured_emblem = {
 		texture = "te_coa_virginia.dds"
 	
-        instance = { scale = { .8   .8  position = { 0.745 0.6 } }
+        instance = { scale = { .8   .8   }
+		}
 	}
-	}	
-}
+}	
 FEI = {		
 	pattern = "pattern_solid.tga"
 	color1 = "red"

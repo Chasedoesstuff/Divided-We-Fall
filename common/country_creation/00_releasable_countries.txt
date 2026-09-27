@@ -2619,7 +2619,7 @@ SCL = {
 	possible = {
 	}
 }
-GOR = {
+GRG = {
 	states = {
 		STATE_GEORGIA
 	}
@@ -2630,7 +2630,7 @@ GOR = {
 	}
 }
 
-FLO = {
+FLR = {
 	states = {
 		STATE_FLORIDA
 	}

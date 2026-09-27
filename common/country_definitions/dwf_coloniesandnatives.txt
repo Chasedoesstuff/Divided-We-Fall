@@ -1,0 +1,417 @@
+VER = {
+	color = { 10 97 18 }
+	
+	country_type = colonial
+	
+	tier = principality
+	
+	cultures = { yankee }
+	capital = STATE_VERMONT
+}
+CNC = {
+	color = { 90  94  193 }
+	
+	country_type = colonial
+	
+	tier = principality
+	
+	cultures = { yankee }
+	capital = STATE_CONNECTICUT
+}
+DEL = {
+	color = { 90  94  193 }
+	
+	country_type = colonial
+	
+	tier = principality
+	
+	cultures = { yankee }
+	capital = STATE_DELAWARE
+}
+INDA = {
+	color = { 90  94  193 }
+	
+	country_type = colonial
+	
+	tier = principality
+	
+	cultures = { yankee }
+	capital = STATE_INDIANA
+}
+ILL = {
+	color = { 90  94  193 }
+	
+	country_type = colonial
+	
+	tier = principality
+	
+	cultures = { yankee }
+	capital = STATE_ILLINOIS
+}
+MAIN = {
+	color = { 90  94  193 }
+	
+	country_type = colonial
+	
+	tier = principality
+	
+	cultures = { yankee }
+	capital = STATE_MAINE
+}
+MAC = {
+	color = { 90  94  193 }
+	
+	country_type = colonial
+	
+	tier = principality
+	
+	cultures = { yankee }
+	capital = STATE_MASSACHUSETTS
+}
+MYL = {
+	color = { 90  94  193 }
+	
+	country_type = colonial
+	
+	tier = principality
+	
+	cultures = { yankee }
+	capital = STATE_MARYLAND
+}
+NEY = {
+	color = { 90  94  193 }
+	
+	country_type = colonial
+	
+	tier = principality
+	
+	cultures = { yankee }
+	capital = STATE_NEW_YORK
+}
+NHM = {
+	color = { 90  94  193 }
+	
+	country_type = colonial
+	
+	tier = principality
+	
+	cultures = { yankee }
+	capital = STATE_NEW_HAMPSHIRE
+}
+NWJ = {
+	color = { 90  94  193 }
+	
+	country_type = colonial
+	
+	tier = principality
+	
+	cultures = { yankee }
+	capital = STATE_NEW_JERSEY
+}
+OHI = {
+	color = { 90  94  193 }
+	
+	country_type = colonial
+	
+	tier = principality
+	
+	cultures = { yankee }
+	capital = STATE_OHIO
+}
+PSV = {
+	color = { 90  94  193 }
+	
+	country_type = colonial
+	
+	tier = principality
+	
+	cultures = { yankee }
+	capital = STATE_PENNSYLVANIA
+}
+RHI = {
+	color = { 90  94  193 }
+	
+	country_type = colonial
+	
+	tier = principality
+	
+	cultures = { yankee }
+	capital = STATE_RHODE_ISLAND
+}
+UOM = {
+	color = { 90 94 193 }
+	
+	country_type = colonial
+
+	tier = principality
+	
+	cultures = { yankee }
+	capital = STATE_MICHIGAN
+}
+WIS = {
+	color = { 90 94 193 }
+	
+	country_type = colonial
+
+	tier = principality
+	
+	cultures = { yankee }
+	capital = STATE_WISCONSIN
+}
+KEN = {
+	color = { 90 94 193 }
+	
+	country_type = colonial
+
+	tier = principality
+	
+	cultures = { dixie }
+	capital = STATE_KENTUCKY
+}
+VIR = {
+	color = { 90 94 193 }
+	
+	country_type = colonial
+
+	tier = principality
+	
+	cultures = { dixie }
+	capital = STATE_VIRGINIA
+}
+TSE = {
+	color = { 90 94 193 }
+	
+	country_type = colonial
+
+	tier = principality
+	
+	cultures = { dixie }
+	capital = STATE_TENNESSEE
+}
+NCL = {
+	color = { 90 94 193 }
+	
+	country_type = colonial
+
+	tier = principality
+	
+	cultures = { dixie }
+	capital = STATE_NORTH_CAROLINA
+}
+SCL = {
+	color = { 90 94 193 }
+	
+	country_type = colonial
+
+	tier = principality
+	
+	cultures = { dixie }
+	capital = STATE_SOUTH_CAROLINA 
+}
+
+ABMA = {
+	color = { 90 94 193 }
+	
+	country_type = colonial
+
+	tier = principality
+	
+	cultures = { dixie }
+	capital = STATE_ALABAMA
+}
+MIS = {
+	color = { 90 94 193 }
+	
+	country_type = colonial
+
+	tier = principality
+	
+	cultures = { dixie }
+	capital = STATE_MISSISSIPPI
+}
+REPLACE:NCR = {
+	color = { 123 175 212 } 
+
+	country_type = colonial
+
+	tier = principality
+
+	cultures = { dixie }
+	capital = STATE_NORTH_CAROLINA
+}
+
+REPLACE:SCR = {
+	color = { 245 102 0 }
+
+	country_type = colonial
+
+	tier = principality
+
+	cultures = { dixie }
+	capital = STATE_SOUTH_CAROLINA
+}
+
+REPLACE:CLI = {
+	color = { 135 113 196 }
+
+	country_type = colonial
+
+	tier = principality
+
+	cultures = { dixie }
+	capital = STATE_NORTH_CAROLINA
+}
+
+REPLACE:GRG = {
+	color = { 181 0 39 }
+
+	country_type = colonial
+
+	tier = principality
+
+	cultures = { dixie }
+	capital = STATE_GEORGIA
+}
+
+
+REPLACE:FLR = {
+	color = { 189 61 42 }
+
+	country_type = colonial
+
+	tier = principality
+
+	cultures = { dixie }
+	capital = STATE_FLORIDA
+}
+REPLACE:DOM = {
+	color = { 93  194  122 }
+
+	country_type = colonial
+
+	tier = principality
+
+	cultures = { caribeno afro_caribeno }
+	capital = STATE_SANTO_DOMINGO
+	is_named_from_capital = yes
+}
+REPLACE:UOM = {
+	color = { 0 39 76 }
+
+	country_type = colonial
+
+	tier = principality
+
+	cultures = { yankee }
+	capital = STATE_MICHIGAN
+	is_named_from_capital = yes
+}
+########
+#TRIBES#
+########
+IWT = {
+	color = { 191 83 27 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { dakota algonquian }
+	capital = STATE_IOWA
+}
+KANT = {
+	color = { 33 71 23 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { siouan }
+	capital = STATE_KANSAS
+}
+CYT = {
+	color = { 105 32 161 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { paiute }
+	capital = STATE_WYOMING
+}
+#OTOE MISSOURI
+OMT = {
+	color = { 96 108 43 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { siouan }
+	capital = STATE_MISSOURI
+}
+#QUAPAW
+QPT = {
+	color = { 235 132 97 }
+	
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { siouan }
+	capital = STATE_MISSOURI
+}
+#(originally sioux) INDIAN CONFEDERACY
+SYT = {
+	color = { 44 92 40 }
+	
+	country_type = unrecognized
+	
+	tier = grand_principality
+	
+	cultures = { dakota algonquian }
+	capital = STATE_WISCONSIN
+}
+#Chickasaw 
+CST = {
+	color = { 111 64 138 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { cherokee }
+	capital = STATE_TENNESSEE
+}
+#Choctaw
+CHOC = {
+	color = { 183 107 2 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { muskogean }
+	capital = STATE_MISSISSIPPI
+}
+REPLACE:CHE = {
+	color = { 105  145  40 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { cherokee dixie }
+	capital = STATE_TENNESSEE
+}
+#####INDIA#####
+FEI = {
+	color = { 188  113  61 }
+	
+	country_type = colonial
+	
+	tier = principality
+	
+	cultures = { french }
+	capital = STATE_MADRAS
+}

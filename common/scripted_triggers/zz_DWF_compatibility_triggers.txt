@@ -1,0 +1,8 @@
+﻿#################################################
+# COMMUNITY MOD COMPATIBILITY SCRIPTED TRIGGERS #
+#################################################
+#This is a short little trigger to check off if DWF is active. For use in any mods that may refer back to this.
+DWF_is_active_trigger = {
+  always = yes
+}
+#If you ever get any mileage out of this trigger, please let me know, it would make my day

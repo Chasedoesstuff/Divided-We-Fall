@@ -225,25 +225,13 @@ usunify.5 = {
 				setting = yes
 			}
 		}
-		create_country = {
-			tag = PCO 
-			origin = c:SPA  
-			state = s:STATE_PUERTO_RICO.region_state:SPA
- 
-				}
-	hidden_effect = {
-		create_country = {
-			tag = PCO 
-			origin = c:SPA  
-			state = s:STATE_PUERTO_RICO.region_state:CUB
- 
-				}
-		create_country = {
-			tag = PCO 
-			origin = c:SPA  
-			state = s:STATE_PUERTO_RICO.region_state:FLO
- 
-				}
+		c:PCO = {
+		make_independent = yes
+		set_owes_obligation_to = {
+				country = ROOT
+				setting = yes
+			}
+		}
 	
 					}
 }

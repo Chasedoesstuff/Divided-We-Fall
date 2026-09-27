@@ -15,7 +15,9 @@
 		activate_law = law_type:law_national_militia
 		activate_law = law_type:law_local_police
 		activate_law = law_type:law_no_womens_rights # Women couldn't hold property until ~1839
-
+		add_journal_entry = {
+			type = je_vermont_war_nen
+		}
 		ig:ig_armed_forces = {
 			add_ruling_interest_group = yes
 		}

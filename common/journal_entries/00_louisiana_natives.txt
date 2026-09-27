@@ -6,6 +6,8 @@ je_lou_natives_core = {
     scripted_button = je_attack_seq
     scripted_button = je_attack_qpt
 	scripted_button = je_attack_omt
+	scripted_button = je_attack_knt
+	scripted_button = je_lou_frontier_migration
 
     immediate = {
     }

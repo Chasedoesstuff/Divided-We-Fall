@@ -71,8 +71,8 @@ maine.2 = {
 		default_option = yes 
 		c:GBR = {
 		create_diplomatic_pact = {
-			country = c:MAI
-			type = puppet
+			country = c:MAIN
+			type = colony
 	}
 	}
 	s:STATE_MAINE = {  
@@ -260,11 +260,6 @@ maine.6 = {
 	option = {
 		name = maine.6.a
 		default_option = yes
-	C:FRA = {
-		create_diplomatic_pact = {
-			country = c:VER
-			type = customs_union
-	} }
 	add_modifier = {
 			name = nen_victory
 			months = normal_modifier_time

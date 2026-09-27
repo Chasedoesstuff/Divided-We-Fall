@@ -52,6 +52,7 @@ auto_small_lou_standoff_points = {
 			}	
 		}
 	}
+#this says minute as in small, not as in sixty seconds
 demo_minute_lou_standoff_points = {
 	custom_tooltip = {
 			text = demo_minute_lou_standoff_points

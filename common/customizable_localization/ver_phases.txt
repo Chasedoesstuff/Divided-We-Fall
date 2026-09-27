@@ -1,0 +1,90 @@
+﻿vermont_phase_1_result = {
+	type = country
+	random_valid = no
+
+	text = {
+		trigger = {
+		has_global_variable = ver_vic1	
+		}
+
+		localization_key = loc_ver_phase1_ver
+	}
+	text = {
+		trigger = {
+		has_global_variable = nen_vic1	
+		}
+
+		localization_key = loc_ver_phase1_nen
+	}
+	text = {
+		trigger = {
+		always = no	
+		}
+		fallback = yes
+		localization_key = loc_ver_phase1_und
+	}
+
+}
+vermont_phase_2_result = {
+	type = country
+	random_valid = no
+
+	text = {
+		trigger = {
+		has_global_variable = ver_vic2	
+		}
+
+		localization_key = loc_ver_phase2_ver
+	}
+	text = {
+		trigger = {
+		has_global_variable = nen_vic2	
+		}
+
+		localization_key = loc_ver_phase2_nen
+	}
+	text = {
+		trigger = {
+		always = no	
+		}
+		fallback = yes
+		localization_key = loc_ver_phase2_und
+	}
+
+}
+vermont_phase_3_result = {
+	type = country
+	random_valid = no
+
+	text = {
+		trigger = {
+		has_global_variable = ver_vic3	
+		}
+
+		localization_key = loc_ver_phase3_ver
+	}
+	text = {
+		trigger = {
+		has_global_variable = nen_vic3	
+		}
+
+		localization_key = loc_ver_phase3_nen
+	}
+	text = {
+		trigger = {
+		OR = { 
+			has_global_variable = nen_vic2	
+			has_global_variable = ver_vic2
+											}
+		}
+		localization_key = loc_ver_phase3_hor
+	}
+	text = {
+		trigger = {
+		always = no	
+		}
+		fallback = yes
+		localization_key = loc_ver_phase3_und
+	}
+
+}

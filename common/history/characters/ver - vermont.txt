@@ -1,0 +1,8 @@
+﻿CHARACTERS = {
+	c:VER ?= {
+		create_character = {
+			template = ver_john_miller_template
+		}
+
+	}
+}

@@ -74,7 +74,7 @@
 		}
 		add_modifier = {
 			name = usa_test_modifier
-			months = short_modifier_time
+			days = short_modifier_time
 		}
 	}
 }

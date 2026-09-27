@@ -1,7 +1,7 @@
 ﻿je_texas_tex = {
-	group = je_group_historical_content
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
 		
+	group = je_group_historical_content
 	scripted_button = je_tex_beg_sb
 	complete = {
 		is_subject = no
