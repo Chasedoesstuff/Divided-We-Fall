@@ -1,0 +1,21 @@
+﻿TREATIES = {
+	
+	# French Support of Vermont
+	create_treaty = {
+		first_country = c:FRA
+		second_country = c:VER
+
+		is_draft = no
+		entered_into_force_on = 1783.8.8 # 
+		binding_period = { years = 60 } # 
+
+		articles_to_create = {
+			{ # French Guarantee of Vermont Independence
+				article = guarantee_independence
+				source_country = c:FRA
+				target_country = c:VER
+			}
+		}
+	}
+
+}

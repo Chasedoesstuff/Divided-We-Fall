@@ -91,3 +91,8 @@ lou_early_frontier_cost = {
 	country_expenses_add = 3000
 	state_migration_quota_mult = 0.5
 }
+lou_early_migrant_cost = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
+	country_expenses_add = 2000
+	country_influence_mult = -0.25
+}

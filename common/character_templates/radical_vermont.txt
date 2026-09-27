@@ -1,0 +1,24 @@
+﻿### VER character template file ###
+
+# Starting characters
+
+ver_john_miller_template = {
+    first_name = John
+    last_name = Miller
+    historical = yes
+    culture = cu:yankee
+    ruler = yes
+	is_general = yes
+    ig_leader = yes
+	dna = dna_john_miller
+    interest_group = ig_intelligentsia
+	#either this or armed forces
+    ideology = ideology_abolitionist
+    birth_date = 1797.2.24
+    traits = {
+       brave
+	   honorable
+	   experienced_defensive_strategist
+	   popular_commander
+    }
+}

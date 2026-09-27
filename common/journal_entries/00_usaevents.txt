@@ -1,5 +1,4 @@
 ﻿je_usa_take_louisiana = {
-
 	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
 	
 	group = je_group_historical_content
@@ -72,7 +71,10 @@ je_usa_should_exist = {
 			country_has_primary_culture = cu:yankee
 			country_has_primary_culture = cu:dixie
 		}
+	OR = {
 		is_subject = yes
+		c:VER = THIS
+		}
 	}
 
 	possible = {

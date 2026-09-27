@@ -356,8 +356,6 @@
 		}
 	}
 	s:STATE_MONTANA={
-		region_state:USA={
-		}
 		region_state:ABS={
 		}
 		region_state:LKT={
@@ -470,7 +468,7 @@
 		}
 	}
 	s:STATE_INDIANA={
-		region_state:IDA={
+		region_state:INDA={
 			create_building={
 				building="building_government_administration"
 				level=2
@@ -758,7 +756,7 @@
 		}
 	}
 	s:STATE_ALABAMA={
-		region_state:ALA={
+		region_state:ABMA={
 			create_building={
 				building="building_government_administration"
 				level=1
@@ -803,7 +801,7 @@
 		}
 	}
 	s:STATE_FLORIDA={
-		region_state:FLO={
+		region_state:FLR={
 		create_building={
 				building="building_port"
 				level=1
@@ -817,7 +815,7 @@
 				activate_production_methods={ "default_building_sugar_plantation" "pm_road_carts" "pm_privately_owned_plantation" }
 			}
 		}
-		region_state:ALA={
+		region_state:ABMA={
 		create_building={
 				building="building_sugar_plantation"
 				level=1
@@ -827,7 +825,7 @@
 		}
 	}
 	s:STATE_GEORGIA={
-		region_state:GOR={
+		region_state:GRG={
 			create_building={
 				building="building_government_administration"
 				level=2
@@ -1253,12 +1251,6 @@
 	}
 	s:STATE_VERMONT={
 		region_state:VER={
-			create_building={
-				building="building_food_industry"
-				level=2
-				reserves=1
-				activate_production_methods={ "pm_bakery" "pm_disabled_canning" "pm_pot_stills" "pm_manual_dough_processing" "pm_merchant_guilds_building_food_industry" }
-			}
 			create_building={
 				building="building_logging_camp"
 				level=1

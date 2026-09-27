@@ -1,1 +1,13 @@
-{"name":"Divided We Fall","id":"","version":"","supported_game_version":"","short_description":"","tags":[],"relationships":[]}
+{
+"name":"Divided We Fall",
+"picture" : "thumbnail.png",
+"id":"",
+"version":"",
+"supported_game_version":"",
+"short_description":"",
+"tags":[],
+"relationships":[],
+"game_custom_data" : {
+    "multiplayer_synchronized" : false
+  }
+}

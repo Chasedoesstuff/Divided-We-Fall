@@ -1,5 +1,8 @@
 ﻿COUNTRIES = {
 	c:VER = {
+		trigger_event = {
+			id = ver_war.1
+		}
 		# set_next_election_date = ???
 		
 		effect_starting_technology_tier_2_tech = yes

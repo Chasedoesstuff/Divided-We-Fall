@@ -298,8 +298,6 @@ lou_frontier.1 = {
 	
 	duration = 3
 	immediate = {
-		if = { 
-			limit = { NOT = { has_variable = quebec_mm } }
 	random_country = {
 			limit = {
 				country_rank <= rank_value:major_power
@@ -307,6 +305,11 @@ lou_frontier.1 = {
 					text = is_in_europe_tt
 					country_is_in_europe = yes
 				}
+				custom_tooltip = {
+					text = same_state_religion
+					religion = root.religion
+				}
+				average_sol <= root.average_sol
 				any_primary_culture = {
 					culture_can_have_mass_migration_to_country = ROOT
 				}
@@ -338,47 +341,46 @@ lou_frontier.1 = {
 					save_scope_as = migration_culture
 				}
 			}
-
 		}
 		ordered_scope_state = {
 			limit = {
-				OR = {
-					region = sr:region_pacific_coast
-					region = sr:region_great_plains
-					}
-				}
+					
+						
 				state_is_eligible_as_mass_migration_target = yes
+			}
 			order_by = migration_pull
 			save_scope_as = migration_target_state
-								} 
 		}
-	}
+		scope:migration_target_state = {
+			create_mass_migration = {
+				origin = scope:migration_country
+				culture = scope:migration_culture
+			}
+		} 
+		}
+	
+	
 	trigger = {
 	}
 	
 	option = {
 		name = lou_frontier.1.a
 		default_option = yes
-		if = {
-			limit = {
-			NOT = { has_variable = quebec_mm }
-												}
-			create_mass_migration = {
-				origin = c:QUE
-				culture = cu:franco_canadian
-											}
-				
-		else = {
-		scope:migration_target_state = {
-			create_mass_migration = {
-				origin = scope:migration_country
-				culture = scope:migration_culture
-										}
-											}
-												}
-													}
-														}
-										}
+		add_modifier = {
+			name = lou_early_migrant_cost
+			years = 2
+		}
+		show_as_tooltip = {
+			scope:migration_target_state = {
+				create_mass_migration = {
+					origin = scope:migration_country
+					culture = scope:migration_culture
+				}
+			}
+		}												} 
+		} 
+										
+										
 lou_frontier.2 = {
 #Louisiana gets a frontier building 
 	type = country_event
@@ -401,7 +403,7 @@ lou_frontier.2 = {
 		random_state = { 	
 			limit = { 
 				owner = ROOT
-				is_homeland_of_country_cultures = ROOT
+				NOT = { is_homeland_of_country_cultures = ROOT }
 				is_split_state = yes
 				has_potential_resource = bg_livestock_ranches	
 																	}
@@ -410,7 +412,7 @@ lou_frontier.2 = {
 		random_state = { 	
 			limit = { 
 				owner = ROOT
-				is_homeland_of_country_cultures = ROOT
+				NOT = { is_homeland_of_country_cultures = ROOT }
 				is_split_state = yes
 					has_potential_resource = bg_plantations	
 																	}
@@ -419,7 +421,7 @@ lou_frontier.2 = {
 		random_state = { 	
 			limit = { 
 				owner = ROOT
-				is_homeland_of_country_cultures = ROOT
+				NOT = { is_homeland_of_country_cultures = ROOT }
 				is_split_state = yes
 				has_potential_resource = bg_logging	
 																	}
@@ -428,7 +430,7 @@ lou_frontier.2 = {
 		random_state = { 	
 			limit = { 
 				owner = ROOT
-				is_homeland_of_country_cultures = ROOT
+				NOT = { is_homeland_of_country_cultures = ROOT }
 				is_split_state = yes
 				has_potential_resource = bg_mining	
 																	}
@@ -437,7 +439,7 @@ lou_frontier.2 = {
 		random_state = { 	
 			limit = { 
 				owner = ROOT
-				is_homeland_of_country_cultures = ROOT
+				NOT = { is_homeland_of_country_cultures = ROOT }
 				is_split_state = yes
 				has_potential_resource = bg_agriculture	
 																	}

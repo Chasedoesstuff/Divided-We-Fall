@@ -1,0 +1,9 @@
+﻿POPS = {
+	s:STATE_LIBERIA = {
+		region_state:BSS = {
+			create_pop = {
+				culture = bassa
+				size = 150000
+			}
+		}
+	}

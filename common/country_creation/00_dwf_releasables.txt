@@ -19,7 +19,7 @@ DEL = {
 	
 	ai_will_do = { always = no }
 }
-IDA = {
+INDA = {
 	states = {
 		STATE_INDIANA
 	}
@@ -33,7 +33,7 @@ ILL = {
 	
 	ai_will_do = { always = no }
 }
-MAI = {
+MAIN = {
 	states = {
 		STATE_MAINE
 	}
@@ -125,7 +125,7 @@ TSE = {
 	}
 	ai_will_do = { always = no }
 }
-ALA = {
+ABMA = {
 	states = {
 		STATE_ALABAMA
 	}
@@ -137,7 +137,7 @@ MIS = {
 	}
 	ai_will_do = { always = no }
 }
-FLO = {
+REPLACE:FLR = {
 	states = {
 		STATE_FLORIDA
 	}

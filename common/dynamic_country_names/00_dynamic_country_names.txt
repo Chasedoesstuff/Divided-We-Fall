@@ -1814,7 +1814,7 @@ QUE = { # Quebec
 			c:GBR = {
 				has_diplomatic_pact = {
 					who = c:QUE
-					type = puppet
+					type = colony
 					is_initiator = yes
 				}
 			}
@@ -1831,7 +1831,7 @@ QUE = { # Quebec
 			c:GBR = {
 				has_diplomatic_pact = {
 					who = c:QUE
-					type = puppet
+					type = colony
 					is_initiator = yes
 				}
 			}

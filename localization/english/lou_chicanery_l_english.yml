@@ -1,6 +1,6 @@
 ﻿l_english:
   lou_standoff_progress_bar: "Louisianian Standoff"
-  lou_standoff_progress_bar_auto_desc: "Autocratic Control: [Subtract_CFixedPoint('(CFixedPoint)1200', GetGlobalVariable('lou_var_standoff').GetValue)]"
+  lou_standoff_progress_bar_auto_desc: "Autocratic Control: [Subtract_CFixedPoint('(CFixedPoint)1200', GetGlobalVariable('lou_var_standoff').GetValue)].0"
   lou_standoff_progress_bar_demo_desc: "Democratic Control: [GetGlobalVariable('lou_var_standoff').GetValue|1]"
   
   
@@ -17,9 +17,11 @@
   lou_tension:0 "Louisianian Tension"
   je_lou_standoff:0 "Louisianan Standoff" 
   je_lou_standoff_reason:0 "Just a couple years ago, [SCOPE.GetRootScope.GetCountry.GetRuler.GetFullName] dismissed Louisiana's parliament leaving power under only his iron fist, but there are elements and advocates in the nation fighting for democracy, [SCOPE.sCharacter('lou_resistance_ig_leader').GetFullName] being a main player. Many of his supporters will not stand for this. [ROOT.GetCountry.GetNameNoFlag] is deep in the flames of distrust and strife. What kind of [ROOT.GetCountry.GetNameNoFlag] will emerge from the ashes?"
-
-  je_lou_standoff_demo_goal_tt: "Democratic Elements have Secured Power"
-  je_lou_standoff_auto_goal_tt: "Autocratic Elements have Maintained Power"
+  
+  lou_immi_tolerance_tt:0 "Louisiana is still open and tolerant"
+  
+  je_lou_standoff_demo_goal_tt:0 "Democratic Elements have Secured Power"
+  je_lou_standoff_auto_goal_tt:0 "Autocratic Elements have Maintained Power"
   
   je_lou_debt:0 "Louisianan Debt Crisis" 
   je_lou_debt_reason:0 "Louisiana, after being thrown to the wind with Napoleon's defeat on the European continent has been plunged into poverty and despair. Left with scraps. The economy has fallen apart. Many sides of the country are offering their solution to save the nation under their vision. Louisiana's only hope is to emerge from the ashes, but what kind of Louisiana will emerge?"
@@ -51,4 +53,4 @@
   
     je_lou_natives_core:0 "Louisianan Settlement" 
     je_lou_natives_core_reason:0 "Louisiana is still carrying a major debt. Some in the government propose that by taming the savage wilderness. We can boost the economy. Although we can't afford a full military campaign, we should be able to bear the cost of marching over some forests and securing it."
-  
+   

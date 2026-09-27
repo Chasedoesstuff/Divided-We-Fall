@@ -1,12 +1,12 @@
-﻿l_english
- texan_war_of_independence.1.f:1 "Maybe the lone star state doesn't have to be alone anymore?"
- texan_war_of_independence.1.t:1 "The Lone Star State"
- texan_war_of_independence.1.d:1 "Texas has fought hard for freedom against Mexico. We stand alone, stuck between Louisiana and Mexico. It would be smart to seek protection."
- texan_war_of_independence.1.fra:1 "We will be the last bastion of New France!"
- texan_war_of_independence.1.spa:1 "We have been under Spain before, why not again?"
- texan_war_of_independence.1.gbr:1 "We Will Join the British. Along with our American brothers."
- texan_war_of_independence.1.lou:1 "Why go to Europe, when we can just join Lousisiana?"
- texan_war_of_independence.1.c:1 "We don't need help from the Imperialists!"
+﻿l_english:
+ texan_war_of_independence.1.f:0 "Maybe the lone star state doesn't have to be alone anymore?"
+ texan_war_of_independence.1.t:0 "The Lone Star State"
+ texan_war_of_independence.1.d:0 "Texas has fought hard for freedom against Mexico. We stand alone, stuck between Louisiana and Mexico. It would be smart to seek protection."
+ texan_war_of_independence.1.fra:0 "We will be the last bastion of New France!"
+ texan_war_of_independence.1.spa:0 "We have been under Spain before, why not again?"
+ texan_war_of_independence.1.gbr:0 "We Will Join the British. Along with our American brothers."
+ texan_war_of_independence.1.lou:0 "Why go to Europe, when we can just join Lousisiana?"
+ texan_war_of_independence.1.c:0 "We don't need help from the Imperialists!"
  lone_star_state:0 "Lone Star State"
  
  
